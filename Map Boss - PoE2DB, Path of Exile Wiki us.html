@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="us" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Map Boss - PoE2DB, Path of Exile Wiki us</title>
+    <meta name="description" content="path of exile is simply a tool to test your path of building creation">
+    <link rel="alternate" hreflang="en" href="https://poe2db.tw/us/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://poe2db.tw/tw/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://poe2db.tw/cn/" />
+        <link href="/favicon2.png" rel="shortcut icon" >
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css" integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-5-theme/1.3.0/select2-bootstrap-5-theme.min.css" integrity="sha512-z/90a5SWiu4MWVelb5+ny7sAayYUfMmdXKEAbpj27PfdkamNdyI3hcjxPxkOPbrXoKIm7r9V2mElt5f1OtVhqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" integrity="sha512-HbPh+j4V7pXprvQMt2dtmK/zCEsUeZWYXRln4sOwmoyHPQAPqy/k9lIquKUyKNpNbDGAY06UdiDHcEkBc72yCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.min.css" integrity="sha512-OkYLbkJ4DB7ewvcpNLF9DSFmhdmxFXQ1Cs+XyjMsMMC94LynFJaA9cPXOokugkmZo6O6lwZg+V5dwQMH4S5/3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video-js.min.css" integrity="sha512-J3tx4ssoARFr4U9VmZmQe2q672q0jUeYizJW3vglkOBTlQ/N6kF3eVqZZzaey/TdIXH69s3HYe2nQwyxK/Emzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.poe2db.tw/css/stdtheme.4bd5d8b8acf8ae5a.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js" integrity="sha512-gbruucq/Opx9jlHfqqZeAg2LNK3Y4BbpXHKDhRC88/tARL/izPOE4Zt2w6X9Sn1UeWaGbL38zW7nkL2jdn5JIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js" integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.all.js" integrity="sha512-A7LzqKE/pm9ofgS0Lxu7qroQS5SkKJQaYJkJ/66nQiWZfEdeGlBq5zEXQ63VRmXZK8zPpCgFf2WQJIAljI0Vdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js" integrity="sha512-4/g9GAdOdTpUP2mKClpKsEzaK7FQNgMjq+No0rX8XZlfrCGtbi4r+T/p5fnacsEC3zIAmHKLJUL7sh3/yVA4OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/theme/dark.min.js" integrity="sha512-3Zm64ayK7DflnnyO2pKkLJX3v9Sb90mvahbwPUuMzEf42HI6k8tquIx5VsNBjEWAcYJWzvimbqnTkLl2QdCUmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video.min.js" integrity="sha512-48NkCweTzA9u2sP4GgKcEDm6IScPIMga142ipKFNcHfz7feUJXDJxO1jwc2l+5MvWfwMj4BDfQv8WIMhrPxZLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.2.1/mustache.min.js" integrity="sha512-Qjrukx28QnvFWISw9y4wCB0kTB/ISnWXPz5/RME5o8OlZqllWygc1AB64dOBlngeTeStmYmNTNcM6kfEjUdnnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdn.poe2db.tw/js/ModsView.ccf47bc9016c7baf.js"></script>
+        <script src="https://cdn.poe2db.tw/js/poedb_header.3abb375410f4ddc6.js"></script>
+    
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2013.js"></script>
+
+    <meta property="og:site_name" content="poe2db.tw">
+<meta property="og:title" content="Map Boss" />
+<meta property="og:description" content="Endgame Maps each contain a Map Boss. These Map Bosses are Unique Monsters that have special mechanics and drop increased rewards.
+
+Defeating the Map Boss will complete the Map." />
+
+  </head>
+
+  <body>
+
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+
+
+    <div class="background-image item-popup--poe2"></div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6598Z863E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6598Z863E2');
+</script>
+
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="/us/">PoE2<span class='brand-suffix'>DB</span><sub></sub></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Items" data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</a></li>
+                    <li><a class="dropdown-item" href="/us/Unique_item" data-i18n="ClientStrings|ItemDisplayStringUnique|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/Reforging_Bench" data-i18n="ClientStrings|RecipeBenchTitle|Name"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Gem" data-i18n="ClientStrings|ItemDisplayStringGem|Name">Gem</a></li>
+                    <li><a class="dropdown-item" href="/us/Skill_Gems" data-i18n="ItemClasses|Active Skill Gem|Name">Skill Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Support_Gems" data-i18n="ItemClasses|Support Skill Gem|Name">Support Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Spirit_Gems" data-i18n-tw="精神寶石">Spirit Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Lineage_Supports" data-i18n="KeywordPopups|LineageSupports|Name">Lineage Supports</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Modifiers" data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Desecrated_Modifiers" data-i18n="KeywordPopups|Abyssalify|Name">Desecrated Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Keywords" data-i18n-tw="提示字">Keywords</a></li>
+                    <li><a class="dropdown-item" href="/us/Crafting" data-i18n="ClientStrings|CraftingWindowTitle|Name">Crafting</a></li>
+                    <li><a class="dropdown-item" href="/us/Liquid_Emotions" data-i18n="KeywordPopups|DistilledEmotion|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/us/Quest" data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</a></li>
+                    <li><a class="dropdown-item" href="/us/Ascendancy_class" data-i18n="ClientStrings|TutorialPanelAscendancies|Name">Ascendancy Classes</a></li>
+                    <li><a class="dropdown-item" href="/us/passive-skill-tree/" data-i18n="ClientStrings|ActionOpenPassivePanel|Name">Passive Skill Tree</a></li>
+                    <li><a class="dropdown-item" href="/us/Act" data-i18n-tw="章節">Act</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Waystones" data-i18n="ItemClasses|Map|Name">Waystones</a></li>
+                    <li><a class="dropdown-item" href="/us/Endgame" data-i18n="Acts|Endgame|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/atlas-skill-tree/" data-i18n="ClientStrings|ActionOpenAtlasPassivesScreen|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item"><a class="nav-link" href="Economy" data-i18n-tw="經濟" data-i18n-cn="经济">Economy</a></li>
+    
+                <li class="nav-item"><a class="ms-4 nav-link  bg-warning rounded-circle" style="color: white" href="/us/patreon">Patreon</a></li>
+              </ul>
+    
+    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="https://poedb.tw/us/">PoE<span class="brand-suffix">DB</span></a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/tw/Map_Boss">TW 繁體中文</a></li>
+                    <li><a class="dropdown-item" href="/cn/Map_Boss">CN 简体中文</a></li>
+                    <li><a class="dropdown-item" href="/us/Map_Boss">US English</a></li>
+                    <li><a class="dropdown-item" href="/kr/Map_Boss">KR 한국어</a></li>
+                    <li><a class="dropdown-item" href="/jp/Map_Boss">JP Japanese</a></li>
+                    <li><a class="dropdown-item" href="/ru/Map_Boss">RU Русский</a></li>
+                    <li><a class="dropdown-item" href="/pt/Map_Boss">PO Português</a></li>
+                    <li><a class="dropdown-item" href="/th/Map_Boss">TH ภาษาไทย</a></li>
+                    <li><a class="dropdown-item" href="/fr/Map_Boss">FR Français</a></li>
+                    <li><a class="dropdown-item" href="/de/Map_Boss">DE Deutsch</a></li>
+                    <li><a class="dropdown-item" href="/sp/Map_Boss">ES Spanish</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            <form class="form-inline my-2 my-lg-0" role="search" action="search">
+              <input type="hidden" name="token" value="df3da3f1a7fa7ea59a799f47278890b9fd9cc6279a12094cb449d95da05cf8fb2a53eb">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" id="navautosearch">
+            </form>
+    
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    </header>
+
+<script>sidebar160("leftside_banner", "left");</script>
+<script>sidebar160("rightside_banner", "right");</script>
+
+
+
+    <div class="page poe2">
+    <div class="page-content theme-showcase container" role="main">
+
+
+<div class="card mb-2" id="head_toolbar" style="background: transparent">
+  <div class="card-body p-1">
+    <div class="league_bar text-center">
+      <a href="Runes_of_Aldur_league" data-bs-toggle="tooltip" title="Runes of Aldur v0.5" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Expedition2RemnantActive.webp" alt="Expedition2RemnantActive" class="league_minimap" /></span></a><a href="Atziris_Temple" data-bs-toggle="tooltip" title="Atziri v0.4" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionAtziriActive.webp" alt="IncursionAtziriActive" class="league_minimap" /></span></a><a href="Waystones" data-bs-toggle="tooltip" title="Waystones" data-hover="?s=Data%5CKeywordPopups%2FWaystone"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2ditems/maps/endgamemaps/endgamemap1.webp" class="league_minimap"/></a><a href="Shrine" data-bs-toggle="tooltip" title="Shrine" data-hover="?s=Data%5CKeywordPopups%2FShrine"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" class="league_minimap" /></span></a><a href="Strongbox" data-bs-toggle="tooltip" title="Strongbox" data-hover="?s=Data%5CKeywordPopups%2FStrongbox"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Strongbox.webp" alt="Strongbox" class="league_minimap" /></span></a><a href="Essence" data-bs-toggle="tooltip" title="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp" alt="Essence" class="league_minimap" /></span></a><a href="Archnemesis" data-bs-toggle="tooltip" title="Archnemesis" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RareMonsterAlive.webp" alt="RareMonsterAlive" class="league_minimap" /></span></a><a href="Azmeri_Spirit" data-bs-toggle="tooltip" title="Azmeri Spirit v0.2" data-hover="?s=Data%5CKeywordPopups%2FAzmeriSpirit"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SpiritActivated.webp" alt="SpiritActivated" class="league_minimap" /></span></a><a href="Rogue_Exile" data-bs-toggle="tooltip" title="Rogue Exile" data-hover="?s=Data%5CKeywordPopups%2FRogueExile"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RogueExile.webp" alt="RogueExile" class="league_minimap" /></span></a><a href="Map_Boss" data-bs-toggle="tooltip" title="Map Boss" data-hover="?s=Data%5CKeywordPopups%2FMapBoss"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="league_minimap"/></a><a href="Precursor_Towers" data-bs-toggle="tooltip" title="Precursor Towers" data-hover="?s=Data%5CKeywordPopups%2FPrecursorTower"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/MapLegend/LostTower.webp" class="league_minimap"/></a><a href="Corrupted_Nexus" data-bs-toggle="tooltip" title="Corrupted Nexus" data-hover="?s=Data%5CKeywordPopups%2FCorruptedNexus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentCorruptionNexusNoGrowth.webp" class="league_minimap"/></a><a href="Abyss" data-bs-toggle="tooltip" title="Abyss v0.3" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/textures/interface/2d/2dart/uiimages/ingame/worldmap/mapbuttonabysshub.webp" class="league_minimap"/></a><a href="Breach" data-bs-toggle="tooltip" title="Breach" data-hover="?s=Data%5CKeywordPopups%2FContainsBreach"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentbreach.webp" class="league_minimap"/></a><a href="Ritual" data-bs-toggle="tooltip" title="Ritual" data-hover="?s=Data%5CKeywordPopups%2FContainsRitual"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentritual.webp" class="league_minimap"/></a><a href="Delirium" data-bs-toggle="tooltip" title="Delirium" data-hover="?s=Data%5CKeywordPopups%2FContainsDelirium"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentdelirium.webp" class="league_minimap"/></a><a href="Expedition" data-bs-toggle="tooltip" title="Expedition" data-hover="?s=Data%5CKeywordPopups%2FContainsExpedition"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentexpedition.webp" class="league_minimap"/></a><a href="The_Burning_Monolith" data-bs-toggle="tooltip" title="The Burning Monolith" data-hover="?s=Data%5CKeywordPopups%2FTheBurningMonoilth"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/maplegend/monolith.webp" class="league_minimap"/></a><a href="Trial_of_the_Sekhemas" data-bs-toggle="tooltip" title="Trial of the Sekhemas" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonSanctum.webp" class="league_minimap"/></a><a href="The_Trial_of_Chaos" data-bs-toggle="tooltip" title="The Trial of Chaos" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonUltimatum.webp" class="league_minimap"/></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="topbanner970"></div><script>topbanner970("topbanner970");</script>
+
+<ul class="nav nav-tabs d-flex flex-wrap" role="tablist"><li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true" href="#MapBossRef">MapBoss Ref /22 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#AtlaspassiveskillPassive">Atlas passive skill Passive /21 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#MapBoss">Map Boss</a></li></ul><div class="tab-content"><div id="MapBossRef" class="tab-pane fade show active"><div   class="card mb-2 ">
+   <h5 class="card-header">MapBoss Ref /22 </h5> <div class="newItemPopup keywordPopups"><div   class="card mb-2 ">
+   <h5 class="card-header"><a href="Map_Boss">Map Boss</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Endgame Maps each contain a Map Boss. These Map Bosses are Unique Monsters that have special mechanics and drop increased rewards.<br />
+<br />
+Defeating the Map Boss will complete the Map.</div></div>   </div></div>  <script>
+$(document).ready(function () {
+    filterClick($('input[name=filterd6Jm3p89Dn]'));
+});
+</script>
+
+<form><div class="input-group my-2">
+    <button class="btn btn-outline-secondary" type="reset">Reset</button>
+    <input name="filterd6Jm3p89Dn" class="form-control" placeholder="Search">
+</div></form><div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/1dc1a3159edb7de4abdda2e76a8238be83c118244de3e7f562822f500ba03c1d" href="Season_of_the_Hunt"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/PrecursorTablets/PrecursorTabletOverseerUnique1.webp" alt="PrecursorTabletOverseerUnique1" class="w1" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/1dc1a3159edb7de4abdda2e76a8238be83c118244de3e7f562822f500ba03c1d" href="/us/Season_of_the_Hunt"><span class="uniqueName">Season of the Hunt</span> <span class="uniqueTypeLine">Overseer Tablet</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span></div><div class="implicitMod"><a data-keyword="ContainsMapBoss" href="Empowerment" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsMapBoss">Empowers</a> the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a> of a Map <br/><span class='mod-value'>10</span> uses remaining</div><div class="separator"></div><div class="explicitMod"><a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a> are Hunted by <a data-keyword="AzmeriSpirit" href="Azmeri_Spirit" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0f0d966bb726c365591e56a3ebb372b5e578f754d1ffcb1a487feababbec25d1">Azmeri Spirits</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/4be7301ef72d0919cb730175f5faba1a267f12b99dc08d94968245181d9d902d" href="Cruel_Hegemony"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/PrecursorTablets/PrecursorTabletOverseerUnique2.webp" alt="PrecursorTabletOverseerUnique2" class="w1" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/4be7301ef72d0919cb730175f5faba1a267f12b99dc08d94968245181d9d902d" href="/us/Cruel_Hegemony"><span class="uniqueName">Cruel Hegemony</span> <span class="uniqueTypeLine">Overseer Tablet</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span></div><div class="implicitMod"><a data-keyword="ContainsMapBoss" href="Empowerment" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsMapBoss">Empowers</a> the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a> of a Map <br/><span class='mod-value'>10</span> uses remaining</div><div class="separator"></div><div class="explicitMod"><a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a> have <span class='mod-value'>1</span> additional <a data-keyword="MonsterModifiers" href="Monster_Modifiers" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMonsterModifiers">Modifier</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem TowerAugmentation" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FTowerAugment%2FMapBossAugment" href="Overseer_Tablet"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/PrecursorTablets/PrecursorTabletBoss.webp" alt="PrecursorTabletBoss" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem TowerAugmentation" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FTowerAugment%2FMapBossAugment" href="Overseer_Tablet">Overseer Tablet</a><div><div class="implicitMod"><a data-keyword="ContainsMapBoss" href="Empowerment" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsMapBoss">Empowers</a> the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a> of a Map <br/><span class='mod-value'>10</span> uses remaining</div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Grand_Mirror_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/3d175c87faa76cc63a83dd14517c218eac8f3ea6ed3080ce288ee0d5a17fba1a">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/DeliriumNode1.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/3d175c87faa76cc63a83dd14517c218eac8f3ea6ed3080ce288ee0d5a17fba1a" href="Grand_Mirror_Chance">Grand Mirror Chance</a></div><div class="property">SubTree: <span class='colourDefault'>Delirium</span></div><div class="property">Quantity: <span class='colourDefault'>16</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>5</span>% increased chance for a <a data-keyword="DeliriumGigaMirror" href="Grand_Mirror" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FDeliriumGigaMirror">Grand Mirror</a> to appear on a nearby<br/>Map when <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a> are slain within Fog</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/I_see_your_true_nature_now" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/bc9e625b4dc3ececbcc9fb7c3a56d6fccf94aa15d4657cef545de12e23230d9f">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/DeliriumNotable8.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/bc9e625b4dc3ececbcc9fb7c3a56d6fccf94aa15d4657cef545de12e23230d9f" href="I_see_your_true_nature_now">I see your true nature now!</a></div><div class="property">SubTree: <span class='colourDefault'>Delirium</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsDelirium" href="Delirium" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/f9d5e9826d64b060bcbfe4c0552f0c12bcc19ee0f8e99ce45de59ed4c7f76f0c">Delirium Fog</a> may now manifest <a data-keyword="FracturingMirrorShard" href="Fracturing_Mirror_Shards" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FFracturingMirrorShard">Shards</a> which add an additional Boss to the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a> arena or a guaranteed <a data-keyword="DeliriumGigaMirror" href="Grand_Mirror" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FDeliriumGigaMirror">Grand Mirror</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Abyssal_Ire" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/45d256d4967b9e83f436d4601a85a87110f1a90e03ef39051d03b95a401ef058">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/45d256d4967b9e83f436d4601a85a87110f1a90e03ef39051d03b95a401ef058" href="Abyssal_Ire">Abyssal Ire</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">25% chance for <a data-keyword="AbyssalDepths" href="Abyssal_Depths" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalDepths">Abyssal Depths</a> in Level 78+ Areas to contain a Boss<br/>25% chance for an Ulaman pit near the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a> to have the Incubator Queen</div><div class="implicitMod"><span class="secondary">map abyss spawn near boss chance + [20]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Hunt_the_Apex" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/21538bda032f821bcb4e7adf1f8e31c72dd6f2441a4934e1d3f8bd732807fc96">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AzmeriSpiritsNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/21538bda032f821bcb4e7adf1f8e31c72dd6f2441a4934e1d3f8bd732807fc96" href="Hunt_the_Apex">Hunt the Apex</a></div><div class="implicitMod"><a data-keyword="AzmeriSpirit" href="Azmeri_Spirit" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0f0d966bb726c365591e56a3ebb372b5e578f754d1ffcb1a487feababbec25d1">Azmeri Spirits</a> may <a data-keyword="SpiritPossessed" href="Possessed" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FSpiritPossessed">Possess</a> <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Fabled_Showdown" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/7a6c6c160941678528f9cf40ac0de215a54d75f311ec79b6a2f066d010146a2f">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/7a6c6c160941678528f9cf40ac0de215a54d75f311ec79b6a2f066d010146a2f" href="Fabled_Showdown">Fabled Showdown</a></div><div class="implicitMod">Gain a <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> bonus for <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a></div><div class="separator"></div><div class="explicitMod"><ul><li><span class='mod-value'>25</span>% chance <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> Buffs are reapplied when entering the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Boss</a> arena</li><li><span class='mod-value'>25</span>% chance <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> Buffs are instead applied to the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Boss</a> when activated, granting an additional reward</li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Warlords_Vendetta" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/42aa6831e6a7a7436953d87d6307f6e8d8e0a1e0d2a88ac81b6e4ac9c20977e2">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/CityBiome.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/42aa6831e6a7a7436953d87d6307f6e8d8e0a1e0d2a88ac81b6e4ac9c20977e2" href="Warlords_Vendetta">Warlord's Vendetta</a></div><div class="implicitMod"><a data-keyword="InvadedCityMap" href="Invaded_City" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FInvadedCityMap">Invaded</a> <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Cities</a> have a <span class='mod-value'>20</span>% chance to include an invading <a data-keyword="Citadel" href="Citadel" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCitadel">Citadel</a> Boss fighting the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Boss_of_the_Bog" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ee12fc07e87cc29dbe9f7472e893de63256c0ee600b75b1b1ae3edd47114acaa">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/SwampBiome.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ee12fc07e87cc29dbe9f7472e893de63256c0ee600b75b1b1ae3edd47114acaa" href="Boss_of_the_Bog">Boss of the Bog</a></div><div class="implicitMod">1 <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Rare</a> Monster in <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Swamp</a> Areas has <span class='mod-value'>15</span>% chance to be replaced by a random <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Fit_for_a_King" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/96fd7deaee579111f45064d3bf633a41932e4f33307dc1fbabd9c98437d6a9b1">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/BossNotableDropRarerItems.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/96fd7deaee579111f45064d3bf633a41932e4f33307dc1fbabd9c98437d6a9b1" href="Fit_for_a_King">Fit for a King</a></div><div class="implicitMod"><span class='mod-value'>20</span>% increased <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Rarity</a> of Items dropped by <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Hard-Won_Treasures" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/091ba331637b3a888f8f76e23c9065be71f5afb2702be1b46c042f244c41bca2">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/BossNotableDropMoreItems.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/091ba331637b3a888f8f76e23c9065be71f5afb2702be1b46c042f244c41bca2" href="Hard-Won_Treasures">Hard-Won Treasures</a></div><div class="property">Mastery: <span class='colourDefault'><a href="Maps">Maps</a></span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>15</span>% increased Quantity of Items dropped by <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Pathkeepers" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/e0893d80062875efc9176664c056f1da69c7b15c67ec9e03f54add1c647e0aa5">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/BossNotableDropMoreWaystone.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/e0893d80062875efc9176664c056f1da69c7b15c67ec9e03f54add1c647e0aa5" href="Pathkeepers">Pathkeepers</a></div><div class="implicitMod"><span class='mod-value'>15</span>% increased Quantity of <a data-keyword="Waystone" href="Waystones" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6967bef8f8e36673401bdc8734ca568f3658e345535c2de9861db9d98a3c6efa">Waystones</a> dropped by <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Powerful_Map_Boss">Powerful Map Boss</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Powerful Map Bosses are <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a> that are even more difficult and drop even better rewards.<br />
+<br />
+Powerful Map Bosses frequently drop <a data-keyword="Waystone" href="Waystones" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6967bef8f8e36673401bdc8734ca568f3658e345535c2de9861db9d98a3c6efa">Waystones</a> one Tier higher.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Empowerment">Empowerment</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Empowering a <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a007b720196c75cfea84debe486bb44f766cff7f6758b8998ce4b45ddf3ce3ae">Map Boss</a> upgrades it to a <a data-keyword="PowerfulMapBoss" href="Powerful_Map_Boss" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/270b01e535d8e4d4a1afab7ac41181222eea61d658960fd68b4dcd65102a2a06">Powerful Map Boss</a></div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Delirium">Delirium</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Maps containing a Delirium Mirror can have the mirror walked through to unleash the rolling Delirium fog ring across the current area. <br />
+You must stay within this fog as it expands to maintain the <a data-keyword="Delirious" href="Delirious_Players" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FDelirious">Delirium</a> or it will disappear.<br />
+<br />
+<a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Magic</a> monsters are able to gain Delirium specific <a data-keyword="MonsterModifiers" href="Monster_Modifiers" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMonsterModifiers">Modifiers</a> while inside the fog.<br />
+<br />
+<a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Rare</a> or <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> monsters in the fog may manifest Delirium Demons. Manifested Delirium Demons inhabit the monster's body to occasionally use Skills of their own.<br />
+<br />
+<a data-keyword="FracturingMirror" href="Fracturing_Mirrors" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FFracturingMirror">Fractured Mirrors</a> may be found within Delirium Fog, summoning extra monsters while <a data-keyword="FracturingMirrorShard" href="Fracturing_Mirror_Shards" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FFracturingMirrorShard">Fracturing Mirror Shards</a> are found at set depths, with more varied rewards.<br />
+<br />
+Defeating <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a> has a chance to summon a <a data-keyword="DeliriumGigaMirror" href="Grand_Mirror" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FDeliriumGigaMirror">Grand Mirror</a> on a nearby map.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Precursor_Towers">Precursor Towers</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Precursor Towers are ancient structures that are scattered all throughout the Atlas. Precursor Tower Maps can be completed to reveal a large area around them and to obtain a <a data-keyword="Tablet" href="Tablets" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FTablet">Tablet</a>.<br />
+<br />
+Completing a Precursor Tower requires you to activate the Precursor Beacon at the end of the Map, after defeating the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a>.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Map_Node">Map Node</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>This represents a Map. A <a data-keyword="Waystone" href="Waystones" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6967bef8f8e36673401bdc8734ca568f3658e345535c2de9861db9d98a3c6efa">Waystone</a> can be used to access it. <br />
+<br />
+If you fail to complete the Map, it may be attempted again but will not contain additional content, <a data-keyword="Essence" href="Essence" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FEssence">Essences</a>, <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a>, or <a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongboxes</a>. It will not be <a data-keyword="ContainsCorruption" href="Corruption" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/f49b0f663028b8753be0884bcb2e2cfa44798a3bdc828c5409c7ababd4ca279f">Corrupted</a>. <a data-keyword="Tablet" href="Tablets" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FTablet">Tablets</a> cannot be used on failed Maps.<br />
+<br />
+To complete a Map, defeat the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Boss</a>.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Delirious_Players">Delirious Players</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Delirious players are assaulted by illusions, making combat more difficult. Higher delirium causes monsters to deal more damage and have additional <a data-keyword="Toughness" href="Toughness" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/50e6089093a15b1d8d6ddb9a3a4043efa3b7a02e00598acc41a5b63f337fbe9a">Toughness</a>. It can also cause additional monsters to appear or can grant additional modifiers to existing monsters. Monster item drops are improved by higher delirium.<br />
+<br />
+Maps within Fog Banks will Deliriousness as <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a007b720196c75cfea84debe486bb44f766cff7f6758b8998ce4b45ddf3ce3ae">Map Bosses</a>, <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Rare</a> Monsters or Unique Monsters are killed.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Grand_Mirror">Grand Mirror</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>A Grand Mirror causes a reflection of the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a007b720196c75cfea84debe486bb44f766cff7f6758b8998ce4b45ddf3ce3ae">Map Boss</a>. When the bosses are defeated <a data-keyword="ContainsDelirium" href="Delirium" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/f9d5e9826d64b060bcbfe4c0552f0c12bcc19ee0f8e99ce45de59ed4c7f76f0c">Delirium</a> fog spreads to nearby Maps.<br />
+<br />
+At least 1 Map the fog spreads to will be transformed into a Simulacrum.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Rite_of_the_Nameless">Rite of the Nameless</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>The Rite of the Nameless is a group of maps which each contain <a data-keyword="ContainsRitual" href="Ritual" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/422d58c1d59cfa4eaa519e1b080f6805f7a953495d5e87b32161edf941ba6a55">Ritual Altars</a> and a <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a>.<br />
+<br />
+Completing all Ritual Altars will drop an <a data-keyword="RitualPinnacleEffigyPiece" href="Effigy" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRitualPinnacleEffigyPiece">Effigy Piece</a>.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Great_Beast">Great Beast</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Great Beasts are <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a007b720196c75cfea84debe486bb44f766cff7f6758b8998ce4b45ddf3ce3ae">Map Bosses</a> marked by Hilda as worthy targets to defeat. Defeating a Great Beast will earn you <a data-keyword="HildasFavour" href="Hildas_Favour" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FHildasFavour"> Hilda's Favour</a>.</div></div>   </div></div></div></div></div></div>  </div></div><div id="AtlaspassiveskillPassive" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">Atlas passive skill Passive /21 </h5>   <script>
+$(document).ready(function () {
+    filterClick($('input[name=filteryoG8ISHYKh]'));
+});
+</script>
+
+<form><div class="input-group my-2">
+    <button class="btn btn-outline-secondary" type="reset">Reset</button>
+    <input name="filteryoG8ISHYKh" class="form-control" placeholder="Search">
+</div></form><div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a  data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/cb5d0aecf18e1e9abeddfebc4ed77201609753e05b86379b9ae355c449583d96">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/MasteryBlank.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/cb5d0aecf18e1e9abeddfebc4ed77201609753e05b86379b9ae355c449583d96">AtlasAbyssStart</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="property">Quantity: <span class='colourDefault'>44</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Depths_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/979cc4e409c7a94cf2864a604948d29f9d96e9540bab99845974c26e6260b4fd">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AtlassAbyssalNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/979cc4e409c7a94cf2864a604948d29f9d96e9540bab99845974c26e6260b4fd" href="Depths_Chance">Depths Chance</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="property">Quantity: <span class='colourDefault'>17</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> have <span class='mod-value'>10</span>% increased chance to lead to an <a data-keyword="AbyssalDepths" href="Abyssal_Depths" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalDepths">Abyssal Depths</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Depths_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/cad9b121cc259121aa51488fba6effc5405bf6c1f334f3a10cad3b133a240a98">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AtlassAbyssalNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/cad9b121cc259121aa51488fba6effc5405bf6c1f334f3a10cad3b133a240a98" href="Depths_Chance">Depths Chance</a></div><div class="property">Mastery: <span class='colourDefault'><a href="Legion">Legion</a></span></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="property">Quantity: <span class='colourDefault'>17</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> have <span class='mod-value'>10</span>% increased chance to lead to an <a data-keyword="AbyssalDepths" href="Abyssal_Depths" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalDepths">Abyssal Depths</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Stir_the_Swarm" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9aceb1837f4ce611e84388104049fb0faf45bd39f7de27c9125f9baade04b21c">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable5.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9aceb1837f4ce611e84388104049fb0faf45bd39f7de27c9125f9baade04b21c" href="Stir_the_Swarm">Stir the Swarm</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>5</span>% chance on completing <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> in your Maps for a nearby map to be Overrun by the Abyssal</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Abyssal_Ire" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/45d256d4967b9e83f436d4601a85a87110f1a90e03ef39051d03b95a401ef058">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/45d256d4967b9e83f436d4601a85a87110f1a90e03ef39051d03b95a401ef058" href="Abyssal_Ire">Abyssal Ire</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">25% chance for <a data-keyword="AbyssalDepths" href="Abyssal_Depths" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalDepths">Abyssal Depths</a> in Level 78+ Areas to contain a Boss<br/>25% chance for an Ulaman pit near the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Boss</a> to have the Incubator Queen</div><div class="implicitMod"><span class="secondary">map abyss spawn near boss chance + [20]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Close_to_the_Surface" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ba8271edb57e7518fa6256871ab59edd272fb4a81e02680fc1b01da595ee5edf">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable4.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ba8271edb57e7518fa6256871ab59edd272fb4a81e02680fc1b01da595ee5edf" href="Close_to_the_Surface">Close to the Surface</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">Explicit Modifiers on your <a data-keyword="Waystone" href="Waystones" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6967bef8f8e36673401bdc8734ca568f3658e345535c2de9861db9d98a3c6efa">Waystones</a> apply to <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> Depths in the Map area</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Sprawling_Rupture" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/8465b5354b6535544872e2d3d406288ebc73668b343fde2bc080d7a32124ba0c">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssCrack.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/8465b5354b6535544872e2d3d406288ebc73668b343fde2bc080d7a32124ba0c" href="Sprawling_Rupture">Sprawling Rupture</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> spawn <span class='mod-value'>25</span>% increased Monsters</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Unholy_Influence" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/38ec6bdf5f7db3e5aa6c354e297942c9e772071f489200b76dcc55293e0dbf25">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/38ec6bdf5f7db3e5aa6c354e297942c9e772071f489200b76dcc55293e0dbf25" href="Unholy_Influence">Unholy Influence</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>100</span>% increased chance for <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters to have <a data-keyword="AbyssalModifiers" href="Abyssal_Modifiers" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalModifiers">Abyssal Modifiers</a></div><div class="implicitMod"><span class='mod-value'>100</span>% increased chance for <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters to have Lichborn Modifiers</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Dark_Bloodlines" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/f70d1356ca215c16e7c1e1a98a36bedb72c8ada4202825e7811dcf36f7b05f6f">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable5.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/f70d1356ca215c16e7c1e1a98a36bedb72c8ada4202825e7811dcf36f7b05f6f" href="Dark_Bloodlines">Dark Bloodlines</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyss</a> Pits have <span class='mod-value'>25</span>% chance to spawn all Monsters as at least Magic</div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyss</a> Cracks have <span class='mod-value'>25</span>% chance to spawn all Monsters as at least Magic</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Shadow_of_Undeath" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/f6efc8d854c1ebecf41bf11eb63500314719bd437455c915ddedc3fbe984c28a">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssCrack.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/f6efc8d854c1ebecf41bf11eb63500314719bd437455c915ddedc3fbe984c28a" href="Shadow_of_Undeath">Shadow of Undeath</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>50</span>% increased chance of <a data-keyword="RogueExile" href="Rogue_Exile" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRogueExile">Rogue Exiles</a> being influenced by <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a></div><div class="implicitMod"><span class='mod-value'>50</span>% increased chance of <a data-keyword="Essence" href="Essence" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FEssence">Essences</a> being influenced by <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Balance_of_Power" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/726b38b2d3818da582cd98317709e714070585d60f5c144194f241697edabc2b">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable1.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/726b38b2d3818da582cd98317709e714070585d60f5c144194f241697edabc2b" href="Balance_of_Power">Balance of Power</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">Select an <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyss</a> Faction to always encounter</div><div class="separator"></div><div class="explicitMod"><ul><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters are loyal to Amanamu</li><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters are loyal to Kurgal</li><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters are loyal to Ulaman</li><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters may be loyal to any faction</li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Vile_Treasures" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/1af92073423f4c07ddd343ad9866fa70b7a5ec950384f0f604819c38f32c4ba3">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/1af92073423f4c07ddd343ad9866fa70b7a5ec950384f0f604819c38f32c4ba3" href="Vile_Treasures">Vile Treasures</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>50</span>% increased chance to find Abyssal Items</div><div class="separator"></div><div class="explicitMod"><ul><li><span class='mod-value'>50</span>% increased chance to find <a data-keyword="AbyssalEye" href="Abyssal_Eye" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalEye">Abyssal Eyes</a></li><li><span class='mod-value'>50</span>% increased chance to find Abyss <a data-keyword="Omen" href="Omens" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FOmen">Omens</a></li><li><span class='mod-value'>50</span>% increased chance to find Abyss <a data-keyword="LineageSupports" href="Lineage_Supports" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FLineageSupports">Lineage Supports</a></li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Ghastly_Relics" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/a73032280d010767f744fd51290201e0d1f19462906810294e52eb25ffb7c5fe">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable6.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/a73032280d010767f744fd51290201e0d1f19462906810294e52eb25ffb7c5fe" href="Ghastly_Relics">Ghastly Relics</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">Large <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> Chests from the final Pit are instead an Abyssal <a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongbox</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Blessing_of_the_Source" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9d7d19de5c55c579b65981703694ebed5c69060da5d6527cbe0b4fb2cef66ec8">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9d7d19de5c55c579b65981703694ebed5c69060da5d6527cbe0b4fb2cef66ec8" href="Blessing_of_the_Source">Blessing of the Source</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="FourUniqueJewel12" href="" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0d0eef2ed35ced8c47ab5c82da882aa895b6ce1ab815fd4f25caebe4a3830e70">Heart of the Well</a> Jewels found have a <span class='mod-value'>5</span>% chance to have an additional <a data-keyword="Abyssalify" href="Desecrated_Modifiers" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalify">Desecrated Modifier</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/From_Below" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/c56d30d94ea57035a7272e3b724df40c01b82b097227e6cec522c3901953a16d">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/c56d30d94ea57035a7272e3b724df40c01b82b097227e6cec522c3901953a16d" href="From_Below">From Below</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> contain an additional Pit</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Dark_Depths" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/cd582705ca20cbb35a57c6440cb1ddebbdc6e101b136f08d73e69b6ee6ccaaf2">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssTo4.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/cd582705ca20cbb35a57c6440cb1ddebbdc6e101b136f08d73e69b6ee6ccaaf2" href="Dark_Depths">Dark Depths</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> have a <span class='mod-value'>30</span>% chance to contain 2 additional Pits</div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> have a <span class='mod-value'>20</span>% chance to contain 3 additional Pits</div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> have a <span class='mod-value'>10</span>% chance to contain 4 additional Pits</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Lord_of_the_Pit" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ae6fd97c00ae7408d94487f1e3de2ae501d42137fa4657352d6c677c0622d668">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssMonstersSpawn.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ae6fd97c00ae7408d94487f1e3de2ae501d42137fa4657352d6c677c0622d668" href="Lord_of_the_Pit">Lord of the Pit</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">Manipulate <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyss</a> Pits throughout Areas</div><div class="separator"></div><div class="explicitMod"><ul><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyss</a> Pits are scattered throughout Areas with Abysses</li><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> Monsters have <span class='mod-value'>10</span>% increased <a data-keyword="MonsterEffectiveness" href="Monster_Effectiveness" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/46120f8415e6c0c04216dbf41241ee156e9c5d55c15e0f937120a44401af1ae4">Effectiveness</a> for each closed Pit, up to 100%</li><li><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> have a <span class='mod-value'>20</span>% chance to contain an additional Abyss</li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Strange_Aversions" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/4da3684566a7ffe5207eb52bbaac172d4d710da59d82bfc164e72e08a5135be1">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssMonstersSpawn.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/4da3684566a7ffe5207eb52bbaac172d4d710da59d82bfc164e72e08a5135be1" href="Strange_Aversions">Strange Aversions</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> Factions now only have different types of chests:<br/>- Ulaman may have Currency Chests<br/>- Kurgal may have Weapons Chests<br/>- Amanamu may have Armour Chests<br/>- Any Faction may have Basic and Jewellery Chests</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Rotting_Bones" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/c27676fa6af1ee77713649d70203f49ed7f0ac4c7f4a18f90916156231d023f7">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/c27676fa6af1ee77713649d70203f49ed7f0ac4c7f4a18f90916156231d023f7" href="Rotting_Bones">Rotting Bones</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>25</span>% increased chance to find Ancient <a data-keyword="Abyssalify" href="Desecrated_Modifiers" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalify">Desecrated</a> Currency</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Armaments_of_Evil" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/90a7974d10580df42ade5bf302dd10d1710e5c68fe7f583a2f0afe1d1304a91c">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssNotable4.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/90a7974d10580df42ade5bf302dd10d1710e5c68fe7f583a2f0afe1d1304a91c" href="Armaments_of_Evil">Armaments of Evil</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod">Tier 5 <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Rare</a> <a data-keyword="Equipment" href="Equipment" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FEquipment">Equipment</a> dropped by <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abyssal</a> monsters have a <a data-keyword="Abyssalify" href="Desecrated_Modifiers" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FAbyssalify">Desecrated Modifier</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Endless_War" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/8dab41fec9ac67f07c2d26b86336e584c169f40aba28271a6e3e607c071777ef">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AbyssMonstersSpawn.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/8dab41fec9ac67f07c2d26b86336e584c169f40aba28271a6e3e607c071777ef" href="Endless_War">Endless War</a></div><div class="property">SubTree: <span class='colourDefault'>Abyss</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>50</span>% chance on completing Overrun <a data-keyword="ContainsAbyss" href="Abyss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss">Abysses</a> for an adjacent map to be Overrun by the Abyssal</div></div></div></div></div>  </div></div><div id="MapBoss" class="tab-pane fade"><div class="card"><h4 class="card-header" data-tabname="Community Wiki">Community Wiki</h4></div><div class="card mb-1">
+    <div class="card-body markdown-body">
+        <a class="btn btn-primary float-end" href='/us/marked?id=Map_Boss' data-i18n="ClientStrings|HideoutEditControlEdit|Name">Edit</a>
+        <div id="markContent"><h1 id="map-boss">Map Boss</h1>
+<img loading='lazy' src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="size64"/>
+
+<p>Now, you may have noticed while looking at the Atlas that some areas have these icons above them. The icon indicates the area contains some kind of special encounter.</p>
+<p>This icon indicates the area has a powerful boss. Because only one in four maps contain a map boss,
+we&#39;re able to make them much more powerful and much more rewarding than they were, in Path of Exile 1.</p>
+<p> These bosses come from the campaign,
+but have had the difficulty increased with changes to AI and some of their abilities. </p>
+<p>It&#39;s worth noting that because you can see where the bosses are,
+you can choose to take them on or avoid them. </p>
+<p>If you do choose to hunt bosses, though, then you&#39;ll be rewarded
+with special points for the boss hunting section of the Atlas skill tree. </p>
+<p>The points here will allow you to specialize in boss killing,
+giving you much greater rewards for defeating them.</p>
+</div>
+        <div><hr style='border-top: 1px solid white'>Wikis Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a> unless otherwise noted.</div>
+    </div>
+</div>
+<script>
+$(function() {
+    lightbox_panel();
+});
+</script>
+</div></div>
+
+<footer class="ccontainer text-center text-lg-left">
+  <div class="card p-4">
+    <div class="row">
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sites</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+          <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+          <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+          <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">News</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="news">GGG Tracker</a> </li>
+          <li> <a href="League#ConcurrentPlayers">Concurrent Players</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Site</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="privacy">Privacy</a> </li>
+          <li> <a href="General_disclaimer">Disclaimers</a> </li>
+          <li> <a href="patreon">Patreon</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Community</h5>
+        <ul class="list-unstyled mb-0">
+
+
+
+          <li><a target="_blank" href="https://www.reddit.com/user/chuanhsing">/u/chuanhsing</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright &copy; 2014-2026 PoE2DB.
+  </div>
+</footer>
+
+<div style=""></div>
+<div class="clearfix"></div><div id="bottom_banner"></div><script>topbanner970("bottom_banner");</script>
+    </div>
+    </div>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+<script>
+ $(document).ready(function()
+ {
+    if (window.location.hostname != "poedb.tw" && window.location.hostname != "poe2db.tw") {
+        window.location.href="https://poedb.tw/";
+    }
+ });
+</script>
+    <script src="https://cdn.poe2db.tw/js/poedb_footer.43e536bf51dca9e4.js"></script>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"369404df4026486bb42f428b903a2162","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

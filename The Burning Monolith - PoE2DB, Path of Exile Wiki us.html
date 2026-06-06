@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="us" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>The Burning Monolith - PoE2DB, Path of Exile Wiki us</title>
+    <meta name="description" content="path of exile is simply a tool to test your path of building creation">
+    <link rel="alternate" hreflang="en" href="https://poe2db.tw/us/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://poe2db.tw/tw/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://poe2db.tw/cn/" />
+        <link href="/favicon2.png" rel="shortcut icon" >
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css" integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-5-theme/1.3.0/select2-bootstrap-5-theme.min.css" integrity="sha512-z/90a5SWiu4MWVelb5+ny7sAayYUfMmdXKEAbpj27PfdkamNdyI3hcjxPxkOPbrXoKIm7r9V2mElt5f1OtVhqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" integrity="sha512-HbPh+j4V7pXprvQMt2dtmK/zCEsUeZWYXRln4sOwmoyHPQAPqy/k9lIquKUyKNpNbDGAY06UdiDHcEkBc72yCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.min.css" integrity="sha512-OkYLbkJ4DB7ewvcpNLF9DSFmhdmxFXQ1Cs+XyjMsMMC94LynFJaA9cPXOokugkmZo6O6lwZg+V5dwQMH4S5/3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video-js.min.css" integrity="sha512-J3tx4ssoARFr4U9VmZmQe2q672q0jUeYizJW3vglkOBTlQ/N6kF3eVqZZzaey/TdIXH69s3HYe2nQwyxK/Emzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.poe2db.tw/css/stdtheme.4bd5d8b8acf8ae5a.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js" integrity="sha512-gbruucq/Opx9jlHfqqZeAg2LNK3Y4BbpXHKDhRC88/tARL/izPOE4Zt2w6X9Sn1UeWaGbL38zW7nkL2jdn5JIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js" integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.all.js" integrity="sha512-A7LzqKE/pm9ofgS0Lxu7qroQS5SkKJQaYJkJ/66nQiWZfEdeGlBq5zEXQ63VRmXZK8zPpCgFf2WQJIAljI0Vdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js" integrity="sha512-4/g9GAdOdTpUP2mKClpKsEzaK7FQNgMjq+No0rX8XZlfrCGtbi4r+T/p5fnacsEC3zIAmHKLJUL7sh3/yVA4OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/theme/dark.min.js" integrity="sha512-3Zm64ayK7DflnnyO2pKkLJX3v9Sb90mvahbwPUuMzEf42HI6k8tquIx5VsNBjEWAcYJWzvimbqnTkLl2QdCUmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video.min.js" integrity="sha512-48NkCweTzA9u2sP4GgKcEDm6IScPIMga142ipKFNcHfz7feUJXDJxO1jwc2l+5MvWfwMj4BDfQv8WIMhrPxZLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.2.1/mustache.min.js" integrity="sha512-Qjrukx28QnvFWISw9y4wCB0kTB/ISnWXPz5/RME5o8OlZqllWygc1AB64dOBlngeTeStmYmNTNcM6kfEjUdnnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdn.poe2db.tw/js/ModsView.ccf47bc9016c7baf.js"></script>
+        <script src="https://cdn.poe2db.tw/js/poedb_header.3abb375410f4ddc6.js"></script>
+    
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2013.js"></script>
+
+    <meta property="og:site_name" content="poe2db.tw">
+<meta property="og:title" content="The Burning Monolith" />
+<meta property="og:description" content="The Burning Monolith houses the most dangerous foe in all of Wraeclast. 
+Access to this foe requires three different Crisis Fragments from the Copper, Iron and Stone Citadels." />
+
+  </head>
+
+  <body>
+
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+
+
+    <div class="background-image item-popup--poe2"></div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6598Z863E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6598Z863E2');
+</script>
+
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="/us/">PoE2<span class='brand-suffix'>DB</span><sub></sub></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Items" data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</a></li>
+                    <li><a class="dropdown-item" href="/us/Unique_item" data-i18n="ClientStrings|ItemDisplayStringUnique|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/Reforging_Bench" data-i18n="ClientStrings|RecipeBenchTitle|Name"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Gem" data-i18n="ClientStrings|ItemDisplayStringGem|Name">Gem</a></li>
+                    <li><a class="dropdown-item" href="/us/Skill_Gems" data-i18n="ItemClasses|Active Skill Gem|Name">Skill Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Support_Gems" data-i18n="ItemClasses|Support Skill Gem|Name">Support Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Spirit_Gems" data-i18n-tw="精神寶石">Spirit Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Lineage_Supports" data-i18n="KeywordPopups|LineageSupports|Name">Lineage Supports</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Modifiers" data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Desecrated_Modifiers" data-i18n="KeywordPopups|Abyssalify|Name">Desecrated Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Keywords" data-i18n-tw="提示字">Keywords</a></li>
+                    <li><a class="dropdown-item" href="/us/Crafting" data-i18n="ClientStrings|CraftingWindowTitle|Name">Crafting</a></li>
+                    <li><a class="dropdown-item" href="/us/Liquid_Emotions" data-i18n="KeywordPopups|DistilledEmotion|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/us/Quest" data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</a></li>
+                    <li><a class="dropdown-item" href="/us/Ascendancy_class" data-i18n="ClientStrings|TutorialPanelAscendancies|Name">Ascendancy Classes</a></li>
+                    <li><a class="dropdown-item" href="/us/passive-skill-tree/" data-i18n="ClientStrings|ActionOpenPassivePanel|Name">Passive Skill Tree</a></li>
+                    <li><a class="dropdown-item" href="/us/Act" data-i18n-tw="章節">Act</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Waystones" data-i18n="ItemClasses|Map|Name">Waystones</a></li>
+                    <li><a class="dropdown-item" href="/us/Endgame" data-i18n="Acts|Endgame|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/atlas-skill-tree/" data-i18n="ClientStrings|ActionOpenAtlasPassivesScreen|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item"><a class="nav-link" href="Economy" data-i18n-tw="經濟" data-i18n-cn="经济">Economy</a></li>
+    
+                <li class="nav-item"><a class="ms-4 nav-link  bg-warning rounded-circle" style="color: white" href="/us/patreon">Patreon</a></li>
+              </ul>
+    
+    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="https://poedb.tw/us/">PoE<span class="brand-suffix">DB</span></a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/tw/The_Burning_Monolith">TW 繁體中文</a></li>
+                    <li><a class="dropdown-item" href="/cn/The_Burning_Monolith">CN 简体中文</a></li>
+                    <li><a class="dropdown-item" href="/us/The_Burning_Monolith">US English</a></li>
+                    <li><a class="dropdown-item" href="/kr/The_Burning_Monolith">KR 한국어</a></li>
+                    <li><a class="dropdown-item" href="/jp/The_Burning_Monolith">JP Japanese</a></li>
+                    <li><a class="dropdown-item" href="/ru/The_Burning_Monolith">RU Русский</a></li>
+                    <li><a class="dropdown-item" href="/pt/The_Burning_Monolith">PO Português</a></li>
+                    <li><a class="dropdown-item" href="/th/The_Burning_Monolith">TH ภาษาไทย</a></li>
+                    <li><a class="dropdown-item" href="/fr/The_Burning_Monolith">FR Français</a></li>
+                    <li><a class="dropdown-item" href="/de/The_Burning_Monolith">DE Deutsch</a></li>
+                    <li><a class="dropdown-item" href="/sp/The_Burning_Monolith">ES Spanish</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            <form class="form-inline my-2 my-lg-0" role="search" action="search">
+              <input type="hidden" name="token" value="df3da3f1a7fa7ea59a799f47278890b9fd9cc6279a12094cb449d95da05cf8fb2a53eb">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" id="navautosearch">
+            </form>
+    
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    </header>
+
+<script>sidebar160("leftside_banner", "left");</script>
+<script>sidebar160("rightside_banner", "right");</script>
+
+
+
+    <div class="page poe2">
+    <div class="page-content theme-showcase container" role="main">
+
+
+<div class="card mb-2" id="head_toolbar" style="background: transparent">
+  <div class="card-body p-1">
+    <div class="league_bar text-center">
+      <a href="Runes_of_Aldur_league" data-bs-toggle="tooltip" title="Runes of Aldur v0.5" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Expedition2RemnantActive.webp" alt="Expedition2RemnantActive" class="league_minimap" /></span></a><a href="Atziris_Temple" data-bs-toggle="tooltip" title="Atziri v0.4" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionAtziriActive.webp" alt="IncursionAtziriActive" class="league_minimap" /></span></a><a href="Waystones" data-bs-toggle="tooltip" title="Waystones" data-hover="?s=Data%5CKeywordPopups%2FWaystone"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2ditems/maps/endgamemaps/endgamemap1.webp" class="league_minimap"/></a><a href="Shrine" data-bs-toggle="tooltip" title="Shrine" data-hover="?s=Data%5CKeywordPopups%2FShrine"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" class="league_minimap" /></span></a><a href="Strongbox" data-bs-toggle="tooltip" title="Strongbox" data-hover="?s=Data%5CKeywordPopups%2FStrongbox"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Strongbox.webp" alt="Strongbox" class="league_minimap" /></span></a><a href="Essence" data-bs-toggle="tooltip" title="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp" alt="Essence" class="league_minimap" /></span></a><a href="Archnemesis" data-bs-toggle="tooltip" title="Archnemesis" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RareMonsterAlive.webp" alt="RareMonsterAlive" class="league_minimap" /></span></a><a href="Azmeri_Spirit" data-bs-toggle="tooltip" title="Azmeri Spirit v0.2" data-hover="?s=Data%5CKeywordPopups%2FAzmeriSpirit"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SpiritActivated.webp" alt="SpiritActivated" class="league_minimap" /></span></a><a href="Rogue_Exile" data-bs-toggle="tooltip" title="Rogue Exile" data-hover="?s=Data%5CKeywordPopups%2FRogueExile"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RogueExile.webp" alt="RogueExile" class="league_minimap" /></span></a><a href="Map_Boss" data-bs-toggle="tooltip" title="Map Boss" data-hover="?s=Data%5CKeywordPopups%2FMapBoss"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="league_minimap"/></a><a href="Precursor_Towers" data-bs-toggle="tooltip" title="Precursor Towers" data-hover="?s=Data%5CKeywordPopups%2FPrecursorTower"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/MapLegend/LostTower.webp" class="league_minimap"/></a><a href="Corrupted_Nexus" data-bs-toggle="tooltip" title="Corrupted Nexus" data-hover="?s=Data%5CKeywordPopups%2FCorruptedNexus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentCorruptionNexusNoGrowth.webp" class="league_minimap"/></a><a href="Abyss" data-bs-toggle="tooltip" title="Abyss v0.3" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/textures/interface/2d/2dart/uiimages/ingame/worldmap/mapbuttonabysshub.webp" class="league_minimap"/></a><a href="Breach" data-bs-toggle="tooltip" title="Breach" data-hover="?s=Data%5CKeywordPopups%2FContainsBreach"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentbreach.webp" class="league_minimap"/></a><a href="Ritual" data-bs-toggle="tooltip" title="Ritual" data-hover="?s=Data%5CKeywordPopups%2FContainsRitual"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentritual.webp" class="league_minimap"/></a><a href="Delirium" data-bs-toggle="tooltip" title="Delirium" data-hover="?s=Data%5CKeywordPopups%2FContainsDelirium"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentdelirium.webp" class="league_minimap"/></a><a href="Expedition" data-bs-toggle="tooltip" title="Expedition" data-hover="?s=Data%5CKeywordPopups%2FContainsExpedition"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentexpedition.webp" class="league_minimap"/></a><a href="The_Burning_Monolith" data-bs-toggle="tooltip" title="The Burning Monolith" data-hover="?s=Data%5CKeywordPopups%2FTheBurningMonoilth"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/maplegend/monolith.webp" class="league_minimap"/></a><a href="Trial_of_the_Sekhemas" data-bs-toggle="tooltip" title="Trial of the Sekhemas" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonSanctum.webp" class="league_minimap"/></a><a href="The_Trial_of_Chaos" data-bs-toggle="tooltip" title="The Trial of Chaos" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonUltimatum.webp" class="league_minimap"/></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="topbanner970"></div><script>topbanner970("topbanner970");</script>
+
+<ul class="nav nav-tabs d-flex flex-wrap" role="tablist"><li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true" href="#TheArbiterofAshUnique">The Arbiter of Ash Unique /6 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#TheBurningMonolithMapUberBoss_Monolith">The Burning Monolith MapUberBoss_Monolith</a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#TheBurningMonoilthRef">TheBurningMonoilth Ref /1 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#AtlaspassiveskillPassive">Atlas passive skill Passive /20 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#PinnacleKeysItem">Pinnacle Keys Item /10 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#TheBurningMonolith">The Burning Monolith</a></li></ul><div class="tab-content"><div id="TheArbiterofAshUnique" class="tab-pane fade show active"><div   class="card mb-2 ">
+   <h5 class="card-header">The Arbiter of Ash Unique /6 </h5>   <div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/5973215ea1b90fdddc574ad122e10f51830b0bbddec5552569a1453a36b1d53c" href="Solus_Ipse"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Armours/Helmets/Uniques/SolusIpse.webp" alt="SolusIpse" class="w2" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/5973215ea1b90fdddc574ad122e10f51830b0bbddec5552569a1453a36b1d53c" href="/us/Solus_Ipse"><span class="uniqueName">Solus Ipse</span> <span class="uniqueTypeLine">Grand Visage</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span>, <span class="colourDefault">36 Str</span>, <span class="colourDefault">36 Dex</span>, <span class="colourDefault">36 Int</span></div><div class="explicitMod"><span class='mod-value'>(150<span class="ndash">—</span>200)</span>% increased <a data-keyword="Armour" href="Armour" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a8bf9187643651455fe72c0b4c9c4db082a7ca0ec66762612f3461fd08ad0837">Armour</a>, <a data-keyword="Evasion" href="Evasion" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c5bbc1c2b0404cfeccb99f617dff266b01b8d33cb0b52bd385db20b6263d77c9">Evasion</a> and <a data-keyword="EnergyShield" href="Energy_Shield" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d99f27680354e4f7c9086f512012c87a51b5599de0729b39d2478dbeddf259e2">Energy Shield</a></div><div class="explicitMod"><span class='mod-value'>+(60<span class="ndash">—</span>100)</span> to maximum Mana</div><div class="explicitMod"><span class='mod-value'>25</span>% increased <a data-keyword="LightRadius" href="Light_Radius" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/939c1356f21b92640ab0af9cd7d29f21397070ee49c108025919716ca4a740c0">Light Radius</a></div><div class="explicitMod">Equipment and Skill Gems have <span class='mod-value'>25</span>% increased <a data-keyword="Attributes" href="Attributes" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/808768f15423d97dbb2899afa14cc421b3313ee9eeb2c85e906e3d80d49b57d3">Attribute</a> Requirements</div><div class="explicitMod">You can Socket <span class='mod-value'>2</span> additional copies of each Lineage <a data-keyword="SupportGem" href="Support_Gems" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/ecb52458a6853b6e9ef8fadb0593e1d677a4ed1e57fec8bd0f062b46fe15e1e7">Support Gem</a>, in different Skills</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/e85d41b415bcc1ad8fd9953846710822b509f22cd83fff1ef29c6ecd73283c8d" href="Sine_Aequo"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Armours/Gloves/Uniques/SineAequo.webp" alt="SineAequo" class="w2" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/e85d41b415bcc1ad8fd9953846710822b509f22cd83fff1ef29c6ecd73283c8d" href="/us/Sine_Aequo"><span class="uniqueName">Sine Aequo</span> <span class="uniqueTypeLine">Grand Manchettes</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span>, <span class="colourDefault">32 Str</span>, <span class="colourDefault">32 Dex</span>, <span class="colourDefault">32 Int</span></div><div class="explicitMod"><span class='mod-value'>(10<span class="ndash">—</span>15)</span>% increased <a data-keyword="SkillSpeed" href="Skill_Speed" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/be3a12ca30227fd11b9e628c3de643d6158828feaa7c932aa96ccbfb6368313a">Skill Speed</a></div><div class="explicitMod"><span class='mod-value'>(150<span class="ndash">—</span>200)</span>% increased <a data-keyword="Armour" href="Armour" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a8bf9187643651455fe72c0b4c9c4db082a7ca0ec66762612f3461fd08ad0837">Armour</a>, <a data-keyword="Evasion" href="Evasion" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c5bbc1c2b0404cfeccb99f617dff266b01b8d33cb0b52bd385db20b6263d77c9">Evasion</a> and <a data-keyword="EnergyShield" href="Energy_Shield" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d99f27680354e4f7c9086f512012c87a51b5599de0729b39d2478dbeddf259e2">Energy Shield</a></div><div class="explicitMod"><a data-keyword="Immobilised" href="Immobilised" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/2b747b07e3b5801e5db191292dc2e7834d1d6b6d83a64f6ae05907083d53ab63">Immobilise</a> enemies at <span class='mod-value'>50</span>% buildup instead of 100%</div><div class="explicitMod"><span class='mod-value'>(30<span class="ndash">—</span>50)</span>% increased Damage against <a data-keyword="Immobilised" href="Immobilised" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/2b747b07e3b5801e5db191292dc2e7834d1d6b6d83a64f6ae05907083d53ab63">Immobilised</a> Enemies</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/88ee5f8cc80eaea8714401f1dabc9859d454d036a1e7d3ebdcfeb9415091c432" href="Ab_Aeterno"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Armours/Boots/Uniques/AbAeterno.webp" alt="AbAeterno" class="w2" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/88ee5f8cc80eaea8714401f1dabc9859d454d036a1e7d3ebdcfeb9415091c432" href="/us/Ab_Aeterno"><span class="uniqueName">Ab Aeterno</span> <span class="uniqueTypeLine">Grand Cuisses</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span>, <span class="colourDefault">34 Str</span>, <span class="colourDefault">34 Dex</span>, <span class="colourDefault">34 Int</span></div><div class="explicitMod"><span class='mod-value'>(15<span class="ndash">—</span>30)</span>% increased Movement Speed</div><div class="explicitMod"><span class='mod-value'>(200<span class="ndash">—</span>250)</span>% increased <a data-keyword="Armour" href="Armour" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a8bf9187643651455fe72c0b4c9c4db082a7ca0ec66762612f3461fd08ad0837">Armour</a>, <a data-keyword="Evasion" href="Evasion" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c5bbc1c2b0404cfeccb99f617dff266b01b8d33cb0b52bd385db20b6263d77c9">Evasion</a> and <a data-keyword="EnergyShield" href="Energy_Shield" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d99f27680354e4f7c9086f512012c87a51b5599de0729b39d2478dbeddf259e2">Energy Shield</a></div><div class="explicitMod">Dodge Roll avoids all <a data-keyword="HitDamage" href="Hit_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0b97d234caf4565fc613ac13e9703c8949cfd19acba1a194d809ef36c6f9d03b">Hits</a></div><div class="explicitMod">Gain <a data-keyword="Overencumbered" href="Overencumbered" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/16b922ed5c87b32b92d3c01121480f0639c421a327fc4c55184ba08c723a6e95">Overencumbrance</a> for 4 seconds when you Dodge Roll</div><div class="explicitMod">Your speed is <a data-keyword="Unaffected" href="Unaffected" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fbf6bc3ebd5589026193a0529e4e93d15bab6a9309e49a6bc93b84584070a45d">Unaffected</a> by <a data-keyword="Slow" href="Slow" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0ddfe46e2e520c18098e160479586907357d88c6483a70ddac3665083c7ebbca">Slows</a> while Sprinting</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/ddbcc2423f805ba86599b4a092b45e0a2c8206001164e75017f42b424b0b6cb7" href="Sacred_Flame"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Weapons/OneHandWeapons/Scepters/Uniques/SacredFlame.webp" alt="SacredFlame" class="w2" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/ddbcc2423f805ba86599b4a092b45e0a2c8206001164e75017f42b424b0b6cb7" href="/us/Sacred_Flame"><span class="uniqueName">Sacred Flame</span> <span class="uniqueTypeLine">Shrine Sceptre</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 26</span>, <span class="colourDefault">17 Str</span>, <span class="colourDefault">38 Int</span></div><div class="implicitMod"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/PurityofFireWeaponSkill.webp" class="grantsSkill"/> Grants Skill: <a class="gem_blue" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_GemEffects_hover/e07356a067078839e78878437769171f1f5a2641b0a82fd7598039dce7cc987d" href="/us/Purity_of_Fire">Purity of Fire</a></div><div class="separator"></div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>(40<span class="ndash">—</span>60)</span>% of Damage as Extra <a data-keyword="Fire" href="Fire_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a86a0ce7bc8ce7aab67e0e541b321e5fde9a6f80d4b0d749c922b03e43eb2b6b">Fire</a> Damage</div><div class="explicitMod"><a data-keyword="Allies" href="Allies" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/751299935034c07c6d24d7fbfc1079dcaa7aeb9a4773c11478e4db88ee116db5">Allies</a> in your <a data-keyword="Presence" href="Presence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6149d6e11511715ec81a49d2676d8bdc1e56a3026fb844ee72cc4457474798c8">Presence</a> Regenerate <span class='mod-value'>(2<span class="ndash">—</span>3)</span>% of their Maximum Life per second</div><div class="explicitMod"><a data-keyword="Allies" href="Allies" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/751299935034c07c6d24d7fbfc1079dcaa7aeb9a4773c11478e4db88ee116db5">Allies</a> in your <a data-keyword="Presence" href="Presence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6149d6e11511715ec81a49d2676d8bdc1e56a3026fb844ee72cc4457474798c8">Presence</a> <a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>(20<span class="ndash">—</span>30)</span>% of Damage as Extra Fire Damage</div><div class="explicitMod">Enemies in your <a data-keyword="Presence" href="Presence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6149d6e11511715ec81a49d2676d8bdc1e56a3026fb844ee72cc4457474798c8">Presence</a> Resist <a data-keyword="ElementalDamage" href="Elemental_Damage_Types" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/8df8908f638b4b2e1f2cd32f5b39502689572384eba0ba1edd8cf390b58298b2">Elemental Damage</a> based on their Lowest <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/7cadf9f2ae60b28039bb5b7585b9cea60aa640e088891c3c271e7a76fc5a9a46">Resistance</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/18e1de82f0fcbe04a2a3193d2329a40bf56d8529023b5818c431b15d8a8c2271" href="Morior_Invictus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Armours/BodyArmours/Uniques/MoriorInvictus_M.webp" alt="MoriorInvictusM" class="w2" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/18e1de82f0fcbe04a2a3193d2329a40bf56d8529023b5818c431b15d8a8c2271" href="/us/Morior_Invictus"><span class="uniqueName">Morior Invictus</span> <span class="uniqueTypeLine">Grand Regalia</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span>, <span class="colourDefault">41 Str</span>, <span class="colourDefault">41 Dex</span>, <span class="colourDefault">41 Int</span></div><div class="explicitMod"><span class='mod-value'>(300<span class="ndash">—</span>400)</span>% increased <a data-keyword="Armour" href="Armour" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a8bf9187643651455fe72c0b4c9c4db082a7ca0ec66762612f3461fd08ad0837">Armour</a>, <a data-keyword="Evasion" href="Evasion" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c5bbc1c2b0404cfeccb99f617dff266b01b8d33cb0b52bd385db20b6263d77c9">Evasion</a> and <a data-keyword="EnergyShield" href="Energy_Shield" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d99f27680354e4f7c9086f512012c87a51b5599de0729b39d2478dbeddf259e2">Energy Shield</a></div><div class="explicitMod">[3 Random Socket Modifiers]</div><div class="explicitMod">Has 4 Augment Sockets (Hidden)</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/15686ac5230c92adebd7427f6a03fdb29e109663223a76d5d88d75d26e61dedf" href="Prism_of_Belief"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Jewels/SacredFlameJewel.webp" alt="SacredFlameJewel" class="w1" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/15686ac5230c92adebd7427f6a03fdb29e109663223a76d5d88d75d26e61dedf" href="/us/Prism_of_Belief"><span class="uniqueName">Prism of Belief</span> <span class="uniqueTypeLine">Diamond</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 20</span></div><div class="explicitMod">+<span class='mod-value'>(1<span class="ndash">—</span>3)</span> to Level of all <span class='mod-value'>Specific Skill</span> Skills</div><div class="corrupted"><a data-keyword="Corrupted" href="Corrupted_Items" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/bd60c9a47d8d780ae3ad12461789a3804daddd025794ede68d73e90e44e34f86">Corrupted</a></div></div></div></div></div>  </div></div><div id="TheBurningMonolithMapUberBoss_Monolith" class="tab-pane fade"><span data-tabname="The Burning Monolith <small>MapUberBoss_Monolith</small>"></span><h4>The Burning Monolith</h4><div class="d-flex flex-wrap">
+
+<div class="newItemPopup NormalPopup item-popup--poe2 "
+>
+    <div class="itemHeader singleLine">
+
+        <div class="itemName typeLine">
+            <span class="lc">The Burning Monolith</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="Stats">
+            <div class="property">Id: <span class='colourDefault'>MapUberBoss_Monolith</span></div><div class="property">Act: <span class='colourDefault'>Endgame</span></div><div class="property">Area Level: <span class='colourDefault'>74</span></div><div class="property">Boss Fights: <span class='colourDefault'><a  data-hover="?s=Data%5CMonsterVarieties%2F21601" href="/us/The_Arbiter_of_Ash">The Arbiter of Ash</a></span></div><div class="separator"></div><div class="implicitMod">Players cannot gain or lose experience</div><div class="implicitMod"><span class="secondary">map pinnacle boss difficulty + [0]</span><br><span class="secondary">map pinnacle boss drops X corrupted rare tablets [1]</span><br><span class="secondary">map pinnacle boss rare socket currency chance % [5]</span><br><span class="secondary">map pinnacle boss special gem drop chance % [10]</span></div><div class="implicitMod"><span class="secondary">map is quest area [1]</span></div><div class="implicitMod">Area allows unlimited <a data-keyword="LimitedRespawn" href="Revival_Availability" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FLimitedRespawn">Revivals</a></div>
+        </div>
+
+        <div class="separator"></div>
+        <div class="FlavourText">
+            Within lies power beyond comprehension.
+        </div>
+
+
+        <div>
+            
+        </div>
+    </div>
+</div>
+
+
+        <div class="itemboximage">
+
+
+        </div>
+
+
+
+</div>
+<div   class="card mb-2 ">
+   <h5 class="card-header">The Burning Monolith Attr /7 </h5>   <div class='table-responsive'><table class='table table-hover table-striped mb-0 filters '><thead><tr><th>Name</th><th>Show Full Descriptions</th></tr></thead><tbody>
+<tr><td>Act</td><td>10</td></tr>
+<tr><td>Level</td><td>74</td></tr>
+<tr><td>Boss</td><td><a  data-hover="?s=Data%5CMonsterVarieties%2F21601" href="/us/The_Arbiter_of_Ash">The Arbiter of Ash</a></td></tr>
+<tr><td>Tags</td><td><i>map</i>, <i>pinnacle_boss</i>, Lightning, <i>maraketh</i>, <i>bloodbather</i>, <i>area_with_water</i>, <i>machinarium</i>, <i>giant</i>, <i>earth_elemental</i>, <i>construct</i>, <i>bones</i>, <i>reptile_beast</i>, <i>beach</i>, <i>vaal</i>, <i>devourer</i>, <i>rodent_beast</i>, <i>insect</i>, <i>demon</i>, <i>rust</i>, <i>cultist</i>, <i>mutewind</i>, <i>avian_beast</i>, <i>spider</i>, <i>stone_construct</i>, <i>corrupted</i>, Chaos, <i>gardens</i>, <i>desert_area</i>, <i>inca</i>, <i>forest</i>, <i>undead</i>, <i>mammal_beast</i>, <i>primate_beast</i>, <i>cenobite</i>, <i>amphibian_beast</i>, <i>skeleton</i>, <i>snake</i>, <i>cavern</i>, <i>feline_beast</i>, <i>crustacean_beast</i>, <i>canine_beast</i>, <i>urban</i>, Cold, Fire, <i>swamp</i>, <i>ghost</i>, <i>werewolf</i></td></tr>
+<tr><td>Mods</td><td>Players cannot gain or lose experience<br><span class="secondary">map pinnacle boss difficulty + [0]</span><br><span class="secondary">map pinnacle boss drops X corrupted rare tablets [1]</span><br><span class="secondary">map pinnacle boss rare socket currency chance % [5]</span><br><span class="secondary">map pinnacle boss special gem drop chance % [10]</span><br><span class="secondary">map is quest area [1]</span><br>Area allows unlimited <a data-keyword="LimitedRespawn" href="Revival_Availability" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FLimitedRespawn">Revivals</a></td></tr>
+<tr><td>Topologies</td><td><div class="row row-cols-1 row-cols-lg-3 g-2 enlarge"><div class="col"><svg viewBox='4 95 180 20' 
+    class="topology "
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>
+svg {
+    background-color: #222;
+}
+.nodes, .connections {
+    color: gray;
+}
+.text, text {
+    font: bold 30px sans-serif;
+    fill: red;
+}
+
+</style>
+<defs>
+</defs>
+<g class="connections" fill="none" stroke-width="2.5" stroke="currentColor">
+
+</g>
+<g class="nodes" stroke="currentColor" fill="currentColor">
+<circle cx="14" cy="105" r="5" id="n0"/>
+<text x="14" y="105" text-anchor="middle" alignment-baseline="middle" stroke="red" class="text" data-bs-toggle="tooltip" data-bs-title="graph">graph</text><circle cx="174" cy="105" r="5" id="n1"/>
+<text x="174" y="105" text-anchor="middle" alignment-baseline="middle" stroke="red" class="text" data-bs-toggle="tooltip" data-bs-title="graph">graph</text>
+</g>
+</svg></div></div></td></tr>
+<tr><td>Loading</td><td><a href='' data-lightbox='panel'></a></td></tr></tbody></table></div>  </div><table class='table table-hover table-striped'><thead><tr><th>Level<th>Name<th>Experience<th>Damage<th>Attack Time<th>Life<th>Armour<th>Evasion<th>Energy Shield<th><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/EnemyHealthBars/IconEnemyResistanceFire.webp" alt="IconEnemyResistanceFire" height="24" class="border-circle enemyNormal" /><th><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/EnemyHealthBars/IconEnemyResistanceCold.webp" alt="IconEnemyResistanceCold" height="24" class="border-circle enemyNormal" /><th><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/EnemyHealthBars/IconEnemyResistanceLightning.webp" alt="IconEnemyResistanceLightning" height="24" class="border-circle enemyNormal" /><th><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/EnemyHealthBars/IconEnemyResistanceChaos.webp" alt="IconEnemyResistanceChaos" height="24" class="border-circle enemyNormal" /><tbody><tr><td>74<td><a class='UniqueItem' data-hover="?s=Data%5CMonsterVarieties%2F21601" href="/us/The_Arbiter_of_Ash">The Arbiter of Ash</a><td><span data-bs-toggle='tooltip' title='50688(Base Stat) * 4(Monster Multiplier) * 8.5(MonsterUnique1) = 1723392'>1,723,392</span><td><span data-bs-toggle='tooltip' title='279.68(Base Stat) * 4.5(Monster Multiplier) * 0.98(MonsterUnique8) * 0.65(MonsterUnique5) * 1(Map+MapBoss Multiplier) = 801.70272'>802</span><td><span data-bs-toggle='tooltip' title='2.13(Base Stat) * 0.98(MonsterUnique8) = 2.0874'>2.0874</span><td><span data-bs-toggle='tooltip' title='14887(Base Stat) * 9.9(Monster Multiplier) * 29(MonsterUnique2) * 1(Map+MapBoss Multiplier) = 4274057.7'>4,274,058</span><td><span data-bs-toggle='tooltip' title='3416(Base Stat) * 1.2(Monster Type Multiplier) = 4099.2'>4,099</span><td><td><td>60<td>60<td>60<td>0</table></div><div id="TheBurningMonoilthRef" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">TheBurningMonoilth Ref /1 </h5> <div class="newItemPopup keywordPopups"><div   class="card mb-2 ">
+   <h5 class="card-header"><a href="The_Burning_Monolith">The Burning Monolith</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>The Burning Monolith houses the most dangerous foe in all of Wraeclast. <br />
+Access to this foe requires three different Crisis Fragments from the <a data-keyword="CopperCitadel" href="Copper_Citadel" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCopperCitadel">Copper</a>, <a data-keyword="IronCitadel" href="Iron_Citadel" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIronCitadel">Iron</a> and <a data-keyword="StoneCitadel" href="Stone_Citadel" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FStoneCitadel">Stone</a> <a data-keyword="Citadel" href="Citadel" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCitadel">Citadels</a>.</div></div>   </div></div>  <div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Citadel">Citadel</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>There are three types of Citadels, each located in different cities throughout Wraeclast. <br />
+<br />
+<a data-keyword="CopperCitadel" href="Copper_Citadel" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/4d79a4aa981dce576fd96e0961c1189942bbcbd039d3ae2ca7612d60bccf421f">Copper Citadels</a> in Faridun Cities, <a data-keyword="IronCitadel" href="Iron_Citadel" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6be415be7f325800c91fb917069b6b3c06051b86ae08fb236799597d090f4877">Iron Citadels</a> in Ezomyte Cities and <a data-keyword="StoneCitadel" href="Stone_Citadel" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6b167be8acb1cb2e1b9ffed9cbb665e6b26ee99c1943f1ca1d4d5758c6585535">Stone Citadels</a> in Vaal Cities.<br />
+<br />
+Complete one of each type of Citadel and collect their Crisis Fragments to gain access to <a data-keyword="TheBurningMonoilth" href="The_Burning_Monolith" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/42de769749a076b625bd13f109f340a91ed239d9881f7660e31954f9d9bac046">The Burning Monolith</a>.</div></div>   </div></div></div></div></div></div>  </div></div><div id="AtlaspassiveskillPassive" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">Atlas passive skill Passive /20 </h5>   <div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a  data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/dc1b241786cfc2114e980aff8eb309cc8504ce9798a6f14a56ed323933a648e4">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/MasteryBlank.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/dc1b241786cfc2114e980aff8eb309cc8504ce9798a6f14a56ed323933a648e4">AtlasIncursionStart_</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="property">Quantity: <span class='colourDefault'>44</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Reduced_Destabilization" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/74befea1f85375917e1296e5084a82110a1bec2ec7080cc0125beca0c88e32fe">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNode2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/74befea1f85375917e1296e5084a82110a1bec2ec7080cc0125beca0c88e32fe" href="Reduced_Destabilization">Reduced Destabilization</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="property">Quantity: <span class='colourDefault'>18</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>2</span>% reduced <a data-keyword="IncursionDestabilization" href="Temple_Destabilisation" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d80bcd47ea733b3bbb7b912ba5722467fc7c8f1be46ad4fdf04a6dfd98b11283">Temple Destabilisation</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Training_and_Preparation" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9bbbe0af90405fc5547e85130632dd2931d49aed8dd999e3afe146317bcd7ae6">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9bbbe0af90405fc5547e85130632dd2931d49aed8dd999e3afe146317bcd7ae6" href="Training_and_Preparation">Training and Preparation</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod">Atziri's Temple has +<span class='mod-value'>1</span> Area Level</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Stolen_Authority" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d1da5e0f9da3a3302c32b6de67233d577be07bff2d6ccc945b8c70ee2547ebb9">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d1da5e0f9da3a3302c32b6de67233d577be07bff2d6ccc945b8c70ee2547ebb9" href="Stolen_Authority">Stolen Authority</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>35</span>% increased <a data-keyword="IncursionMedallions" href="Medallions" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/93acd48648917a49964afcc506bed30f87e3236ab471d2721aa17b78004e41fe">Medallions</a> found</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Xipocados_Machinations" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d1f9e3780ba3fe51970580292f6d6bc5093f1d7dc16be261e800e5297d994e7c">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable4.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d1f9e3780ba3fe51970580292f6d6bc5093f1d7dc16be261e800e5297d994e7c" href="Xipocados_Machinations">Xipocado's Machinations</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>1.5</span>% increased effect of Room Temple Modifiers for each different Room in the Temple</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Power_Relays" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/89314868ac56541f6e244b7ec2a634905b4983c5208fae608ed2e87fb865fc1a">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/89314868ac56541f6e244b7ec2a634905b4983c5208fae608ed2e87fb865fc1a" href="Power_Relays">Power Relays</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>20</span>% increased effect of Room Temple Modifiers</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Transcendent_Progress" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9bc5983177545dcb60480da1e570826c300e5d9e3cd63dc36bde7d0ad7a0f0d2">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9bc5983177545dcb60480da1e570826c300e5d9e3cd63dc36bde7d0ad7a0f0d2" href="Transcendent_Progress">Transcendent Progress</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod">Temple Rooms may now be upgraded to Tier 4</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Secrets_of_the_Ancients" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/e9a559f0ebc27f5f751c4cacde4f6b9f974e9092cc249e6fe87be315c007d343">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable4.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/e9a559f0ebc27f5f751c4cacde4f6b9f974e9092cc249e6fe87be315c007d343" href="Secrets_of_the_Ancients">Secrets of the Ancients</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod">Adds Terraforming Research <a data-keyword="IncursionRestrictedRoom" href="Restricted_Room" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9dab05d77ce9048582453ff136d0371fc635a412b7bdee3e92b2cab897bcf1b3">Restricted Rooms</a> which add <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Biome</a> Bonuses to the Temple</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Protected_Treasures" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/1a17b6ac3b4e1fdcd48e95ad6b1cb809dbd80904e4d74102486732e759f12002">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/1a17b6ac3b4e1fdcd48e95ad6b1cb809dbd80904e4d74102486732e759f12002" href="Protected_Treasures">Protected Treasures</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="IncursionRestrictedRoom" href="Restricted_Room" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9dab05d77ce9048582453ff136d0371fc635a412b7bdee3e92b2cab897bcf1b3">Restricted Rooms</a> have <span class='mod-value'>50</span>% chance to contain additional chests or drop additional items</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Royal_Prerogative" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/3d51cc272454efd8dcfaa953043e82129de1c099a8ae08e5b2720c88843fdc68">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable1.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/3d51cc272454efd8dcfaa953043e82129de1c099a8ae08e5b2720c88843fdc68" href="Royal_Prerogative">Royal Prerogative</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="IncursionRestrictedRoom" href="Restricted_Room" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9dab05d77ce9048582453ff136d0371fc635a412b7bdee3e92b2cab897bcf1b3">Restricted Rooms</a> have <span class='mod-value'>15</span>% chance to avoid <a data-keyword="IncursionDestabilization" href="Temple_Destabilisation" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d80bcd47ea733b3bbb7b912ba5722467fc7c8f1be46ad4fdf04a6dfd98b11283">Destabilisation</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Expanded_Designs" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d73ae6ec63508779f88379468fe487b713a2fac3c1ffde40d4851020f00bc515">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d73ae6ec63508779f88379468fe487b713a2fac3c1ffde40d4851020f00bc515" href="Expanded_Designs">Expanded Designs</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod">Defeating the Architect allows placement of an additional <a data-keyword="IncursionRestrictedRoom" href="Restricted_Room" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9dab05d77ce9048582453ff136d0371fc635a412b7bdee3e92b2cab897bcf1b3">Restricted Room</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Atziris_Assets" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/68afed5294a2c06250bd8770b9913444d07676c617e815c9bc67ebcce150ed38">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/68afed5294a2c06250bd8770b9913444d07676c617e815c9bc67ebcce150ed38" href="Atziris_Assets">Atziri's Assets</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod">Atziri's Vault will contain an additional reward</div><div class="separator"></div><div class="explicitMod"><ul><li><a data-keyword="UniqueCulture" href="Unique_Culture" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FUniqueCulture">Vaal</a> <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> Item</li><li><a data-keyword="IncursionMedallions" href="Medallions" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/93acd48648917a49964afcc506bed30f87e3236ab471d2721aa17b78004e41fe">Medallion</a></li><li><a data-keyword="IncursionTempleCurrency" href="Temple_Currency" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIncursionTempleCurrency">Temple Currency</a></li><li><span class='mod-value'>20</span>% chance of an extra Atziri <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a></li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Bloodrite_Vestments" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/1ecf88e7247f7946da193f967183b873505d68b381036e9def4a349c56ee4898">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/1ecf88e7247f7946da193f967183b873505d68b381036e9def4a349c56ee4898" href="Bloodrite_Vestments">Bloodrite Vestments</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod">Atziri's Vault will drop a <a data-keyword="SacrificialRegalia" href="" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/71b8552729b8c70d9db03e964b1528f4b64800879fe837f3360aae4c298a1549">Sacrificial Regalia</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Military_Reinforcements" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9c350e2217b3da1a17efd15c57616856b5c956239507e245efe831661bbdac67">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable1.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/9c350e2217b3da1a17efd15c57616856b5c956239507e245efe831661bbdac67" href="Military_Reinforcements">Military Reinforcements</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>50</span>% increased chance <a data-keyword="ContainsIncursion" href="Vaal_Beacon" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsIncursion">Vaal Beacons</a> summon additional Monsters</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Offerings_to_the_Queen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/0cf336c9943502c75306d1402a81bfc4297a419cd2a45a07096026aa7f039618">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/0cf336c9943502c75306d1402a81bfc4297a419cd2a45a07096026aa7f039618" href="Offerings_to_the_Queen">Offerings to the Queen</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>50</span>% chance <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Rare</a> <a data-keyword="ContainsIncursion" href="Vaal_Beacon" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsIncursion">Vaal Beacon</a> chests contain an additional random <a data-keyword="IncursionTempleCurrency" href="Temple_Currency" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIncursionTempleCurrency">Temple Currency</a> Item</div><div class="implicitMod"><span class='mod-value'>25</span>% chance <a data-keyword="ContainsIncursion" href="Vaal_Beacon" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsIncursion">Vaal Beacon</a> <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> Monsters drop an additional random <a data-keyword="IncursionTempleCurrency" href="Temple_Currency" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIncursionTempleCurrency">Temple Currency</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Loyal_Gatekeepers" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/29a91c70f0853c63229411cc2bc68e40c379e6fbbc1b1b334f75b4834e97de4d">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNode2.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/29a91c70f0853c63229411cc2bc68e40c379e6fbbc1b1b334f75b4834e97de4d" href="Loyal_Gatekeepers">Loyal Gatekeepers</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>50</span>% chance <a data-keyword="ContainsIncursion" href="Vaal_Beacon" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsIncursion">Vaal Beacon</a> <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> Monsters have an <a data-keyword="Essence" href="Essence" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FEssence">Essence</a> Modifier</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Riches_of_the_Empire" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/dd89609e091ea46c5dc336e4b69ab9df23da925291f5cb1d8220ce3744fb6e05">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNotable4.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/dd89609e091ea46c5dc336e4b69ab9df23da925291f5cb1d8220ce3744fb6e05" href="Riches_of_the_Empire">Riches of the Empire</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="IncursionTempleCurrency" href="Temple_Currency" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIncursionTempleCurrency">Temple Currency</a> found inside the Temple has <span class='mod-value'>15</span>% chance to be duplicated</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Efficient_Arteries" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/077b420fb661dad70e5c1e077dd766e8ae16d658def2bf79757175e1b05878e8">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AlvaNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/077b420fb661dad70e5c1e077dd766e8ae16d658def2bf79757175e1b05878e8" href="Efficient_Arteries">Efficient Arteries</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>20</span>% increased effect of Room Temple Modifiers from Rooms with 4 adjacent rooms</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Patrolling_Legions" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/6d8680841cb80596677413685460f5e11ae28cc1ccfabcc608e9619ea3952068">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/AnarchyNotable1.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/6d8680841cb80596677413685460f5e11ae28cc1ccfabcc608e9619ea3952068" href="Patrolling_Legions">Patrolling Legions</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>20</span>% chance <a data-keyword="ContainsIncursion" href="Vaal_Beacon" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsIncursion">Vaal Beacon</a> <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> Monsters are added to the Area for each <a data-keyword="ContainsIncursion" href="Vaal_Beacon" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FContainsIncursion">Vaal Beacon</a> in an Area</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/The_Lost_Architect" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ce175f73dc8ff98c5d407401bf72cc12f6d0fb9568e4abd9807e00716af6c4aa">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/DisablingMasterAlva.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ce175f73dc8ff98c5d407401bf72cc12f6d0fb9568e4abd9807e00716af6c4aa" href="The_Lost_Architect">The Lost Architect</a></div><div class="property">SubTree: <span class='colourDefault'>Incursion</span></div><div class="separator"></div><div class="implicitMod"><a data-keyword="IncursionMedallionAddTempleModifier" href="Zantipis_Medallion" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FIncursionMedallionAddTempleModifier">Zantipi's Medallion</a> can be found from <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> Monsters in the Temple</div></div></div></div></div>  </div></div><div id="PinnacleKeysItem" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">Pinnacle Keys Item /10 </h5>   <div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/be757dce3ce0ef37d9c734f4e7b7df4c1adf887389ddddd676f7854123da8820" href="Ancient_Crisis_Fragment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/QuestItems/PinnacleKey1.webp" alt="PinnacleKey1" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/be757dce3ce0ef37d9c734f4e7b7df4c1adf887389ddddd676f7854123da8820" href="Ancient_Crisis_Fragment">Ancient Crisis Fragment</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/67ada95fbb5bd8622da8325e431e5391cb355a5429de0c6bf81b082ba2099388" href="Faded_Crisis_Fragment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/QuestItems/PinnacleKey2.webp" alt="PinnacleKey2" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/67ada95fbb5bd8622da8325e431e5391cb355a5429de0c6bf81b082ba2099388" href="Faded_Crisis_Fragment">Faded Crisis Fragment</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/1a113b651f8ecf3f5e047d9bf0db40ce5886ff55cbdde45d4277c97faa9c50ce" href="Weathered_Crisis_Fragment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/QuestItems/PinnacleKey3.webp" alt="PinnacleKey3" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/1a113b651f8ecf3f5e047d9bf0db40ce5886ff55cbdde45d4277c97faa9c50ce" href="Weathered_Crisis_Fragment">Weathered Crisis Fragment</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/fa88a7745c5b1aa7449d99a4bf17ede05fce0dac4792bf556a4af964b85d2955" href="Primary_Calamity_Fragment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/QuestItems/UberPinnacleKey1.webp" alt="UberPinnacleKey1" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/fa88a7745c5b1aa7449d99a4bf17ede05fce0dac4792bf556a4af964b85d2955" href="Primary_Calamity_Fragment">Primary Calamity Fragment</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/c72e86e10f160ee79286daa96588c48d3c7341c2a30302f4b52e216c6eb5d089" href="Secondary_Calamity_Fragment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/QuestItems/UberPinnacleKey2.webp" alt="UberPinnacleKey2" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/c72e86e10f160ee79286daa96588c48d3c7341c2a30302f4b52e216c6eb5d089" href="Secondary_Calamity_Fragment">Secondary Calamity Fragment</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/011018052e6a9fdadfaeb4427e7df8776e98d5b5d8cfbcf666389f64d077b2d5" href="Tertiary_Calamity_Fragment"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/QuestItems/UberPinnacleKey3.webp" alt="UberPinnacleKey3" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/011018052e6a9fdadfaeb4427e7df8776e98d5b5d8cfbcf666389f64d077b2d5" href="Tertiary_Calamity_Fragment">Tertiary Calamity Fragment</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FMothersoulEgg" href="Origin_Cradle"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/PrecursorEgg.webp" alt="PrecursorEgg" class="w2" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FMothersoulEgg" href="Origin_Cradle">Origin Cradle</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FMothersoulEmbryo" href="Origin_Spark"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/PrecursorSeed.webp" alt="PrecursorSeed" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FMothersoulEmbryo" href="Origin_Spark">Origin Spark</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FMothersoulCombined" href="Origin_Core"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/PrecursorSeedEggCombined.webp" alt="PrecursorSeedEggCombined" class="w2" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FMothersoulCombined" href="Origin_Core">Origin Core</a><div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FRitualPinnacleEffigyPiece" href="Call_of_the_Shadows"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Ritual/RitualEffigyPieces.webp" alt="RitualEffigyPieces" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem PinnacleKeyStackable" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FPinnacle%2FRitualPinnacleEffigyPiece" href="Call_of_the_Shadows">Call of the Shadows</a><div><div class="property">Stack Size: <span class='colourDefault'>1 / 5</span></div></div></div></div></div></div>  </div></div><div id="TheBurningMonolith" class="tab-pane fade"><div class="card"><h4 class="card-header" data-tabname="Community Wiki">Community Wiki</h4></div><div class="card mb-1">
+    <div class="card-body markdown-body">
+        <a class="btn btn-primary float-end" href='/us/marked?id=The_Burning_Monolith' data-i18n="ClientStrings|HideoutEditControlEdit|Name">Edit</a>
+        <div id="markContent"><h1 id="the-burning-monolith">The Burning Monolith</h1>
+<ul>
+<li>Pinnacle Boss: <a  data-hover="/cache2/us/Poe_Data_MonsterVarieties_hover/747b66820d12849263d5a1b174a849102a0a81b4ea16f7df89f3c85a9411e221" href="/us/The_Arbiter_of_Ash">The Arbiter of Ash</a></li>
+</ul>
+<p>Had enough yet? Because there&#39;s still just one more thing. The most difficult content in Path of Exile 2.</p>
+<p>While mapping, you may come across this fortress with a pillar of flame and ash rising from the center, there has emerged from underground,
+surrounded by an enormous maze riddled with danger. </p>
+<p>Is the maze preventing something getting in or something getting out?</p>
+<p>This fortress is of ancient origin, and its construction has similarities to the towers and tablets that you&#39;ve been using on your journey
+through the end game. It is clear from the entrance that there are three keys required to enter.</p>
+<p>Local factions of vying for access to the fortress in order to seize the power they believe will be inside.</p>
+<p>Each of the factions leaders have managed to get their hands on one of the keys, so you&#39;ll need to defeat them.</p>
+<p>Each faction is led by an Uber Act Boss. You can see one of them inhabiting this city, but in order to fight him, you&#39;ll first need to defeat their two
+lieutenants in the adjacent zones. </p>
+<table class="table table-hover table-striped">
+<thead>
+<tr>
+<th>Boss</th>
+<th>Crisis Fragment</th>
+<th>Calamity Fragment</th>
+<th>Faction Map</th>
+<th>Colour</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a  data-hover="/cache2/us/Poe_Data_MonsterVarieties_hover/a689373f9cf193ac5e7203c348e2964f6403e4411b328fb8ecb030b1c9cf1c1a" href="/us/Count_Geonor">Count Geonor</a></td>
+<td><a class="whiteitem PinnacleKey" data-hover="/cache2/us/Poe_Data_BaseItemTypes_hover/fd038508bec2709caad00cc261679de12d9c1e44cee18f0c0f0f16182ae29ddc" href="Ancient_Crisis_Fragment">Ancient Crisis Fragment</a></td>
+<td><a class="whiteitem PinnacleKey" data-hover="/cache2/us/Poe_Data_BaseItemTypes_hover/20e73cfdae089d982e71349bdf24d548cd6df224a54477761d5fc35efca4bebb" href="Primary_Calamity_Fragment">Primary Calamity Fragment</a></td>
+<td><a class="WorldAreas " data-hover="/cache2/us/Poe_Data_WorldAreas_hover/d5e1df93cdd4a8b8ddc1b7cbc0460f0a8bc985f52816e97e0696ddec8811aa70" href="/us/The_Iron_Citadel">The Iron Citadel</a></td>
+<td>Blue</td>
+</tr>
+<tr>
+<td><a  data-hover="/cache2/us/Poe_Data_MonsterVarieties_hover/dff39ec72e5e4d8f41c9b55be7701233f402a429c4a0d29c20ecbe1da34e863a" href="/us/Jamanra%2C_the_Abomination">Jamanra, the Abomination</a></td>
+<td><a class="whiteitem PinnacleKey" data-hover="/cache2/us/Poe_Data_BaseItemTypes_hover/e7318cc820f3d17aa0bc4754e92b86e5e27e0e170af0ff4bb126ef179e83b9eb" href="Faded_Crisis_Fragment">Faded Crisis Fragment</a></td>
+<td><a class="whiteitem PinnacleKey" data-hover="/cache2/us/Poe_Data_BaseItemTypes_hover/a817e92d76fec3599d8704bd782d8a9e8cfad7a5f7fd75d8456ee32efa5c3eaa" href="Secondary_Calamity_Fragment">Secondary Calamity Fragment</a></td>
+<td><a class="WorldAreas " data-hover="/cache2/us/Poe_Data_WorldAreas_hover/52adc571a85a1e95a8e80bf4283f4a82492d70e9a18c2333721642e64b34b616" href="/us/The_Copper_Citadel">The Copper Citadel</a></td>
+<td>Orange</td>
+</tr>
+<tr>
+<td><a  data-hover="/cache2/us/Poe_Data_MonsterVarieties_hover/910bf8a69e99aa1d2eee79f68fbdf1d925c8b17ea6429d6208a0c9cb6b6ca6f1" href="/us/Doryani%2C_Royal_Thaumaturge">Doryani, Royal Thaumaturge</a></td>
+<td><a class="whiteitem PinnacleKey" data-hover="/cache2/us/Poe_Data_BaseItemTypes_hover/487f1432248460776e4dc221b251db89a26ec71ab7267d73f8e5d8755480dcd6" href="Weathered_Crisis_Fragment">Weathered Crisis Fragment</a></td>
+<td><a class="whiteitem PinnacleKey" data-hover="/cache2/us/Poe_Data_BaseItemTypes_hover/80e8a7e58a20f27282d59e2bb0506b7cb13f795c680444b1b879a18ae95a9c1e" href="Tertiary_Calamity_Fragment">Tertiary Calamity Fragment</a></td>
+<td><a class="WorldAreas " data-hover="/cache2/us/Poe_Data_WorldAreas_hover/8f8c1dbfd412f15ce9ca742f7288f1a7b4fd7dc2dfdb17e17d5a6ffce42a834c" href="/us/The_Stone_Citadel">The Stone Citadel</a></td>
+<td>Red</td>
+</tr>
+</tbody></table>
+</div>
+        <div><hr style='border-top: 1px solid white'>Wikis Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a> unless otherwise noted.</div>
+    </div>
+</div>
+<script>
+$(function() {
+    lightbox_panel();
+});
+</script>
+</div></div>
+
+<footer class="ccontainer text-center text-lg-left">
+  <div class="card p-4">
+    <div class="row">
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sites</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+          <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+          <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+          <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">News</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="news">GGG Tracker</a> </li>
+          <li> <a href="League#ConcurrentPlayers">Concurrent Players</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Site</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="privacy">Privacy</a> </li>
+          <li> <a href="General_disclaimer">Disclaimers</a> </li>
+          <li> <a href="patreon">Patreon</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Community</h5>
+        <ul class="list-unstyled mb-0">
+
+
+
+          <li><a target="_blank" href="https://www.reddit.com/user/chuanhsing">/u/chuanhsing</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright &copy; 2014-2026 PoE2DB.
+  </div>
+</footer>
+
+<div style=""></div>
+<div class="clearfix"></div><div id="bottom_banner"></div><script>topbanner970("bottom_banner");</script>
+    </div>
+    </div>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+<script>
+ $(document).ready(function()
+ {
+    if (window.location.hostname != "poedb.tw" && window.location.hostname != "poe2db.tw") {
+        window.location.href="https://poedb.tw/";
+    }
+ });
+</script>
+    <script src="https://cdn.poe2db.tw/js/poedb_footer.43e536bf51dca9e4.js"></script>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"369404df4026486bb42f428b903a2162","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

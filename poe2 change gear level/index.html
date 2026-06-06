@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PoE2 Spirit Walker Twister — HC Gearing Sheet</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Sarabun:wght@300;400;600&family=JetBrains+Mono:wght@500&display=swap');
+
+  :root{
+    --bg:#0c0a07;
+    --panel:#161310;
+    --panel2:#1d1914;
+    --line:#3a3024;
+    --gold:#c9a227;
+    --gold-soft:#e3c75a;
+    --eva:#5fd6a0;
+    --txt:#e8e0d0;
+    --muted:#9a8f78;
+    --red:#d8533f;
+    --blue:#5aa9d6;
+    --speed:#6ec6e6;
+    --dmg:#e6864f;
+    --shadow:0 8px 30px rgba(0,0,0,.55);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(201,162,39,.07), transparent 60%),
+      radial-gradient(800px 500px at -10% 110%, rgba(95,214,160,.05), transparent 60%),
+      var(--bg);
+    color:var(--txt);
+    font-family:'Sarabun',sans-serif;
+    line-height:1.65;
+    padding:40px 18px 80px;
+  }
+  .wrap{max-width:920px;margin:0 auto}
+
+  header{
+    text-align:center;
+    border-bottom:1px solid var(--line);
+    padding-bottom:28px;margin-bottom:34px;
+    position:relative;
+  }
+  header::after{
+    content:"";position:absolute;bottom:-1px;left:50%;transform:translateX(-50%);
+    width:120px;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  }
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.32em;color:var(--gold);text-transform:uppercase}
+  h1{font-family:'Cinzel',serif;font-size:2.05rem;font-weight:700;color:var(--gold-soft);margin:.35em 0 .15em;letter-spacing:.02em}
+  .sub{color:var(--muted);font-size:.95rem}
+
+  section{margin-bottom:40px}
+  h2{
+    font-family:'Cinzel',serif;font-size:1.18rem;color:var(--gold);
+    display:flex;align-items:center;gap:12px;margin-bottom:16px;letter-spacing:.03em;
+  }
+  h2 .num{
+    font-family:'JetBrains Mono',monospace;font-size:.85rem;color:var(--bg);
+    background:var(--gold);width:26px;height:26px;border-radius:50%;
+    display:grid;place-items:center;flex:none;font-weight:700;
+  }
+
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px 22px;box-shadow:var(--shadow)}
+
+  table{width:100%;border-collapse:collapse;font-size:.92rem;overflow:hidden;border-radius:10px}
+  thead th{
+    background:var(--panel2);color:var(--gold-soft);font-family:'Cinzel',serif;font-weight:500;
+    text-align:left;padding:11px 13px;border-bottom:2px solid var(--line);font-size:.86rem;letter-spacing:.02em;
+  }
+  tbody td{padding:10px 13px;border-bottom:1px solid rgba(58,48,36,.5);vertical-align:top}
+  tbody tr:nth-child(even){background:rgba(255,255,255,.015)}
+  tbody tr:hover{background:rgba(201,162,39,.06)}
+  .lvl{font-family:'JetBrains Mono',monospace;color:var(--gold);font-weight:500;white-space:nowrap}
+  .eva{font-family:'JetBrains Mono',monospace;color:var(--eva)}
+  .star{color:var(--gold-soft)}
+  .key-row{box-shadow:inset 3px 0 0 var(--gold)}
+
+  .legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;font-size:.82rem;color:var(--muted)}
+  .tag{display:inline-flex;align-items:center;gap:6px;background:var(--panel2);border:1px solid var(--line);border-radius:20px;padding:3px 11px}
+  .dot{width:8px;height:8px;border-radius:50%;flex:none}
+
+  .cmp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px}
+  .cmp .cell{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:13px 15px;text-align:center}
+  .cmp .jot{font-family:'JetBrains Mono',monospace;font-size:1.5rem;color:var(--gold);font-weight:600}
+  .cmp .verdict{font-size:.8rem;margin-top:4px}
+  .ok{color:var(--eva)} .near{color:var(--gold-soft)} .no{color:var(--red)}
+
+  .prio{display:grid;gap:10px}
+  .prio .item{display:flex;gap:14px;align-items:flex-start;background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:13px 16px}
+  .prio .rank{font-family:'Cinzel',serif;font-size:1.3rem;color:var(--gold);flex:none;width:30px}
+  .prio .body-t b{color:var(--txt)}
+  .prio .body-t span{color:var(--muted);font-size:.88rem}
+
+  .rule{
+    background:linear-gradient(135deg,rgba(216,83,63,.12),rgba(216,83,63,.04));
+    border:1px solid rgba(216,83,63,.4);border-left:4px solid var(--red);
+    border-radius:8px;padding:16px 20px;
+  }
+  .rule b{color:var(--red)}
+
+  .sets{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}
+  .setcard{border-radius:10px;padding:16px 18px;border:1px solid var(--line);background:var(--panel2);position:relative;overflow:hidden}
+  .setcard::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px}
+  .setcard.speed::before{background:var(--speed)}
+  .setcard.dmg::before{background:var(--dmg)}
+  .setcard .label{font-family:'JetBrains Mono',monospace;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
+  .setcard.speed .label{color:var(--speed)}
+  .setcard.dmg .label{color:var(--dmg)}
+  .setcard h3{font-family:'Cinzel',serif;font-size:1.05rem;color:var(--gold-soft);margin-bottom:10px;font-weight:500}
+  .setcard ul{list-style:none;font-size:.88rem}
+  .setcard li{padding:3px 0 3px 16px;position:relative;color:var(--muted)}
+  .setcard li::before{content:"›";position:absolute;left:0;color:var(--gold)}
+  .setcard li b{color:var(--txt)}
+  .aps{font-family:'JetBrains Mono',monospace;color:var(--speed)}
+  .phys{font-family:'JetBrains Mono',monospace;color:var(--dmg)}
+  .uniq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .uniq .u{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:15px 17px}
+  .uniq .u .n{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:1.02rem;margin-bottom:3px}
+  .uniq .u .w{font-size:.78rem;color:var(--gold);font-family:'JetBrains Mono',monospace;text-transform:uppercase;letter-spacing:.1em;margin-bottom:8px}
+  .uniq .u p{font-size:.88rem;color:var(--muted)}
+
+  footer{text-align:center;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:22px;margin-top:10px}
+  .note{font-size:.82rem;color:var(--muted);margin-top:12px;font-style:italic}
+
+  @media(max-width:560px){
+    .uniq{grid-template-columns:1fr}
+    .sets{grid-template-columns:1fr}
+    h1{font-size:1.6rem}
+    body{padding:26px 12px 60px}
+    .panel{padding:15px}
+    tbody td,thead th{padding:8px 9px;font-size:.84rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Path of Exile 2 · Hardcore · Patch 0.5</div>
+    <h1>Spirit Walker — Twister</h1>
+    <div class="sub">สรุปการอัปเกรดเกราะสาย Evasion / Deflection · เน้นอยู่รอด</div>
+  </header>
+
+  <!-- 1. BREAKPOINTS -->
+  <section>
+    <h2><span class="num">1</span>Breakpoint ที่คุ้มสุด (จำแค่นี้พอ)</h2>
+    <div class="panel">
+      <table>
+        <thead>
+          <tr><th>Level</th><th>ทำอะไร</th><th>หมายเหตุ</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="lvl">Lv.16</td><td>อัปครั้งแรกทุกชิ้น</td><td>หลังพ้นต้นเกม</td></tr>
+          <tr><td class="lvl">Lv.26–28</td><td>อัปกลาง Act</td><td>body/helmet = 26 · boots/gloves = 28</td></tr>
+          <tr class="key-row"><td class="lvl">Lv.33 <span class="star">★</span></td><td>จุดสำคัญที่สุด</td><td>เริ่มมี <b style="color:var(--eva)">Deflection suffix</b> บน body + evasion ขยับดี (ทุกชิ้นมี base ที่ 33)</td></tr>
+          <tr class="key-row"><td class="lvl">Lv.45 <span class="star">★</span></td><td>Jump ใหญ่สุดช่วงกลาง</td><td>ทุกชิ้นตรงกันเป๊ะ · เข้าช่วง mapping</td></tr>
+          <tr class="key-row"><td class="lvl">Lv.70 <span class="star">★</span></td><td>Base ปลายทาง</td><td>Body = <b style="color:var(--eva)">Slipstrike Vest</b> (Eva 519 — สูงสุดในเกม)</td></tr>
+        </tbody>
+      </table>
+      <div class="legend">
+        <span class="tag"><span class="dot" style="background:var(--gold-soft)"></span>★ = breakpoint สำคัญ ห้ามพลาด</span>
+        <span class="tag"><span class="dot" style="background:var(--eva)"></span>Lv.33 = ปลดล็อก Deflection</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. เลขที่จด vs จริง -->
+  <section>
+    <h2><span class="num">2</span>เลขที่จดไว้เดิม vs ของจริงตอนนี้</h2>
+    <div class="panel">
+      <p style="color:var(--muted);margin-bottom:16px;font-size:.92rem">ตัวเลขเดิม <b style="color:var(--txt)">18 / 28 / 35 / 45 / 62</b> ถูกหลักการ แต่ patch ปัจจุบันคลาดไปนิด — น่าจะจดจาก patch เก่า:</p>
+      <div class="cmp">
+        <div class="cell"><div class="jot">18</div><div class="verdict near">≈ จริงคือ 16</div></div>
+        <div class="cell"><div class="jot">28</div><div class="verdict ok">✓ ตรง (boots/gloves)</div></div>
+        <div class="cell"><div class="jot">35</div><div class="verdict near">≈ จริงคือ 33</div></div>
+        <div class="cell"><div class="jot">45</div><div class="verdict ok">✓ ตรงทุกชิ้น</div></div>
+        <div class="cell"><div class="jot">62</div><div class="verdict no">✗ ไม่มี base (ใกล้สุด 59)</div></div>
+      </div>
+      <p class="note">สรุป: ควรแก้ 18→16, 35→33 · ส่วน 28 และ 45 ใช้ได้เลย · เลิกใช้ 62 (เปลี่ยนเป็น 59 หรือข้ามไป 65/70)</p>
+    </div>
+  </section>
+
+  <!-- 3. ตาราง base เต็ม -->
+  <section>
+    <h2><span class="num">3</span>ตาราง Base เต็ม (ค่า Evasion ต่อชิ้น)</h2>
+    <div class="panel">
+      <table>
+        <thead>
+          <tr><th>Lv.</th><th>Body Armour</th><th>Boots</th><th>Gloves</th><th>Helmet</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="lvl">11</td><td>Pathfinder Coat <span class="eva">96</span></td><td>Laced <span class="eva">47</span></td><td>Firm <span class="eva">31</span></td><td>—</td></tr>
+          <tr><td class="lvl">16</td><td>Shrouded Vest <span class="eva">128</span></td><td>Embossed <span class="eva">63</span></td><td>Bound <span class="eva">42</span></td><td>Lace Hood <span class="eva">84</span></td></tr>
+          <tr><td class="lvl">22</td><td>Rhoahide Coat <span class="eva">168</span></td><td>—</td><td>—</td><td>—</td></tr>
+          <tr><td class="lvl">26</td><td>Studded Vest <span class="eva">194</span></td><td>—</td><td>—</td><td>Swathed Cap <span class="eva">127</span></td></tr>
+          <tr><td class="lvl">28</td><td>—</td><td>Steeltoe <span class="eva">102</span></td><td>Sectioned <span class="eva">68</span></td><td>—</td></tr>
+          <tr class="key-row"><td class="lvl">33 ★</td><td>Scout's Vest <span class="eva">240</span></td><td>Lizardscale <span class="eva">118</span></td><td>Spined <span class="eva">79</span></td><td>Hunter Hood <span class="eva">158</span></td></tr>
+          <tr><td class="lvl">36–38</td><td>Serpentscale <span class="eva">260</span></td><td>—</td><td>—</td><td>Viper Cap <span class="eva">179</span></td></tr>
+          <tr class="key-row"><td class="lvl">45 ★</td><td>Corsair Vest <span class="eva">320</span></td><td>Bound/Flared <span class="eva">157</span></td><td>Fine/Hunting <span class="eva">105</span></td><td>Corsair Cap <span class="eva">210</span></td></tr>
+          <tr><td class="lvl">51–52</td><td>Smuggler Coat <span class="eva">359</span></td><td>Sleek <span class="eva">177</span></td><td>Swift <span class="eva">118</span></td><td>Narrow Hood <span class="eva">235</span></td></tr>
+          <tr><td class="lvl">59</td><td>Runner Vest <span class="eva">412</span></td><td>Serpentscale <span class="eva">203</span></td><td>Spiked <span class="eva">135</span></td><td>Deerstalker <span class="eva">270</span></td></tr>
+          <tr><td class="lvl">65</td><td>Swiftstalker <span class="eva">451</span></td><td>Cinched <span class="eva">222</span></td><td>Engraved <span class="eva">148</span></td><td>Armoured Cap <span class="eva">296</span></td></tr>
+          <tr class="key-row"><td class="lvl">70 ★</td><td>Slipstrike Vest <span class="eva">519</span></td><td>Cavalry <span class="eva">233</span></td><td>Grand <span class="eva">155</span></td><td>Desert Cap <span class="eva">311</span></td></tr>
+          <tr><td class="lvl">80</td><td>Corsair Coat <span class="eva">451</span></td><td>Drakeskin <span class="eva">255</span></td><td>Polished <span class="eva">170</span></td><td>Freebooter <span class="eva">340</span></td></tr>
+        </tbody>
+      </table>
+      <p class="note">ตัวเลขสีเขียว = ค่า Evasion ของ base · แถวที่ขีดทองคือ breakpoint สำคัญ</p>
+    </div>
+  </section>
+
+  <!-- 4. ลำดับความสำคัญ -->
+  <section>
+    <h2><span class="num">4</span>ลำดับลงทุนต่อชิ้น</h2>
+    <div class="prio">
+      <div class="item"><div class="rank">1</div><div class="body-t"><b>Body Armour</b> — สำคัญสุด <span>ให้ evasion เยอะสุด (ถึง 519) + เป็นแหล่ง Deflection หลัก · อัปทุก breakpoint ที่ทำได้</span></div></div>
+      <div class="item"><div class="rank">2</div><div class="body-t"><b>Helmet</b> <span>evasion สูงรองลงมา (ถึง 340) · อัปตาม breakpoint ได้</span></div></div>
+      <div class="item"><div class="rank">3</div><div class="body-t"><b>Boots</b> <span>เลือกจาก <b style="color:var(--blue)">% Movement Speed + Res</b> เป็นหลัก ไม่ใช่ค่า evasion base (สูงสุดแค่ 255) · MS tier สูงต้องการ item level 70/82</span></div></div>
+      <div class="item"><div class="rank">4</div><div class="body-t"><b>Gloves</b> <span>เลือกจาก <b style="color:var(--blue)">Res / Life / Attack Speed</b> · evasion base น้อยมาก (สูงสุด 170) แทบไม่ต้องสน</span></div></div>
+    </div>
+  </section>
+
+  <!-- 5. อาวุธ -->
+  <section>
+    <h2><span class="num">5</span>อาวุธ — หอก 2 set (หัวใจของ build)</h2>
+    <div class="panel">
+      <p style="color:var(--muted);margin-bottom:16px;font-size:.92rem">build นี้ต้องใช้ <b style="color:var(--txt)">หอก 2 อันคนละ stat</b> สลับด้วยระบบ Weapon Swap — ไม่ใช่ทางเลือก แต่เป็นกลไกหลัก:</p>
+      <div class="sets">
+        <div class="setcard speed">
+          <div class="label">Weapon Set I</div>
+          <h3>Speed → Whirling Slash</h3>
+          <ul>
+            <li>เน้น <b>% Attack Speed</b> สูงสุด</li>
+            <li>off-hand <b>ต้องว่าง</b> (เพื่อ Dance with Death)</li>
+            <li>ปั่น Whirling Slash ให้ไว + เดินเร็ว</li>
+          </ul>
+        </div>
+        <div class="setcard dmg">
+          <div class="label">Weapon Set II</div>
+          <h3>Damage → Twister</h3>
+          <ul>
+            <li>เน้น <b>flat Physical Damage</b> สูง + Crit</li>
+            <li>ใส่ Twister / skill ปล่อยดาเมจไว้ set นี้</li>
+            <li>สลับมา set นี้ตอนจะ burst</li>
+          </ul>
+        </div>
+      </div>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:12px">ลำดับ stat บนหอก (ทั้ง 2 set ต้องมี Life + Res ผ่านของชิ้นอื่น):</p>
+      <table>
+        <thead><tr><th>ลำดับ</th><th>Stat</th><th>ทำไม</th></tr></thead>
+        <tbody>
+          <tr><td class="lvl">1</td><td><b style="color:var(--dmg)">Physical Damage</b></td><td>สเกลดาเมจหลักทั้ง build</td></tr>
+          <tr><td class="lvl">2</td><td><b style="color:var(--speed)">Attack Speed</b></td><td>สำคัญสุดบน Set 1</td></tr>
+          <tr><td class="lvl">3</td><td>Mana Leech</td><td><b style="color:var(--red)">จำเป็นใน HC</b> — กันมานาหมดกลาง pack</td></tr>
+          <tr><td class="lvl">4</td><td>Crit Chance + Crit Damage</td><td>สเกล Set 2 (Twister)</td></tr>
+          <tr><td class="lvl">5</td><td>Accuracy</td><td>กันพลาดตอน crit build</td></tr>
+        </tbody>
+      </table>
+
+      <p style="color:var(--muted);font-size:.92rem;margin:18px 0 12px">Base spear ตาม level — แยก 2 กลุ่มตาม set:</p>
+      <table>
+        <thead><tr><th>Lv.</th><th>Base</th><th>Phys</th><th>APS</th><th>เหมาะ Set</th></tr></thead>
+        <tbody>
+          <tr><td class="lvl">10</td><td>Hunting Spear</td><td class="phys">10–17</td><td class="aps">1.55</td><td>—</td></tr>
+          <tr class="key-row"><td class="lvl">16 ★</td><td>Winged Spear</td><td class="phys">12–22</td><td class="aps">1.7</td><td><b style="color:var(--speed)">Speed</b> (APS สูงสุดต้นเกม)</td></tr>
+          <tr><td class="lvl">26</td><td>Forked Spear</td><td class="phys">13–38</td><td class="aps">1.55</td><td>—</td></tr>
+          <tr class="key-row"><td class="lvl">33 ★</td><td>Barbed Spear</td><td class="phys">20–38</td><td class="aps">1.5</td><td>กลางๆ</td></tr>
+          <tr><td class="lvl">40</td><td>Broad Spear</td><td class="phys">32–48</td><td class="aps">1.4</td><td><b style="color:var(--dmg)">Damage</b> (phys jump แรก)</td></tr>
+          <tr class="key-row"><td class="lvl">45 ★</td><td>Crossblade / Steelhead</td><td class="phys">25–52</td><td class="aps">1.6</td><td>ได้ทั้งคู่</td></tr>
+          <tr><td class="lvl">52</td><td>Sword Spear</td><td class="phys">30–56</td><td class="aps">1.6</td><td>balance</td></tr>
+          <tr class="key-row"><td class="lvl">62 ★</td><td>Massive Spear</td><td class="phys">46–69</td><td class="aps">1.4</td><td><b style="color:var(--dmg)">Damage</b></td></tr>
+          <tr class="key-row"><td class="lvl">70 ★</td><td>Soaring Spear</td><td class="phys">35–65</td><td class="aps">1.7</td><td><b style="color:var(--speed)">Speed</b> (endgame Set 1)</td></tr>
+          <tr><td class="lvl">79</td><td>Grand Spear</td><td class="phys">56–84</td><td class="aps">1.4</td><td><b style="color:var(--dmg)">Damage</b> (phys สูงสุดในเกม)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Set 1 มองหา APS 1.6–1.7 (Winged → Soaring) · Set 2 มองหา phys สูง APS 1.4 (Broad → Massive → Grand) · ช่วง lv.60+ ไกด์บอกว่าหอกตัวไหนก็ craft ได้ใกล้กัน</p>
+    </div>
+  </section>
+
+  <!-- 6. unique -->
+  <section>
+    <h2><span class="num">6</span>Unique เป้าหมาย</h2>
+    <div class="uniq">
+      <div class="u">
+        <div class="n">Foxshade</div>
+        <div class="w">ต้นเกม · Quilted Vest</div>
+        <p>หาง่าย drop ได้ตั้งแต่ Act 1 · ให้ evasion เพิ่มมากตอน Full Life เหมาะช่วงต้น HC</p>
+      </div>
+      <div class="u">
+        <div class="n">Hyrri's Ire</div>
+        <div class="w">ปลายทาง · Armoured Vest</div>
+        <p>Chase item สาย evasion · Eva 1218–1421, +cold/+dex, Evasion เป็น 2 เท่าถ้าไม่โดนตีเร็วๆ นี้</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. กฎเหล็ก -->
+  <section>
+    <h2><span class="num">7</span>กฎเหล็ก HC (เหนือทุก breakpoint)</h2>
+    <div class="rule">
+      <b>Res cap 75% + Life มาก่อนเสมอ.</b> ค่า Evasion base เป็นเรื่องรอง — ถ้าของชิ้นใหม่ทำให้ Resistance หลุด 75% หรือ Life ลด <b>อย่าใส่เด็ดขาด</b> ไม่ว่าจะถึง breakpoint หรือไม่ก็ตาม โดยเฉพาะช่วง campaign ที่ res ตกง่าย สาเหตุการตายอันดับต้นๆ ใน Hardcore คือ res หลุดตอนเจอ elemental burst
+    </div>
+  <!-- 8. ชนิดเกราะ -->
+  <section>
+    <h2><span class="num">8</span>ชนิดเกราะทั้งหมด (6 แบบ)</h2>
+    <div class="panel">
+      <table>
+        <thead><tr><th>ชนิด defence</th><th>Attribute</th><th>เหมาะใคร</th></tr></thead>
+        <tbody>
+          <tr class="key-row"><td><b style="color:var(--eva)">Evasion</b></td><td>Dex</td><td><b>build นี้ (หลัก)</b></td></tr>
+          <tr class="key-row"><td><b style="color:var(--eva)">Armour / Evasion</b></td><td>Str/Dex</td><td>ทางเลือก — อึดช่วง campaign</td></tr>
+          <tr class="key-row"><td><b style="color:var(--eva)">Evasion / ES</b></td><td>Dex/Int</td><td>ทางเลือก — ถ้าเสริม ES</td></tr>
+          <tr><td>Armour</td><td>Str</td><td>สาย block/tank</td></tr>
+          <tr><td>Energy Shield</td><td>Int</td><td>สาย ES</td></tr>
+          <tr><td>Armour / ES</td><td>Str/Int</td><td>สาย hybrid tank</td></tr>
+        </tbody>
+      </table>
+      <p class="note">★ <b style="color:var(--gold-soft)">breakpoint "เลเวล" เหมือนกันทุกชนิด</b> — base ปลดล็อกที่เลเวลเดียวกัน (16/22/26/33/45/70…) ต่างแค่ค่า stat + attribute ที่ต้องใช้ → ใช้ตาราง Base เดิม (section 3) ได้เลย แค่หยิบ base "ชนิดที่เลือก"</p>
+      <p class="note">แนะนำ: หลัก = <b style="color:var(--eva)">Evasion</b> · ช่วงต้นที่ evasion ล้วนเอาตัวรอดยาก ใช้ <b style="color:var(--eva)">Armour/Evasion</b> หรือ <b style="color:var(--eva)">Evasion/ES</b> ผสมก่อนได้ · ❌ เลี่ยง pure Armour / pure ES (ไม่เข้าธีม + attribute ไม่พอ)</p>
+    </div>
+  </section>
+
+  <!-- 9. Movement Speed รองเท้า -->
+  <section>
+    <h2><span class="num">9</span>รองเท้า — Movement Speed (ขึ้นกับ item level)</h2>
+    <div class="panel">
+      <table>
+        <thead><tr><th>Movement Speed</th><th>ต้อง item level</th><th>ทำได้ช่วง</th></tr></thead>
+        <tbody>
+          <tr><td class="eva">15%</td><td class="lvl">16</td><td>ได้แล้ว</td></tr>
+          <tr class="key-row"><td class="eva">20% ★</td><td class="lvl">33</td><td>ตั้งแต่ Lv.33</td></tr>
+          <tr><td class="eva">25%</td><td class="lvl">46</td><td>Lv.45+</td></tr>
+          <tr><td class="eva">30%</td><td class="lvl">65</td><td>endgame</td></tr>
+          <tr><td class="eva">35%</td><td class="lvl">82</td><td>endgame</td></tr>
+        </tbody>
+      </table>
+      <p class="note">ค่านี้ขึ้นกับ <b>ilvl ของรองเท้า</b> (มาจากเลเวลโซนที่ดรอป) ไม่ใช่เลเวลตัวละคร · base ilvl ต่ำกว่าเพดาน craft ยังไงก็ไม่ขึ้น tier สูง</p>
+    </div>
+  </section>
+
+  <!-- 10. เครื่องประดับ + charm -->
+  <section>
+    <h2><span class="num">10</span>เครื่องประดับ (แหวน/สร้อย/เข็มขัด) + Charm</h2>
+    <div class="panel">
+      <p style="color:var(--muted);margin-bottom:16px;font-size:.92rem"><b style="color:var(--txt)">ไม่มี breakpoint แบบ base stat เหมือนเกราะ</b> — พลังอยู่ที่ <b>มอดที่ roll</b> ซึ่ง tier สูงถูกล็อกด้วย <b>item level</b> (เหมือน MS รองเท้า)</p>
+      <p style="color:var(--muted);font-size:.92rem;margin-bottom:12px">breakpoint จริงของมอด <b style="color:var(--red)">max Life</b> (ใช้ได้กับทั้งเกราะ + เครื่องประดับ):</p>
+      <table>
+        <thead><tr><th>Life roll</th><th>ต้อง item level</th></tr></thead>
+        <tbody>
+          <tr><td>+30–39</td><td class="lvl">16</td></tr>
+          <tr><td>+40–59</td><td class="lvl">24</td></tr>
+          <tr class="key-row"><td>+60–69 ★</td><td class="lvl">33</td></tr>
+          <tr><td>+70–84</td><td class="lvl">38</td></tr>
+          <tr class="key-row"><td>+85–99 ★</td><td class="lvl">46</td></tr>
+          <tr><td>+100–119</td><td class="lvl">54</td></tr>
+          <tr class="key-row"><td>+120–149 ★</td><td class="lvl">60</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Resistance & MS ก็ gate ด้วย ilvl คล้ายกัน — ของ ilvl สูง = ลุ้นมอดแรงได้</p>
+
+      <p style="color:var(--muted);font-size:.92rem;margin:18px 0 12px"><b style="color:var(--gold-soft)">เปลี่ยนพร้อมเกราะได้เลย</b> — Life tier ใหม่ล็อกตรงกับ ★ ของเกราะพอดี:</p>
+      <table>
+        <thead><tr><th>Milestone</th><th>เกราะ</th><th>+ เครื่องประดับ (Life tier ที่ปลด)</th></tr></thead>
+        <tbody>
+          <tr class="key-row"><td class="lvl">33 ★</td><td>เปลี่ยน 4 ชิ้น</td><td>Life +60–69 (ilvl 33)</td></tr>
+          <tr class="key-row"><td class="lvl">45 ★</td><td>เปลี่ยน 4 ชิ้น</td><td>Life +85–99 (ilvl 46)</td></tr>
+          <tr class="key-row"><td class="lvl">60</td><td>เปลี่ยน</td><td>Life +120–149 (ilvl 60)</td></tr>
+        </tbody>
+      </table>
+      <p class="note">👉 พอถึง ★ → เก็บ base เครื่องประดับ ilvl ตามนั้น craft/หา ไปพร้อมเกราะทีเดียว · priority: <b>Amulet</b> (Life→Res→Spirit→Crit) › <b>Rings ×2</b> (Res→Life→flat Phys→Mana Leech) › <b>Belt</b> (Life→Res→Charm→Stun)</p>
+
+      <p style="color:var(--muted);font-size:.92rem;margin:18px 0 8px"><b style="color:var(--speed)">Charm</b> — ไม่มี level breakpoint:</p>
+      <p class="note" style="margin-top:0">เลือกตาม <b>ชนิด/ภัยที่เจอ</b> (Thawing กัน freeze · Staunching กัน bleed ฯลฯ) ไม่ใช่ตามเลเวล · มอดเข็มขัด: HC แนะนำ <b>Charm Effect Duration</b> (ยืดเกราะกันตายต่อครั้ง) มากกว่า charge gain เว้นแต่ charm นั้นทริกถี่/เคลียร์ทันที</p>
+    </div>
+  </section>
+
+  <footer>
+    ข้อมูล base จาก poe2db.tw (Patch 0.5) · ยืนยันตรงกับ Game8<br>
+    ค่าในเกมจริงอาจเปลี่ยนตาม patch — เช็ค poe2db ก่อนลงทุนหนักเสมอ
+  </footer>
+
+</div>
+</body>
+</html>

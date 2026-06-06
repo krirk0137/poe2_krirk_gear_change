@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="us" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Shrine - PoE2DB, Path of Exile Wiki us</title>
+    <meta name="description" content="path of exile is simply a tool to test your path of building creation">
+    <link rel="alternate" hreflang="en" href="https://poe2db.tw/us/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://poe2db.tw/tw/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://poe2db.tw/cn/" />
+        <link href="/favicon2.png" rel="shortcut icon" >
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css" integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-5-theme/1.3.0/select2-bootstrap-5-theme.min.css" integrity="sha512-z/90a5SWiu4MWVelb5+ny7sAayYUfMmdXKEAbpj27PfdkamNdyI3hcjxPxkOPbrXoKIm7r9V2mElt5f1OtVhqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" integrity="sha512-HbPh+j4V7pXprvQMt2dtmK/zCEsUeZWYXRln4sOwmoyHPQAPqy/k9lIquKUyKNpNbDGAY06UdiDHcEkBc72yCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.min.css" integrity="sha512-OkYLbkJ4DB7ewvcpNLF9DSFmhdmxFXQ1Cs+XyjMsMMC94LynFJaA9cPXOokugkmZo6O6lwZg+V5dwQMH4S5/3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video-js.min.css" integrity="sha512-J3tx4ssoARFr4U9VmZmQe2q672q0jUeYizJW3vglkOBTlQ/N6kF3eVqZZzaey/TdIXH69s3HYe2nQwyxK/Emzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.poe2db.tw/css/stdtheme.4bd5d8b8acf8ae5a.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js" integrity="sha512-gbruucq/Opx9jlHfqqZeAg2LNK3Y4BbpXHKDhRC88/tARL/izPOE4Zt2w6X9Sn1UeWaGbL38zW7nkL2jdn5JIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js" integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.all.js" integrity="sha512-A7LzqKE/pm9ofgS0Lxu7qroQS5SkKJQaYJkJ/66nQiWZfEdeGlBq5zEXQ63VRmXZK8zPpCgFf2WQJIAljI0Vdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js" integrity="sha512-4/g9GAdOdTpUP2mKClpKsEzaK7FQNgMjq+No0rX8XZlfrCGtbi4r+T/p5fnacsEC3zIAmHKLJUL7sh3/yVA4OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/theme/dark.min.js" integrity="sha512-3Zm64ayK7DflnnyO2pKkLJX3v9Sb90mvahbwPUuMzEf42HI6k8tquIx5VsNBjEWAcYJWzvimbqnTkLl2QdCUmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video.min.js" integrity="sha512-48NkCweTzA9u2sP4GgKcEDm6IScPIMga142ipKFNcHfz7feUJXDJxO1jwc2l+5MvWfwMj4BDfQv8WIMhrPxZLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.2.1/mustache.min.js" integrity="sha512-Qjrukx28QnvFWISw9y4wCB0kTB/ISnWXPz5/RME5o8OlZqllWygc1AB64dOBlngeTeStmYmNTNcM6kfEjUdnnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdn.poe2db.tw/js/ModsView.ccf47bc9016c7baf.js"></script>
+        <script src="https://cdn.poe2db.tw/js/poedb_header.3abb375410f4ddc6.js"></script>
+    
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2013.js"></script>
+
+    <meta property="og:site_name" content="poe2db.tw">
+<meta property="og:title" content="Shrine" />
+<meta property="og:description" content="Shrines are Precursor Artifacts that empower monsters with its Presence with various effects.
+Defeat all the monsters Worshipping the Shrine and interact with it to temporarily gain the power for yourself." />
+
+  </head>
+
+  <body>
+
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+
+
+    <div class="background-image item-popup--poe2"></div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6598Z863E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6598Z863E2');
+</script>
+
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="/us/">PoE2<span class='brand-suffix'>DB</span><sub></sub></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Items" data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</a></li>
+                    <li><a class="dropdown-item" href="/us/Unique_item" data-i18n="ClientStrings|ItemDisplayStringUnique|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/Reforging_Bench" data-i18n="ClientStrings|RecipeBenchTitle|Name"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Gem" data-i18n="ClientStrings|ItemDisplayStringGem|Name">Gem</a></li>
+                    <li><a class="dropdown-item" href="/us/Skill_Gems" data-i18n="ItemClasses|Active Skill Gem|Name">Skill Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Support_Gems" data-i18n="ItemClasses|Support Skill Gem|Name">Support Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Spirit_Gems" data-i18n-tw="精神寶石">Spirit Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Lineage_Supports" data-i18n="KeywordPopups|LineageSupports|Name">Lineage Supports</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Modifiers" data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Desecrated_Modifiers" data-i18n="KeywordPopups|Abyssalify|Name">Desecrated Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Keywords" data-i18n-tw="提示字">Keywords</a></li>
+                    <li><a class="dropdown-item" href="/us/Crafting" data-i18n="ClientStrings|CraftingWindowTitle|Name">Crafting</a></li>
+                    <li><a class="dropdown-item" href="/us/Liquid_Emotions" data-i18n="KeywordPopups|DistilledEmotion|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/us/Quest" data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</a></li>
+                    <li><a class="dropdown-item" href="/us/Ascendancy_class" data-i18n="ClientStrings|TutorialPanelAscendancies|Name">Ascendancy Classes</a></li>
+                    <li><a class="dropdown-item" href="/us/passive-skill-tree/" data-i18n="ClientStrings|ActionOpenPassivePanel|Name">Passive Skill Tree</a></li>
+                    <li><a class="dropdown-item" href="/us/Act" data-i18n-tw="章節">Act</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Waystones" data-i18n="ItemClasses|Map|Name">Waystones</a></li>
+                    <li><a class="dropdown-item" href="/us/Endgame" data-i18n="Acts|Endgame|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/atlas-skill-tree/" data-i18n="ClientStrings|ActionOpenAtlasPassivesScreen|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item"><a class="nav-link" href="Economy" data-i18n-tw="經濟" data-i18n-cn="经济">Economy</a></li>
+    
+                <li class="nav-item"><a class="ms-4 nav-link  bg-warning rounded-circle" style="color: white" href="/us/patreon">Patreon</a></li>
+              </ul>
+    
+    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="https://poedb.tw/us/Shrine">PoE<span class="brand-suffix">DB</span></a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/tw/Shrine">TW 繁體中文</a></li>
+                    <li><a class="dropdown-item" href="/cn/Shrine">CN 简体中文</a></li>
+                    <li><a class="dropdown-item" href="/us/Shrine">US English</a></li>
+                    <li><a class="dropdown-item" href="/kr/Shrine">KR 한국어</a></li>
+                    <li><a class="dropdown-item" href="/jp/Shrine">JP Japanese</a></li>
+                    <li><a class="dropdown-item" href="/ru/Shrine">RU Русский</a></li>
+                    <li><a class="dropdown-item" href="/pt/Shrine">PO Português</a></li>
+                    <li><a class="dropdown-item" href="/th/Shrine">TH ภาษาไทย</a></li>
+                    <li><a class="dropdown-item" href="/fr/Shrine">FR Français</a></li>
+                    <li><a class="dropdown-item" href="/de/Shrine">DE Deutsch</a></li>
+                    <li><a class="dropdown-item" href="/sp/Shrine">ES Spanish</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            <form class="form-inline my-2 my-lg-0" role="search" action="search">
+              <input type="hidden" name="token" value="df3da3f1a7fa7ea59a799f47278890b9fd9cc6279a12094cb449d95da05cf8fb2a53eb">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" id="navautosearch">
+            </form>
+    
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    </header>
+
+<script>sidebar160("leftside_banner", "left");</script>
+<script>sidebar160("rightside_banner", "right");</script>
+
+
+
+    <div class="page poe2">
+    <div class="page-content theme-showcase container" role="main">
+
+
+<div class="card mb-2" id="head_toolbar" style="background: transparent">
+  <div class="card-body p-1">
+    <div class="league_bar text-center">
+      <a href="Runes_of_Aldur_league" data-bs-toggle="tooltip" title="Runes of Aldur v0.5" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Expedition2RemnantActive.webp" alt="Expedition2RemnantActive" class="league_minimap" /></span></a><a href="Atziris_Temple" data-bs-toggle="tooltip" title="Atziri v0.4" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionAtziriActive.webp" alt="IncursionAtziriActive" class="league_minimap" /></span></a><a href="Waystones" data-bs-toggle="tooltip" title="Waystones" data-hover="?s=Data%5CKeywordPopups%2FWaystone"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2ditems/maps/endgamemaps/endgamemap1.webp" class="league_minimap"/></a><a href="Shrine" data-bs-toggle="tooltip" title="Shrine" data-hover="?s=Data%5CKeywordPopups%2FShrine"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" class="league_minimap" /></span></a><a href="Strongbox" data-bs-toggle="tooltip" title="Strongbox" data-hover="?s=Data%5CKeywordPopups%2FStrongbox"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Strongbox.webp" alt="Strongbox" class="league_minimap" /></span></a><a href="Essence" data-bs-toggle="tooltip" title="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp" alt="Essence" class="league_minimap" /></span></a><a href="Archnemesis" data-bs-toggle="tooltip" title="Archnemesis" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RareMonsterAlive.webp" alt="RareMonsterAlive" class="league_minimap" /></span></a><a href="Azmeri_Spirit" data-bs-toggle="tooltip" title="Azmeri Spirit v0.2" data-hover="?s=Data%5CKeywordPopups%2FAzmeriSpirit"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SpiritActivated.webp" alt="SpiritActivated" class="league_minimap" /></span></a><a href="Rogue_Exile" data-bs-toggle="tooltip" title="Rogue Exile" data-hover="?s=Data%5CKeywordPopups%2FRogueExile"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RogueExile.webp" alt="RogueExile" class="league_minimap" /></span></a><a href="Map_Boss" data-bs-toggle="tooltip" title="Map Boss" data-hover="?s=Data%5CKeywordPopups%2FMapBoss"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="league_minimap"/></a><a href="Precursor_Towers" data-bs-toggle="tooltip" title="Precursor Towers" data-hover="?s=Data%5CKeywordPopups%2FPrecursorTower"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/MapLegend/LostTower.webp" class="league_minimap"/></a><a href="Corrupted_Nexus" data-bs-toggle="tooltip" title="Corrupted Nexus" data-hover="?s=Data%5CKeywordPopups%2FCorruptedNexus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentCorruptionNexusNoGrowth.webp" class="league_minimap"/></a><a href="Abyss" data-bs-toggle="tooltip" title="Abyss v0.3" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/textures/interface/2d/2dart/uiimages/ingame/worldmap/mapbuttonabysshub.webp" class="league_minimap"/></a><a href="Breach" data-bs-toggle="tooltip" title="Breach" data-hover="?s=Data%5CKeywordPopups%2FContainsBreach"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentbreach.webp" class="league_minimap"/></a><a href="Ritual" data-bs-toggle="tooltip" title="Ritual" data-hover="?s=Data%5CKeywordPopups%2FContainsRitual"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentritual.webp" class="league_minimap"/></a><a href="Delirium" data-bs-toggle="tooltip" title="Delirium" data-hover="?s=Data%5CKeywordPopups%2FContainsDelirium"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentdelirium.webp" class="league_minimap"/></a><a href="Expedition" data-bs-toggle="tooltip" title="Expedition" data-hover="?s=Data%5CKeywordPopups%2FContainsExpedition"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentexpedition.webp" class="league_minimap"/></a><a href="The_Burning_Monolith" data-bs-toggle="tooltip" title="The Burning Monolith" data-hover="?s=Data%5CKeywordPopups%2FTheBurningMonoilth"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/maplegend/monolith.webp" class="league_minimap"/></a><a href="Trial_of_the_Sekhemas" data-bs-toggle="tooltip" title="Trial of the Sekhemas" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonSanctum.webp" class="league_minimap"/></a><a href="The_Trial_of_Chaos" data-bs-toggle="tooltip" title="The Trial of Chaos" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonUltimatum.webp" class="league_minimap"/></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="topbanner970"></div><script>topbanner970("topbanner970");</script>
+
+<ul class="nav nav-tabs d-flex flex-wrap" role="tablist"><li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" role="tab" aria-selected="true" href="#MinimapIcons">Minimap Icons /3 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#Shrine">Shrine /43 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#ShrineRef">Shrine Ref /28 </a></li><li class="nav-item"><a class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false" href="#Shrine_Markdown4">Shrine</a></li></ul><div class="tab-content"><div id="MinimapIcons" class="tab-pane fade show active"><div   class="card mb-2 ">
+   <h5 class="card-header">Minimap Icons /3 </h5>   <div class="row row-cols-1 row-cols-lg-3 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/ShrineInactive.webp" alt="ShrineInactive" /></span></div><div class="flex-grow-1 ms-2">ShrineInactive</div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/ShrineActive.webp" alt="ShrineActive" /></span></div><div class="flex-grow-1 ms-2">ShrineActive</div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" /></span></div><div class="flex-grow-1 ms-2">Shrine</div></div></div></div>  </div></div><div id="Shrine" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">Shrine /43 </h5> <div class="card-body"><div class="newItemPopup keywordPopups"><div   class="card mb-2 ">
+   <h5 class="card-header"><a href="Shrine">Shrine</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Shrines are Precursor Artifacts that empower monsters with its <a data-keyword="Presence" href="Presence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6149d6e11511715ec81a49d2676d8bdc1e56a3026fb844ee72cc4457474798c8">Presence</a> with various effects.<br />
+Defeat all the monsters <a data-keyword="ShrineMonster" href="Shrine_Worship" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrineMonster">Worshipping</a> the Shrine and interact with it to temporarily gain the power for yourself.</div></div>   </div></div></div>  <script>
+$(document).ready(function () {
+    filterClick($('input[name=filtere5MztKDAFh]'));
+});
+</script>
+
+<form><div class="input-group my-2">
+    <button class="btn btn-outline-secondary" type="reset">Reset</button>
+    <input name="filtere5MztKDAFh" class="form-control" placeholder="Search">
+</div></form><div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_speed.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Acceleration Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Action Speed and Projectile Speed</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>80</span>% increased <a data-keyword="Projectile" href="Projectile" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/51b3a0d2df1893fbbe21f8ab340466d340e92537a9201bafd14921499ea9a462">Projectile</a> Speed</div><div class="explicitMod"><span class='mod-value'>50</span>% increased Action Speed</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_lightning.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Tempest Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Shock Novas happen around you</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_cold.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Freezing Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Ice Novas happen around you</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_fire.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Meteoric Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Fire rains down around you</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_experience.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Tempest Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Lightning arcs from you</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_critical.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Diamond Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You always deal [Critical|Critical Hits]</div><div class="separator"></div><div class="explicitMod"><span class="secondary">always crit [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_brutal.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Brutal Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Your hits have Knockback, and increased Damage and Stun Duration</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>30</span>% increased Stun Duration on Enemies</div><div class="explicitMod"><span class='mod-value'>50</span>% increased Damage</div><div class="explicitMod"><a data-keyword="Knockback" href="Knockback" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FKnockback">Knocks Enemies Back</a> on <a data-keyword="HitDamage" href="Hit_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0b97d234caf4565fc613ac13e9703c8949cfd19acba1a194d809ef36c6f9d03b">Hit</a></div><div class="explicitMod">Extra gore</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_defence.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Thorned Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You Reflect some Physical and Elemental Damage</div><div class="separator"></div><div class="explicitMod"><span class="secondary">elemental damage taken % to deal to attacker [18]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div><div class="explicitMod"><span class="secondary">physical damage taken % to deal to attacker [18]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_regen.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Replenishing Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You are regenerating Life and Mana</div><div class="separator"></div><div class="explicitMod">Regenerate <span class='mod-value'>10</span>% of maximum Mana per second</div><div class="explicitMod">Regenerate <span class='mod-value'>6.67</span>% of maximum Life per second</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_massive.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Enduring Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Life, Area of Effect, and Size</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>40</span>% increased maximum Life</div><div class="explicitMod"><span class='mod-value'>40</span>% increased Area of Effect</div><div class="explicitMod"><span class='mod-value'>30</span>% increased Character Size</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_defence.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Impenetrable Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Armour, Evasion and Energy Shield</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>100</span>% increased <a data-keyword="Armour" href="Armour" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a8bf9187643651455fe72c0b4c9c4db082a7ca0ec66762612f3461fd08ad0837">Armour</a></div><div class="explicitMod"><span class='mod-value'>100</span>% increased <a data-keyword="Evasion" href="Evasion" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c5bbc1c2b0404cfeccb99f617dff266b01b8d33cb0b52bd385db20b6263d77c9">Evasion Rating</a></div><div class="explicitMod"><span class='mod-value'>100</span>% increased maximum <a data-keyword="EnergyShield" href="Energy_Shield" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d99f27680354e4f7c9086f512012c87a51b5599de0729b39d2478dbeddf259e2">Energy Shield</a></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div><div class="explicitMod"><span class="secondary">monsters only old bad add % of total maximum life to base maximum energy shield [0]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_resistance.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Resistance Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have additional Resistance to Elemental Damage</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>+50</span>% to all <a data-keyword="ElementalDamage" href="Elemental_Damage_Types" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/8df8908f638b4b2e1f2cd32f5b39502689572384eba0ba1edd8cf390b58298b2">Elemental</a> <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/7cadf9f2ae60b28039bb5b7585b9cea60aa640e088891c3c271e7a76fc5a9a46">Resistances</a></div><div class="explicitMod"><span class='mod-value'>+10</span>% to all maximum Resistances</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_godmode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Divine Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You cannot be Damaged</div><div class="separator"></div><div class="explicitMod"><span class="secondary">base cannot be damaged [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_echoing.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Echoing Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Your skills are repeated.</div><div class="separator"></div><div class="explicitMod">[DNT-UNUSED]Skills hapenn an additional Time</div><div class="explicitMod"><span class="secondary">echoing shrine attack speed +% final [100]</span></div><div class="explicitMod"><span class="secondary">echoing shrine cast speed +% final [100]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_curses.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Hexing Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Your hits inflict random curses.</div><div class="separator"></div><div class="explicitMod">% chance to <a data-keyword="Curse" href="Curses" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/256c52a03e4317ef42989be8e6981ac041fb6d758420324c5182cb5d1027088f">Curse</a> Enemies with a random Hex on Hit</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_skeleton.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Skeletal Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Skeletons are summoned to you</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_smoke.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Shrouded Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Smoke shrouds you</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/ResonatingShrine.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Charged Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have a chance to gain a Power, Frenzy or Endurance Charge on Hit and on Kill, and gain extra bonuses from Charges.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>+4</span>% to all Elemental Resistances per Endurance Charge</div><div class="explicitMod"><span class='mod-value'>4</span>% increased <a data-keyword="Attack" href="Attacks" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/afeaef653e6688f0f04ce97d3d4208923be1a0bbac7cbbceb044ca816e084287">Attack</a> Speed per Frenzy Charge</div><div class="explicitMod"><span class='mod-value'>4</span>% additional Physical Damage Reduction per Endurance Charge</div><div class="explicitMod"><span class='mod-value'>40</span>% increased <a data-keyword="Critical" href="Critical_Hits" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCritical">Critical Hit</a> Chance per Power Charge</div><div class="explicitMod"><span class='mod-value'>60</span>% chance to gain a <a data-keyword="Charges" href="Charges" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCharges">Power</a>, <a data-keyword="Charges" href="Charges" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCharges">Frenzy</a>, or <a data-keyword="Charges" href="Charges" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCharges">Endurance Charge</a> on kill</div><div class="explicitMod"><span class='mod-value'>20</span>% chance to gain a Power, Frenzy or Endurance Charge on Hit</div><div class="explicitMod"><span class='mod-value'>5</span>% increased Damage per Endurance, Frenzy or Power Charge</div><div class="explicitMod"><span class="secondary">base cast speed +% per frenzy charge [4]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div><div class="explicitMod"><span class="secondary">object inherent damage +% final per frenzy charge [4]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_curses.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Gloom Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You gain a portion of Non-Chaos Damage as extra Chaos Damage and Enemies you Kill have a chance to Explode, dealing a portion of their Maximum Life as Chaos Damage. </div><div class="separator"></div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>10</span>% of Non-Chaos Damage as Extra Chaos Damage</div><div class="explicitMod">Enemies you kill have a <span class='mod-value'>40</span>% chance to explode, dealing a quarter of their maximum Life as <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/GreedShrinebuff.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Covetous Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Item Quantity and Rarity but take increased Damage</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>50</span>% increased <a data-keyword="ItemRarity" href="Item_Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FItemRarity">Rarity of Items</a> found</div><div class="explicitMod"><span class='mod-value'>15</span>% increased Quantity of Items found</div><div class="explicitMod"><span class='mod-value'>20</span>% increased Damage taken</div><div class="explicitMod"><span class="secondary" data-type="no_description">monster dropped item rarity +% [0]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/ShrineBrineKing.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Tsoagoth Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You cannot be Chilled, Frozen or Stunned. You take some Physical Damage as Cold Damage.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>100</span>% chance to Avoid being <a data-keyword="Chill" href="Chill" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FChill">Chilled</a></div><div class="explicitMod"><span class='mod-value'>100</span>% chance to Avoid being <a data-keyword="Freeze" href="Freeze" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FFreeze">Frozen</a></div><div class="explicitMod">Cannot be <a data-keyword="Stun" href="Stun" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/f1f5376a9946f13bda3cac47c7abc946e2e89a2bc96777b8fa47e000ca89181a">Stunned</a></div><div class="explicitMod"><span class='mod-value'>20</span>% of Physical Damage from Hits taken as Cold Damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/ShrineLunaris.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Lunaris Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Cold Damage, your skills chain additional times, you fire additional Projectiles, and you always avoid Projectiles.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>50</span>% increased <a data-keyword="Cold" href="Cold_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c08cb224ad1c3ec989de540a3673e0bf6bd6e30bd31cd27771035c3e735bb673">Cold</a> Damage</div><div class="explicitMod">Skills Chain <span class='mod-value'>+2</span> times</div><div class="explicitMod">Skills fire <span class='mod-value'>2</span> additional <a data-keyword="Projectile" href="Projectile" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/51b3a0d2df1893fbbe21f8ab340466d340e92537a9201bafd14921499ea9a462">Projectiles</a></div><div class="explicitMod">Avoid Projectiles</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/ShrineSolaris.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Solaris Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Fire Damage, always critically strike, take no extra damage from critical strikes and avoid all Elemental Ailments.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>50</span>% increased <a data-keyword="Fire" href="Fire_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a86a0ce7bc8ce7aab67e0e541b321e5fde9a6f80d4b0d749c922b03e43eb2b6b">Fire</a> Damage</div><div class="explicitMod"><span class='mod-value'>100</span>% chance to Avoid Elemental Ailments</div><div class="explicitMod">Take no Extra Damage from <a data-keyword="Critical" href="Critical_Hits" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCritical">Critical Hits</a></div><div class="explicitMod"><span class="secondary">always crit [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/ShrineArakali.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Arakaali Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Chaos Damage, gain some Physical and Elemental Damage as Extra Chaos Damage and take reduced damage from Damage Over Time.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>50</span>% increased <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> Damage</div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>15</span>% of <a data-keyword="Physical" href="Physical_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/36f3fa6c397930e99a7316febce91227393d487bf902e613dca033258fbc310d">Physical</a> Damage as extra <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> Damage</div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>15</span>% of Elemental Damage as Extra Chaos Damage</div><div class="explicitMod"><span class='mod-value'>100</span>% reduced Damage taken from Damage Over Time</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div><div class="explicitMod"><span class="secondary">hexproof [0]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_fire.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Meteoric Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Fire Damage and Meteors rain down around you.</div><div class="separator"></div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>50</span>% of Damage as Extra <a data-keyword="Fire" href="Fire_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a86a0ce7bc8ce7aab67e0e541b321e5fde9a6f80d4b0d749c922b03e43eb2b6b">Fire</a> Damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_lightning.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Tempest Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Lightning Damage and bolts strike the ground around you.</div><div class="separator"></div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>50</span>% of Damage as Extra <a data-keyword="Lightning" href="Lightning_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/eb6ca75edcaf5c59f4ee0d8a7bb16ed783e09f7a49a0ae80df88ea51cf71663b">Lightning</a> Damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_cold.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Freezing Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Cold Damage and freezing shards fire around you in a spiral.</div><div class="separator"></div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>50</span>% of Damage as Extra <a data-keyword="Cold" href="Cold_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c08cb224ad1c3ec989de540a3673e0bf6bd6e30bd31cd27771035c3e735bb673">Cold</a> Damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_skeleton.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Gloom Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Chaos Damage and slain enemies can explode dealing Chaos Damage based on their maximum Life.</div><div class="separator"></div><div class="explicitMod"><a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> <span class='mod-value'>25</span>% of Damage as Extra <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> Damage</div><div class="explicitMod">Enemies you kill have a <span class='mod-value'>100</span>% chance to explode, dealing a quarter of their maximum Life as <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_speed.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Acceleration Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Skill and Movement Speed.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>40</span>% increased Movement Speed</div><div class="explicitMod"><span class='mod-value'>60</span>% increased <a data-keyword="SkillSpeed" href="Skill_Speed" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/be3a12ca30227fd11b9e628c3de643d6158828feaa7c932aa96ccbfb6368313a">Skill Speed</a></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_godmode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Divine Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You cannot be Damaged.</div><div class="separator"></div><div class="explicitMod"><span class="secondary">base cannot be damaged [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/GreedShrinebuff.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Seeking Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Rarity of Items Found.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>100</span>% increased <a data-keyword="ItemRarity" href="Item_Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FItemRarity">Rarity of Items</a> found</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_massive.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Enduring Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have increased Life and Defences.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>50</span>% increased maximum Life</div><div class="explicitMod"><span class='mod-value'>100</span>% increased Global <a data-keyword="Armour" href="Armour" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/a8bf9187643651455fe72c0b4c9c4db082a7ca0ec66762612f3461fd08ad0837">Armour</a>, <a data-keyword="Evasion" href="Evasion" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c5bbc1c2b0404cfeccb99f617dff266b01b8d33cb0b52bd385db20b6263d77c9">Evasion</a> and <a data-keyword="EnergyShield" href="Energy_Shield" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/d99f27680354e4f7c9086f512012c87a51b5599de0729b39d2478dbeddf259e2">Energy Shield</a></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_regen.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Replenishing Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You are regenerating Life and Mana.</div><div class="separator"></div><div class="explicitMod">Regenerate <span class='mod-value'>10</span>% of maximum Mana per second</div><div class="explicitMod">Regenerate <span class='mod-value'>10</span>% of maximum Life per second</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_experience.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Enlightning Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You gain increased Experience.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>100</span>% increased Experience gain</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_smoke.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Greed Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">Monsters you kill only drop gold.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>100</span>% increased Quantity of Gold Dropped by Slain Enemies</div><div class="explicitMod"><span class="secondary">drop no equipment [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_resistance.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Resistance Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You have additional Resistance to Elemental Damage.</div><div class="separator"></div><div class="explicitMod"><span class='mod-value'>+50</span>% to all <a data-keyword="ElementalDamage" href="Elemental_Damage_Types" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/8df8908f638b4b2e1f2cd32f5b39502689572384eba0ba1edd8cf390b58298b2">Elemental</a> <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/7cadf9f2ae60b28039bb5b7585b9cea60aa640e088891c3c271e7a76fc5a9a46">Resistances</a></div><div class="explicitMod"><span class='mod-value'>+10</span>% to all maximum Resistances</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_critical.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Diamond Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">You always deal [Critical|Critical Hits].</div><div class="separator"></div><div class="explicitMod"><span class="secondary">always crit [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_curses.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Tainted Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">All item drops are Corrupted.</div><div class="separator"></div><div class="explicitMod"><span class="secondary">dropped items are corrupted [0]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div><div class="explicitMod"><span class="secondary">player found items are corrupted [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_fire.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Meteoric Shrine</div><div class="property">Duration: <span class='colourDefault'>60 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Fire Damage and Meteors rain down around you.</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_lightning.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Tempest Shrine</div><div class="property">Duration: <span class='colourDefault'>60 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Lightning Damage and bolts strike the ground around you.</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_cold.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Freezing Shrine</div><div class="property">Duration: <span class='colourDefault'>60 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Cold Damage and freezing shards fire around you in a spiral.</div><div class="separator"></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_skeleton.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Gloom Shrine</div><div class="property">Duration: <span class='colourDefault'>60 sec</span></div><div class="separator"></div><div class="implicitMod">You gain Damage as Chaos Damage and slain enemies can explode dealing Chaos Damage based on their maximum Life.</div><div class="separator"></div><div class="explicitMod">Enemies you kill have a <span class='mod-value'>100</span>% chance to explode, dealing a quarter of their maximum Life as <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> damage</div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="buff-icon-container buff-icon-type__Buff">
+    <div class="buff-icon-frame"></div>
+    <a>
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/BuffIcons/shrine_smoke.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div>Greed Shrine</div><div class="property">Duration: <span class='colourDefault'>45 sec</span></div><div class="separator"></div><div class="implicitMod">All Equipment found converted to other items.</div><div class="separator"></div><div class="explicitMod"><span class="secondary">drop no equipment [1]</span></div><div class="explicitMod"><span class="secondary">has shrine effect [1]</span></div></div></div></div></div>  </div></div><div id="ShrineRef" class="tab-pane fade"><div   class="card mb-2 ">
+   <h5 class="card-header">Shrine Ref /28 </h5> <div class="newItemPopup keywordPopups"><div   class="card mb-2 ">
+   <h5 class="card-header"><a href="Shrine">Shrine</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Shrines are Precursor Artifacts that empower monsters with its <a data-keyword="Presence" href="Presence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6149d6e11511715ec81a49d2676d8bdc1e56a3026fb844ee72cc4457474798c8">Presence</a> with various effects.<br />
+Defeat all the monsters <a data-keyword="ShrineMonster" href="Shrine_Worship" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrineMonster">Worshipping</a> the Shrine and interact with it to temporarily gain the power for yourself.</div></div>   </div></div>  <script>
+$(document).ready(function () {
+    filterClick($('input[name=filterZ7D3cUotgs]'));
+});
+</script>
+
+<form><div class="input-group my-2">
+    <button class="btn btn-outline-secondary" type="reset">Reset</button>
+    <input name="filterZ7D3cUotgs" class="form-control" placeholder="Search">
+</div></form><div class="row row-cols-1 row-cols-lg-2 g-2"><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="UniqueItems UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/24ce91e2f6d6b466a442deb4f68777581b3a982ac484324d1f62526231c4af9e" href="The_Hammer_of_Faith"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Weapons/TwoHandWeapons/TwoHandMaces/Uniques/HammerOfTheChurch.webp" alt="HammerOfTheChurch" class="w2" /></a></div><div class="flex-grow-1 ms-2"><div><a class="UniqueItem" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_UniqueItems_hover/24ce91e2f6d6b466a442deb4f68777581b3a982ac484324d1f62526231c4af9e" href="/us/The_Hammer_of_Faith"><span class="uniqueName">The Hammer of Faith</span> <span class="uniqueTypeLine">Giant Maul</span></a></div><div class="requirements">Requires:  <span class="colourDefault">Level 65</span>, <span class="colourDefault">114 Str</span></div><div class="explicitMod"><span class='mod-value'>(300<span class="ndash">—</span>350)</span>% increased <a data-keyword="Physical" href="Physical_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/36f3fa6c397930e99a7316febce91227393d487bf902e613dca033258fbc310d">Physical</a> Damage</div><div class="explicitMod"><span class='mod-value'>10</span>% reduced <a data-keyword="Attack" href="Attacks" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/afeaef653e6688f0f04ce97d3d4208923be1a0bbac7cbbceb044ca816e084287">Attack</a> Speed</div><div class="explicitMod"><span class='mod-value'>+10</span>% to all <a data-keyword="ElementalDamage" href="Elemental_Damage_Types" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/8df8908f638b4b2e1f2cd32f5b39502689572384eba0ba1edd8cf390b58298b2">Elemental</a> <a data-keyword="Resistances" href="Resistances" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FResistances">Resistances</a></div><div class="explicitMod"><span class='mod-value'>50</span>% increased Mana Regeneration Rate</div><div class="explicitMod">Every 10 seconds, gain a random non-damaging <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> buff for 20 seconds</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/4a565565f2a26e3405a4f1917f02d2371e7e2289e4e7bcbcda69907c232265fe" href="Omen_of_Answered_Prayers"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/Omens/VoodooOmens4Blue.webp" alt="VoodooOmens4Blue" class="w1" /></a></div><div class="flex-grow-1 ms-2"><a class="whiteitem Omen" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_BaseItemTypes_hover/4a565565f2a26e3405a4f1917f02d2371e7e2289e4e7bcbcda69907c232265fe" href="Omen_of_Answered_Prayers">Omen of Answered Prayers</a><div><div class="property">Stack Size: <span class='colourDefault'>1 / 10</span></div><div class="separator"></div><div class="explicitMod">While this item is active in your inventory the next<br />
+<a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> you click on will grant an additional Effect</div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Shrine_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/19d9b61e9b4825d2c91275edae3cfa65e72c0d7bb7bd838c64f171dd5a7b56c1">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/19d9b61e9b4825d2c91275edae3cfa65e72c0d7bb7bd838c64f171dd5a7b56c1" href="Shrine_Chance">Shrine Chance</a></div><div class="property">Quantity: <span class='colourDefault'>8</span></div><div class="separator"></div><div class="implicitMod"><span class='mod-value'>40</span>% increased chance of <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Favoured_Disciple" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/485940ea72d57a7d927fd63d1980a2f39b68d30f81b568bb8c3fa0239fe3f54e">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/Shrines.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/485940ea72d57a7d927fd63d1980a2f39b68d30f81b568bb8c3fa0239fe3f54e" href="Favoured_Disciple">Favoured Disciple</a></div><div class="implicitMod"><span class='mod-value'>50</span>% increased <a data-keyword="BuffEffect" href="Buff_Debuff_Effect" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBuffEffect">Effect</a> of <a data-keyword="Buff" href="Buffs" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBuff">Buffs</a> granted by <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Mystic_Guardians" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/33a56393540fc0f02973e7f5d319c98afb14e22440b66e4af6cb6795e08e97f0">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/Shrines.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/33a56393540fc0f02973e7f5d319c98afb14e22440b66e4af6cb6795e08e97f0" href="Mystic_Guardians">Mystic Guardians</a></div><div class="implicitMod"><span class='mod-value'>33</span>% chance for <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> <a data-keyword="ShrineMonster" href="Shrine_Worship" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrineMonster">Worshippers</a> to be <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Magic</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Seasonal_Blessing" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/334fb8a10ba0f3f69e1b3f0cd5fb6883a32c3bf5a5faa71ac737ec8687fb7cdd">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/Shrines.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/334fb8a10ba0f3f69e1b3f0cd5fb6883a32c3bf5a5faa71ac737ec8687fb7cdd" href="Seasonal_Blessing">Seasonal Blessing</a></div><div class="implicitMod"><span class='mod-value'>50</span>% increased Duration of <a data-keyword="Buff" href="Buffs" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBuff">Buffs</a> granted by <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Convenient_Beliefs" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/af857202fe1ae36c9fcb5af192881e6e7e10342df1aeab80c217f4e1d4139ad2">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/af857202fe1ae36c9fcb5af192881e6e7e10342df1aeab80c217f4e1d4139ad2" href="Convenient_Beliefs">Convenient Beliefs</a></div><div class="implicitMod"><a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> have <span class='mod-value'>10</span>% chance to be be <a data-keyword="ShrineMonster" href="Shrine_Worship" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrineMonster">Worshipped</a> by a <a data-keyword="RogueExile" href="Rogue_Exile" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRogueExile">Rogue Exile</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Fabled_Showdown" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/7a6c6c160941678528f9cf40ac0de215a54d75f311ec79b6a2f066d010146a2f">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/7a6c6c160941678528f9cf40ac0de215a54d75f311ec79b6a2f066d010146a2f" href="Fabled_Showdown">Fabled Showdown</a></div><div class="implicitMod">Gain a <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> bonus for <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Map Bosses</a></div><div class="separator"></div><div class="explicitMod"><ul><li><span class='mod-value'>25</span>% chance <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> Buffs are reapplied when entering the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Boss</a> arena</li><li><span class='mod-value'>25</span>% chance <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> Buffs are instead applied to the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Boss</a> when activated, granting an additional reward</li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Curious_Spirits" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/a3efe00497f393a5803491fa6da28dd2bec3c9e3f547ce2ba1050e34302a553d">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/a3efe00497f393a5803491fa6da28dd2bec3c9e3f547ce2ba1050e34302a553d" href="Curious_Spirits">Curious Spirits</a></div><div class="implicitMod"><a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> have a <span class='mod-value'>10</span>% chance to release an <a data-keyword="AzmeriSpirit" href="Azmeri_Spirit" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0f0d966bb726c365591e56a3ebb372b5e578f754d1ffcb1a487feababbec25d1">Azmeri Spirit</a>, the Shrine Buff is reapplied when it <a data-keyword="SpiritPossessed" href="Possessed" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FSpiritPossessed">Possesses</a> a monster</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Offerings_to_the_Unknown" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/0008f07940c9229d75d1a1b8fa5d8e771ae0d6a4303800b6ef2e94a50cecd82d">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/0008f07940c9229d75d1a1b8fa5d8e771ae0d6a4303800b6ef2e94a50cecd82d" href="Offerings_to_the_Unknown">Offerings to the Unknown</a></div><div class="implicitMod"><span class='mod-value'>20</span>% increased Rarity of Items Dropped <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> <a data-keyword="ShrineMonster" href="Shrine_Worship" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrineMonster">Worshippers</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_keystone ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Divined_Blessing" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d09e804c2f050b3b940e15e38a1f04cfeafacd6d0a83b82150b673f4ac7c6d8f">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/ShrinesNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/d09e804c2f050b3b940e15e38a1f04cfeafacd6d0a83b82150b673f4ac7c6d8f" href="Divined_Blessing">Divined Blessing</a></div><div class="implicitMod"><span class='mod-value'>100</span>% increased chance to encounter certain <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a></div><div class="separator"></div><div class="explicitMod"><ul><li><span class='mod-value'>100</span>% increased chance for <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> to be <a data-keyword="CovetousShrine" href="Seeking_Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FCovetousShrine">Seeking Shrines</a></li><li><span class='mod-value'>100</span>% increased chance for <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> to be <a data-keyword="EnlighteningShrine" href="Enlightening_Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FEnlighteningShrine">Enlightening Shrines</a></li><li><span class='mod-value'>100</span>% increased chance for <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> to be <a data-keyword="GloomShrine" href="Gloom_Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FGloomShrine">Gloom Shrines</a></li></ul></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Twice-Answered_Prayers" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/287199279cecf2eb55dac5ee8e1ab0982325a6fba9b3dfbb6015959125b2bed9">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/StrongboxNotable3.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/287199279cecf2eb55dac5ee8e1ab0982325a6fba9b3dfbb6015959125b2bed9" href="Twice-Answered_Prayers">Twice-Answered Prayers</a></div><div class="implicitMod"><span class='mod-value'>25</span>% chance for <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> to have an additional Effect</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Hope_in_Despair" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/3d5322b00d6d94044668a51a08d182303e5870c9e0f6e5fa6b0d6d941b0be994">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/CityBiome.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/3d5322b00d6d94044668a51a08d182303e5870c9e0f6e5fa6b0d6d941b0be994" href="Hope_in_Despair">Hope in Despair</a></div><div class="implicitMod">Faridun <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Cities</a> contain an additional <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Cult_of_the_Rains" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/fb26e8982c85afc2bd0bc3b205382f1284c4323e35d81b5bf048dfb5a70d7da3">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/WaterBiome.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/fb26e8982c85afc2bd0bc3b205382f1284c4323e35d81b5bf048dfb5a70d7da3" href="Cult_of_the_Rains">Cult of the Rains</a></div><div class="implicitMod"><a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> in <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Water</a> Areas are <a data-keyword="ShrineMonster" href="Shrine_Worship" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrineMonster">Worshipped</a> by an additional <a data-keyword="Pack" href="Pack" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FPack">Pack</a> of Monsters</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Water_Biome%3A_Shrine_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/a58a29e56234992d979dc9ce02c709d508884cce1ad4e00407ac0bccffb803a0">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/WaterBiomeNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/a58a29e56234992d979dc9ce02c709d508884cce1ad4e00407ac0bccffb803a0" href="Water_Biome%3A_Shrine_Chance">Water Biome: Shrine Chance</a></div><div class="implicitMod"><span class='mod-value'>60</span>% increased chance of <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> in <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Water</a> Areas</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Closer_to_the_Heavens" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/bea16f56f3e3d5f3da8cc54a255fbfcf6f69586dcf271efe048f8b14d4e9d9d2">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/MountainBiome.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/bea16f56f3e3d5f3da8cc54a255fbfcf6f69586dcf271efe048f8b14d4e9d9d2" href="Closer_to_the_Heavens">Closer to the Heavens</a></div><div class="implicitMod"><span class='mod-value'>60</span>% increased <a data-keyword="BuffEffect" href="Buff_Debuff_Effect" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBuffEffect">Effect</a> of <a data-keyword="Buff" href="Buffs" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBuff">Buffs</a> granted by <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> in <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Mountain</a> Areas</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_notable ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Favoured_Treasures" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/36d0bf64de6eacf5d40de49ccfa5828afd4d0d1907c6f06f285804332469679f">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/MountainBiome.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/36d0bf64de6eacf5d40de49ccfa5828afd4d0d1907c6f06f285804332469679f" href="Favoured_Treasures">Favoured Treasures</a></div><div class="implicitMod"><a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongboxes</a> in <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Mountain</a> Areas grant a random <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrine</a> <a data-keyword="Buff" href="Buffs" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBuff">Buff</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Mountain_Biome%3A_Shrine_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/e8a773e6d4821369b8f4e462c26bc457ba77c5f8fa996196133c0d527a12e37b">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/MountainBiomeNode.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/e8a773e6d4821369b8f4e462c26bc457ba77c5f8fa996196133c0d527a12e37b" href="Mountain_Biome%3A_Shrine_Chance">Mountain Biome: Shrine Chance</a></div><div class="implicitMod"><span class='mod-value'>60</span>% increased chance of <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a> in <a data-keyword="Biome" href="Biome" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FBiome">Mountain</a> Areas</div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Azmeri_Spirit_and_Shrine_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/99d05c9ac0f59c6274ead44cba4870964268096e736f3703d6bb935530c401b5">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/HybridShrineAzmeriSpirit.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/99d05c9ac0f59c6274ead44cba4870964268096e736f3703d6bb935530c401b5" href="Azmeri_Spirit_and_Shrine_Chance">Azmeri Spirit and Shrine Chance</a></div><div class="implicitMod"><span class='mod-value'>20</span>% increased chance of <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a></div><div class="implicitMod"><span class='mod-value'>20</span>% increased chance of <a data-keyword="AzmeriSpirit" href="Azmeri_Spirit" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0f0d966bb726c365591e56a3ebb372b5e578f754d1ffcb1a487feababbec25d1">Azmeri Spirits</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0">  <div class="passive-icon-container passive-icon-type__atlas_basic ">
+    <div class="passive-icon-frame"></div>
+    <a href="/us/Shrine_and_Strongbox_Chance" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ae02fc2f279389de9ebc4f56e023f8bdc9f804370283b5b0375b8275ef65bf90">
+      <img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/SkillIcons/passives/AtlasTrees/HybridStrongboxShrines.webp">
+    </a>
+  </div></div><div class="flex-grow-1 ms-2"><div><a class="PassiveSkills" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_PassiveSkills_hover/ae02fc2f279389de9ebc4f56e023f8bdc9f804370283b5b0375b8275ef65bf90" href="Shrine_and_Strongbox_Chance">Shrine and Strongbox Chance</a></div><div class="implicitMod"><span class='mod-value'>20</span>% increased chance of <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FShrine">Shrines</a></div><div class="implicitMod"><span class='mod-value'>20</span>% increased chance of <a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongboxes</a></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Unique_Map">Unique Map</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Contains a <a data-keyword="Rarity" href="Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FRarity">Unique</a> Map layout which may contain specialised rewards.<br />
+<br />
+Unique Maps cannot gain additional content, <a data-keyword="Essence" href="Essence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/7bd5b28e757706cf367e41144b0fced64f1afc088396a5574ef8f1bba258a4c5">Essences</a>, <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a>, or <a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongboxes</a>.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Map_Node">Map Node</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>This represents a Map. A <a data-keyword="Waystone" href="Waystones" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6967bef8f8e36673401bdc8734ca568f3658e345535c2de9861db9d98a3c6efa">Waystone</a> can be used to access it. <br />
+<br />
+If you fail to complete the Map, it may be attempted again but will not contain additional content, <a data-keyword="Essence" href="Essence" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FEssence">Essences</a>, <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a>, or <a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongboxes</a>. It will not be <a data-keyword="ContainsCorruption" href="Corruption" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/f49b0f663028b8753be0884bcb2e2cfa44798a3bdc828c5409c7ababd4ca279f">Corrupted</a>. <a data-keyword="Tablet" href="Tablets" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FTablet">Tablets</a> cannot be used on failed Maps.<br />
+<br />
+To complete a Map, defeat the <a data-keyword="MapBoss" href="Map_Boss" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FMapBoss">Boss</a>.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Extra_Content">Extra Content</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Random Extra Content is <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a>, <a data-keyword="Strongbox" href="Strongbox" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c7f67f991d57f05e9e51683379ddb7b0eda58df20cbf75d8af8b0da92b2814bc">Strongboxes</a>, <a data-keyword="Essence" href="Essence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/7bd5b28e757706cf367e41144b0fced64f1afc088396a5574ef8f1bba258a4c5">Essences</a>, <a data-keyword="RogueExile" href="Rogue_Exile" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/32b18ae23924d5645de8463a841a40a37fff14c35dc3745cf76679a33dd0f82d">Rogue Exiles</a>, <a data-keyword="AzmeriSpirit" href="Azmeri_Spirit" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/0f0d966bb726c365591e56a3ebb372b5e578f754d1ffcb1a487feababbec25d1">Azmeri Spirits</a> and <a data-keyword="StoneSummoningCircle" href="Summoning_Circle" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FStoneSummoningCircle">Summoning Circles</a>.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Seeking_Shrine">Seeking Shrine</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Seeking <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a> grant increased <a data-keyword="ItemRarity" href="Item_Rarity" class="KeywordPopups" data-hover="?s=Data%5CKeywordPopups%2FItemRarity">Rarity</a> of Items Found.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Enlightening_Shrine">Enlightening Shrine</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Enlightening <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a> cause you to gain increased Experience.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Gloom_Shrine">Gloom Shrine</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Gloom <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a> cause you to <a data-keyword="Gain" href="Damage_Gained_as_extra_X" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/9e01a778f74fa4de8b7499cc6f94b4c9c87190c0ab9ee436bb1f99cb1aca9094">Gain</a> Damage as Extra <a data-keyword="Chaos" href="Chaos_Damage" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/c4d0a312c6392b99dc0957571efdf613cfd748d469dd7f570bc130fff5f9257d">Chaos</a> Damage and slain enemies can explode dealing Chaos Damage based on their maximum Life.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Greed_Shrine">Greed Shrine</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div>Greed <a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a> cause item drops to be converted to Gold and monsters to drop increased Gold.</div></div>   </div></div></div></div></div><div class="col"><div class="d-flex border-top rounded"><div class="flex-shrink-0"></div><div class="flex-grow-1 ms-2"><div class="text-center keywordPopups"><div   class=" mb-2 ">
+   <h5 class="card-header"><a href="Shrine_Worship">Shrine Worship</a></h5>  <div class="card-body"><div class="keyword-body"><div class="ItemRareSeparator"></div><a data-keyword="Shrine" href="Shrine" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/fe08097867b3fe5ab2e77432823b8a96f6e265030e699f882302ba25e6ec662f">Shrines</a> are found with multiple packs of monsters Worshipping the Shrine.<br />
+<br />
+Other monsters may be affected by the Shrine's <a data-keyword="Presence" href="Presence" class="KeywordPopups" data-hover="https://cdn.poe2db.tw/cache2/us/Poe_Data_KeywordPopups_hover/6149d6e11511715ec81a49d2676d8bdc1e56a3026fb844ee72cc4457474798c8">Presence</a> but do not count as Worshippers.</div></div>   </div></div></div></div></div></div>  </div></div><div id="Shrine_Markdown4" class="tab-pane fade"><div class="card"><h4 class="card-header" data-tabname="Community Wiki">Community Wiki</h4></div><div class="card mb-1">
+    <div class="card-body markdown-body">
+        <a class="btn btn-primary float-end" href='/us/marked?id=Shrine' data-i18n="ClientStrings|HideoutEditControlEdit|Name">Edit</a>
+        <div id="markContent"><h1 id="shrine">Shrine</h1>
+<p>There are also all kinds of other random encounters you might run into as you play maps. One such encounter are Precursor Artifacts.</p>
+<p>These are ancient, corrupting monuments that irradiate the monsters around them. The monsters that feed off corruption are drawn to their power.</p>
+<p>If you defeat the monsters and cleanse the artifacts, you will get a powerful temporary buff. </p>
+<p>Some of the buffs make you faster, others rain lightning or fire around you,
+and some even give you increased experience or help you find better items. </p>
+</div>
+        <div><hr style='border-top: 1px solid white'>Wikis Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a> unless otherwise noted.</div>
+    </div>
+</div>
+<script>
+$(function() {
+    lightbox_panel();
+});
+</script>
+</div></div>
+
+<footer class="ccontainer text-center text-lg-left">
+  <div class="card p-4">
+    <div class="row">
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sites</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+          <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+          <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+          <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">News</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="news">GGG Tracker</a> </li>
+          <li> <a href="League#ConcurrentPlayers">Concurrent Players</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Site</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="privacy">Privacy</a> </li>
+          <li> <a href="General_disclaimer">Disclaimers</a> </li>
+          <li> <a href="patreon">Patreon</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Community</h5>
+        <ul class="list-unstyled mb-0">
+
+
+
+          <li><a target="_blank" href="https://www.reddit.com/user/chuanhsing">/u/chuanhsing</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright &copy; 2014-2026 PoE2DB.
+  </div>
+</footer>
+
+<div style=""></div>
+<div class="clearfix"></div><div id="bottom_banner"></div><script>topbanner970("bottom_banner");</script>
+    </div>
+    </div>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+<script>
+ $(document).ready(function()
+ {
+    if (window.location.hostname != "poedb.tw" && window.location.hostname != "poe2db.tw") {
+        window.location.href="https://poedb.tw/";
+    }
+ });
+</script>
+    <script src="https://cdn.poe2db.tw/js/poedb_footer.43e536bf51dca9e4.js"></script>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"369404df4026486bb42f428b903a2162","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

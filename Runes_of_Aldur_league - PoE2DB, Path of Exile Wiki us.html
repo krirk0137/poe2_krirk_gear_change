@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="us" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Runes_of_Aldur_league - PoE2DB, Path of Exile Wiki us</title>
+    <meta name="description" content="path of exile is simply a tool to test your path of building creation">
+    <link rel="alternate" hreflang="en" href="https://poe2db.tw/us/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://poe2db.tw/tw/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://poe2db.tw/cn/" />
+        <link href="/favicon2.png" rel="shortcut icon" >
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css" integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/css/jquery.dataTables.min.css" integrity="sha512-1k7mWiTNoyx2XtmI96o+hdjP8nn0f3Z2N4oF/9ZZRgijyV4omsKOXEnqL1gKQNPy2MTSP9rIEWGcH/CInulptA==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-5-theme/1.3.0/select2-bootstrap-5-theme.min.css" integrity="sha512-z/90a5SWiu4MWVelb5+ny7sAayYUfMmdXKEAbpj27PfdkamNdyI3hcjxPxkOPbrXoKIm7r9V2mElt5f1OtVhqA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy.min.css" integrity="sha512-HbPh+j4V7pXprvQMt2dtmK/zCEsUeZWYXRln4sOwmoyHPQAPqy/k9lIquKUyKNpNbDGAY06UdiDHcEkBc72yCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.min.css" integrity="sha512-OkYLbkJ4DB7ewvcpNLF9DSFmhdmxFXQ1Cs+XyjMsMMC94LynFJaA9cPXOokugkmZo6O6lwZg+V5dwQMH4S5/3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/css/modal-video.min.css" integrity="sha256-nd8IBqNn9uqwZKfZcLIXQcNxk5TjqrxiLx7PzN5PFW0=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" integrity="sha256-auPoJwk/+RK6KSkib92Dkq1Y5hEkZvKtvSwucs15Skg=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video-js.min.css" integrity="sha512-J3tx4ssoARFr4U9VmZmQe2q672q0jUeYizJW3vglkOBTlQ/N6kF3eVqZZzaey/TdIXH69s3HYe2nQwyxK/Emzw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <link rel="stylesheet" href="https://cdn.poe2db.tw/css/stdtheme.4bd5d8b8acf8ae5a.css" />
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js" integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js" integrity="sha512-qzgd5cYSZcosqpzpn7zF2ZId8f/8CHmFKZ8j7mU4OUXTNRd5g+ZHBPsgKEwoqxCtdQvExE5LprwwPAgoicguNg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js" integrity="sha256-Ikk5myJowmDQaYVCUD0Wr+vIDkN8hGI58SGWdE671A8=" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/datatables/1.10.21/js/jquery.dataTables.min.js" integrity="sha512-BkpSL20WETFylMrcirBahHfSnY++H2O1W+UnEEO4yNIl+jI2+zowyoGJpbtk6bx97fBXf++WJHSSK2MV4ghPcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.full.min.js" integrity="sha512-RtZU3AyMVArmHLiW0suEZ9McadTdegwbgtiQl5Qqo9kunkVg1ofwueXD8/8wv3Af8jkME3DDe3yLfR8HSJfT2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tippy.js/6.3.7/tippy-bundle.umd.min.js" integrity="sha512-gbruucq/Opx9jlHfqqZeAg2LNK3Y4BbpXHKDhRC88/tARL/izPOE4Zt2w6X9Sn1UeWaGbL38zW7nkL2jdn5JIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/3.0.1/marked.min.js" integrity="sha512-VUuO/d6MS7hXmiFGEj7HtUa2FCI6Ll+xPvX9yX3bxn7ZqDWwleqXa8dtW13brbZ1ld2jiTrv8hWbpfp4B5mi4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.2.1/sweetalert2.all.js" integrity="sha512-A7LzqKE/pm9ofgS0Lxu7qroQS5SkKJQaYJkJ/66nQiWZfEdeGlBq5zEXQ63VRmXZK8zPpCgFf2WQJIAljI0Vdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/modal-video@2.4.6/js/modal-video.min.js" integrity="sha256-VqINwNxkS4VEDMq5O52YTckX+Mx84X6bafO8NxF21Xw=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js" integrity="sha256-DiHJ7hbvMejsMyP76bpVWacb5HSHQ2sQlrJV8n7KEvA=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/echarts.min.js" integrity="sha512-4/g9GAdOdTpUP2mKClpKsEzaK7FQNgMjq+No0rX8XZlfrCGtbi4r+T/p5fnacsEC3zIAmHKLJUL7sh3/yVA4OQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/6.0.0/theme/dark.min.js" integrity="sha512-3Zm64ayK7DflnnyO2pKkLJX3v9Sb90mvahbwPUuMzEf42HI6k8tquIx5VsNBjEWAcYJWzvimbqnTkLl2QdCUmw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/8.19.1/video.min.js" integrity="sha512-48NkCweTzA9u2sP4GgKcEDm6IScPIMga142ipKFNcHfz7feUJXDJxO1jwc2l+5MvWfwMj4BDfQv8WIMhrPxZLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.2.1/mustache.min.js" integrity="sha512-Qjrukx28QnvFWISw9y4wCB0kTB/ISnWXPz5/RME5o8OlZqllWygc1AB64dOBlngeTeStmYmNTNcM6kfEjUdnnQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js" integrity="sha512-7O5pXpc0oCRrxk8RUfDYFgn0nO1t+jLuIOQdOMRp4APB7uZ4vSjspzp5y6YDtDs4VzUSTbWzBFZ/LKJhnyFOKw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="sha512-JRlcvSZAXT8+5SQQAvklXGJuxXTouyq8oIMaYERZQasB8SBDHZaUbeASsJWpk0UUrf89DP3/aefPPrlMR1h1yQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pako/2.1.0/pako.min.js" integrity="sha512-g2TeAWw5GPnX7z0Kn8nFbYfeHcvAu/tx6d6mrLe/90mkCxO+RcptyYpksUz35EO337F83bZwcmUyHiHamspkfg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script src="https://cdn.poe2db.tw/js/ModsView.ccf47bc9016c7baf.js"></script>
+        <script src="https://cdn.poe2db.tw/js/poedb_header.3abb375410f4ddc6.js"></script>
+    
+    <script data-cfasync="false">window.nitroAds=window.nitroAds||{createAd:function(){return new Promise(e=>{window.nitroAds.queue.push(["createAd",arguments,e])})},addUserToken:function(){window.nitroAds.queue.push(["addUserToken",arguments])},queue:[]};</script>
+    <script data-cfasync="false" async src="https://s.nitropay.com/ads-2013.js"></script>
+
+    <meta property="og:site_name" content="poe2db.tw">
+
+  </head>
+
+  <body>
+
+    <div id="consent-box" style="display:none">
+      <button onclick="window.__cmp('showModal');">
+        Update cookie preferences
+      </button>
+    </div>
+    
+    <script>
+      if (window["nitroAds"] && window["nitroAds"].loaded) {
+        document.getElementById("consent-box").style.display = window["__tcfapi"]
+          ? ""
+          : "none";
+      } else {
+        document.addEventListener(
+          "nitroAds.loaded",
+          () =>
+            (document.getElementById("consent-box").style.display = window["__tcfapi"]
+              ? ""
+              : "none")
+        );
+      }
+    </script>
+
+
+    <div class="background-image item-popup--poe2"></div>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6598Z863E2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6598Z863E2');
+</script>
+
+
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <div class="container">
+            <a class="navbar-brand fw-bold" href="/us/">PoE2<span class='brand-suffix'>DB</span><sub></sub></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+              <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Items" data-i18n="ClientStrings|UIOptionsSectionTitleItems|Name">Item</a></li>
+                    <li><a class="dropdown-item" href="/us/Unique_item" data-i18n="ClientStrings|ItemDisplayStringUnique|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/Reforging_Bench" data-i18n="ClientStrings|RecipeBenchTitle|Name"></a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Gem" data-i18n="ClientStrings|ItemDisplayStringGem|Name">Gem</a></li>
+                    <li><a class="dropdown-item" href="/us/Skill_Gems" data-i18n="ItemClasses|Active Skill Gem|Name">Skill Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Support_Gems" data-i18n="ItemClasses|Support Skill Gem|Name">Support Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Spirit_Gems" data-i18n-tw="精神寶石">Spirit Gems</a></li>
+                    <li><a class="dropdown-item" href="/us/Lineage_Supports" data-i18n="KeywordPopups|LineageSupports|Name">Lineage Supports</a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="themes">
+                    <li><a class="dropdown-item" href="/us/Modifiers" data-i18n="ClientStrings|ExpeditionModsTitle|Name">Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Desecrated_Modifiers" data-i18n="KeywordPopups|Abyssalify|Name">Desecrated Modifiers</a></li>
+                    <li><a class="dropdown-item" href="/us/Keywords" data-i18n-tw="提示字">Keywords</a></li>
+                    <li><a class="dropdown-item" href="/us/Crafting" data-i18n="ClientStrings|CraftingWindowTitle|Name">Crafting</a></li>
+                    <li><a class="dropdown-item" href="/us/Liquid_Emotions" data-i18n="KeywordPopups|DistilledEmotion|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/us/Quest" data-i18n="ClientStrings|ItemDisplayStringQuest|Name">Quest</a></li>
+                    <li><a class="dropdown-item" href="/us/Ascendancy_class" data-i18n="ClientStrings|TutorialPanelAscendancies|Name">Ascendancy Classes</a></li>
+                    <li><a class="dropdown-item" href="/us/passive-skill-tree/" data-i18n="ClientStrings|ActionOpenPassivePanel|Name">Passive Skill Tree</a></li>
+                    <li><a class="dropdown-item" href="/us/Act" data-i18n-tw="章節">Act</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="/us/Waystones" data-i18n="ItemClasses|Map|Name">Waystones</a></li>
+                    <li><a class="dropdown-item" href="/us/Endgame" data-i18n="Acts|Endgame|Name"></a></li>
+                    <li><a class="dropdown-item" href="/us/atlas-skill-tree/" data-i18n="ClientStrings|ActionOpenAtlasPassivesScreen|Name"></a></li>
+                  </ul>
+                </li>
+    
+                <li class="nav-item"><a class="nav-link" href="Economy" data-i18n-tw="經濟" data-i18n-cn="经济">Economy</a></li>
+    
+                <li class="nav-item"><a class="ms-4 nav-link  bg-warning rounded-circle" style="color: white" href="/us/patreon">Patreon</a></li>
+              </ul>
+    
+    
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" aria-current="page" href="https://poedb.tw/us/">PoE<span class="brand-suffix">DB</span></a>
+                </li>
+    
+                <li class="nav-item dropdown">
+                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="fas fa-language fa-lg"></i> <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a class="dropdown-item" href="/tw/Runes_of_Aldur_league">TW 繁體中文</a></li>
+                    <li><a class="dropdown-item" href="/cn/Runes_of_Aldur_league">CN 简体中文</a></li>
+                    <li><a class="dropdown-item" href="/us/Runes_of_Aldur_league">US English</a></li>
+                    <li><a class="dropdown-item" href="/kr/Runes_of_Aldur_league">KR 한국어</a></li>
+                    <li><a class="dropdown-item" href="/jp/Runes_of_Aldur_league">JP Japanese</a></li>
+                    <li><a class="dropdown-item" href="/ru/Runes_of_Aldur_league">RU Русский</a></li>
+                    <li><a class="dropdown-item" href="/pt/Runes_of_Aldur_league">PO Português</a></li>
+                    <li><a class="dropdown-item" href="/th/Runes_of_Aldur_league">TH ภาษาไทย</a></li>
+                    <li><a class="dropdown-item" href="/fr/Runes_of_Aldur_league">FR Français</a></li>
+                    <li><a class="dropdown-item" href="/de/Runes_of_Aldur_league">DE Deutsch</a></li>
+                    <li><a class="dropdown-item" href="/sp/Runes_of_Aldur_league">ES Spanish</a></li>
+                  </ul>
+                </li>
+              </ul>
+    
+            <form class="form-inline my-2 my-lg-0" role="search" action="search">
+              <input type="hidden" name="token" value="df3da3f1a7fa7ea59a799f47278890b9fd9cc6279a12094cb449d95da05cf8fb2a53eb">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" id="navautosearch">
+            </form>
+    
+            </div><!--/.nav-collapse -->
+          </div><!--/.container-fluid -->
+        </nav>
+    </header>
+
+<script>sidebar160("leftside_banner", "left");</script>
+<script>sidebar160("rightside_banner", "right");</script>
+
+
+
+    <div class="page poe2">
+    <div class="page-content theme-showcase container" role="main">
+
+
+<div class="card mb-2" id="head_toolbar" style="background: transparent">
+  <div class="card-body p-1">
+    <div class="league_bar text-center">
+      <a href="Runes_of_Aldur_league" data-bs-toggle="tooltip" title="Runes of Aldur v0.5" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Expedition2RemnantActive.webp" alt="Expedition2RemnantActive" class="league_minimap" /></span></a><a href="Atziris_Temple" data-bs-toggle="tooltip" title="Atziri v0.4" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/IncursionAtziriActive.webp" alt="IncursionAtziriActive" class="league_minimap" /></span></a><a href="Waystones" data-bs-toggle="tooltip" title="Waystones" data-hover="?s=Data%5CKeywordPopups%2FWaystone"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2ditems/maps/endgamemaps/endgamemap1.webp" class="league_minimap"/></a><a href="Shrine" data-bs-toggle="tooltip" title="Shrine" data-hover="?s=Data%5CKeywordPopups%2FShrine"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Shrine.webp" alt="Shrine" class="league_minimap" /></span></a><a href="Strongbox" data-bs-toggle="tooltip" title="Strongbox" data-hover="?s=Data%5CKeywordPopups%2FStrongbox"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Strongbox.webp" alt="Strongbox" class="league_minimap" /></span></a><a href="Essence" data-bs-toggle="tooltip" title="Essence" data-hover="?s=Data%5CKeywordPopups%2FEssence"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/Essence.webp" alt="Essence" class="league_minimap" /></span></a><a href="Archnemesis" data-bs-toggle="tooltip" title="Archnemesis" ><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RareMonsterAlive.webp" alt="RareMonsterAlive" class="league_minimap" /></span></a><a href="Azmeri_Spirit" data-bs-toggle="tooltip" title="Azmeri Spirit v0.2" data-hover="?s=Data%5CKeywordPopups%2FAzmeriSpirit"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/SpiritActivated.webp" alt="SpiritActivated" class="league_minimap" /></span></a><a href="Rogue_Exile" data-bs-toggle="tooltip" title="Rogue Exile" data-hover="?s=Data%5CKeywordPopups%2FRogueExile"><span class="MinimapIcons"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/minimap/player/RogueExile.webp" alt="RogueExile" class="league_minimap" /></span></a><a href="Map_Boss" data-bs-toggle="tooltip" title="Map Boss" data-hover="?s=Data%5CKeywordPopups%2FMapBoss"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentMapBoss.webp" class="league_minimap"/></a><a href="Precursor_Towers" data-bs-toggle="tooltip" title="Precursor Towers" data-hover="?s=Data%5CKeywordPopups%2FPrecursorTower"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/MapLegend/LostTower.webp" class="league_minimap"/></a><a href="Corrupted_Nexus" data-bs-toggle="tooltip" title="Corrupted Nexus" data-hover="?s=Data%5CKeywordPopups%2FCorruptedNexus"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/AtlasScreen/AtlasIconContent/AtlasIconContentCorruptionNexusNoGrowth.webp" class="league_minimap"/></a><a href="Abyss" data-bs-toggle="tooltip" title="Abyss v0.3" data-hover="?s=Data%5CKeywordPopups%2FContainsAbyss"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/textures/interface/2d/2dart/uiimages/ingame/worldmap/mapbuttonabysshub.webp" class="league_minimap"/></a><a href="Breach" data-bs-toggle="tooltip" title="Breach" data-hover="?s=Data%5CKeywordPopups%2FContainsBreach"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentbreach.webp" class="league_minimap"/></a><a href="Ritual" data-bs-toggle="tooltip" title="Ritual" data-hover="?s=Data%5CKeywordPopups%2FContainsRitual"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentritual.webp" class="league_minimap"/></a><a href="Delirium" data-bs-toggle="tooltip" title="Delirium" data-hover="?s=Data%5CKeywordPopups%2FContainsDelirium"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentdelirium.webp" class="league_minimap"/></a><a href="Expedition" data-bs-toggle="tooltip" title="Expedition" data-hover="?s=Data%5CKeywordPopups%2FContainsExpedition"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/atlasscreen/atlasiconcontent/atlasiconcontentexpedition.webp" class="league_minimap"/></a><a href="The_Burning_Monolith" data-bs-toggle="tooltip" title="The Burning Monolith" data-hover="?s=Data%5CKeywordPopups%2FTheBurningMonoilth"><img loading="lazy" src="https://cdn.poe2db.tw/image/art/2dart/uiimages/ingame/maplegend/monolith.webp" class="league_minimap"/></a><a href="Trial_of_the_Sekhemas" data-bs-toggle="tooltip" title="Trial of the Sekhemas" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonSanctum.webp" class="league_minimap"/></a><a href="The_Trial_of_Chaos" data-bs-toggle="tooltip" title="The Trial of Chaos" data-hover="?s=Data%5CKeywordPopups%2FAscendancyPoints"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DArt/UIImages/InGame/WorldMap/MapButtonUltimatum.webp" class="league_minimap"/></a>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="topbanner970"></div><script>topbanner970("topbanner970");</script>
+
+<div class="card"><h4 class="card-header" data-tabname="Community Wiki">Community Wiki</h4></div><div class="card mb-1">
+    <div class="card-body markdown-body">
+        <a class="btn btn-primary float-end" href='/us/marked?id=Runes_of_Aldur_league' data-i18n="ClientStrings|HideoutEditControlEdit|Name">Edit</a>
+        <div id="markContent"><h1 id="runes-of-aldur">Runes of Aldur</h1>
+<ul>
+<li>New League: <a href='Runes_of_Aldur'>Runes of Aldur</a><ul>
+<li>Uncover Ezomyte Remnants</li>
+<li>160+ New Crafting Runes</li>
+<li>25+ New Kalguur Skills</li>
+<li>Explore the Uncharted Seas</li>
+</ul>
+</li>
+<li>5 New Endgame Storylines<ul>
+<li>The Origins of Divinity</li>
+<li><a href="Masters_of_the_Atlas">Masters of the Atlas</a></li>
+<li>Delirium - The Hare &amp; the Raven</li>
+<li>Breach - Walking the Dreamer</li>
+<li>Ritual - Rite of the Nameless</li>
+</ul>
+</li>
+<li>Extra<ul>
+<li>Abyss</li>
+<li><a class="WorldAreas " data-hover="?s=Data%5CWorldAreas%2FIncursionTemple" href="/us/Atziris_Temple">Atziri&#39;s Temple</a></li>
+<li>Patriarch and Matriarch</li>
+<li>Enigma Chambers</li>
+</ul>
+</li>
+<li>2 New Ascendancy Classes<ul>
+<li><a class="Huntress" data-hover="?s=Data%5CAscendancy%2FHuntress2" href="/us/Spirit_Walker">Spirit Walker</a></li>
+<li><a class="Monk" data-hover="?s=Data%5CAscendancy%2FMonk1" href="/us/Martial_Artist">Martial Artist</a></li>
+</ul>
+</li>
+<li>and Much More!<ul>
+<li>15 New Bosses &amp; Pinnacles</li>
+<li>New 400+ Node Atlas Tree</li>
+<li>40+ New Unique Items</li>
+<li>Build Planner</li>
+<li>In-game trade query, Atlas search, market price checker, and the Fragment Stash Tab</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-origins-of-divinity">The Origins of Divinity</h2>
+<h5 id="return-of-the-ancients">Return of the Ancients</h5>
+<p>Wraeclast lies in ruin after a devastating cataclysm, consumed by a creeping corruption that gnaws at all it touches. Guided by Doryani, the Vaal thaumaturge, you must seek out the makers of the Third Edict, the Precursors, and uncover what path remains.</p>
+<p>Reach the fortress by traversing forsaken maps, and unseal its ancient gates.</p>
+<h5 id="exploring-the-fortress">Exploring the Fortress</h5>
+<p>Beyond the walls lies more than first meets the eye. The fortress holds many paths to explore and many new things to find. Power up ancient machines, fight new and deadly foes, discover new depths, and uncover dark secrets buried deep within.</p>
+<p>Lose 1 portal per 2 mods on a Waystones, so 6 mod maps should have 3 portals.</p>
+<p>New Legends</p>
+<ul>
+<li>Crystalised Twinning: Essence Packs in Area contain an additional Rare Monster</li>
+<li>Essence Trove: All Rare monster are Essence monsters</li>
+<li>Twinned Terrors: Summoning Circles always summon an additional Boss</li>
+<li>Hunting Grounds: Contains 2 additional Rogue Exiles and 5 additional Rare Beasts</li>
+<li>Magic Hordes: All Monsters are at least Magic</li>
+<li>Nature Shrines: Shrines release an Azmeri Spirit when activated</li>
+</ul>
+<h5 id="reshaped-atlas-tree">Reshaped Atlas Tree</h5>
+<p>In Return of the Ancients, we have significantly reworked and upgraded the Atlas Passive Tree. With nodes that combine mechanics in new ways and many providing multiple choices, you can customise your Atlas like never before.</p>
+<h5 id="behold-the-first-edict">Behold the First Edict</h5>
+<p>Should you press onward to the fortress’s heart... a mighty foe awaits.</p>
+<h2 id="delirium---the-raven-and-the-hare">Delirium - The Raven and the Hare</h2>
+<p>An ancient trickster god has been unleashed, spreading madness across Wraeclast. Do you dare to uncover his origins and confront your darkest fears?</p>
+<p>The entity of Delirium, the Strange Voice, has grown in power. A new progression system now measures how far you descend into the fog, with danger and madness intensifying as you venture deeper into the Withered Willow.</p>
+<p>Encounter warped reflections of reality alongside nightmarish foes. Those who endure will uncover potent new rewards, as well as deeper, more perilous layers of the Delirium.</p>
+<h5 id="enter-the-distortion">Enter the Distortion</h5>
+<p>Consuming a Strange Fruit draws a pall of fog across the Atlas, its shroud thickening with each step forward. In time, this descent gives rise to a Simulacrum, a twisted echo of one&#39;s memory.</p>
+<p>Overcome the insanity to earn passage to the Raven Trickster’s domain.</p>
+<h5 id="improved-rewards">Improved Rewards</h5>
+<p>Distilled Emotions are powerful Delirium rewards that, in Return of the Ancients, can be used in two ways: to instill notable passive buffs onto amulets, and to craft specific mods onto jewels.</p>
+<p>Each emotion can provide modifiers such as critical strike chance, movement speed, and many more valuable stats to jewels.</p>
+<ul>
+<li><a class="item_currency StackableCurrency" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FDistilledEmotionTimeLost4" href="Ancient_Liquid_Paranoia"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/DistilledEmotions/TimelostDistilledParanoia.webp" alt="TimelostDistilledParanoia" height="16" />Ancient Liquid Paranoia</a></li>
+<li><a class="item_currency StackableCurrency" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FEndgameDistilledEmotion1" href="Potent_Liquid_Melancholy"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/DistilledEmotions/UniqueHumansEmotion.webp" alt="UniqueHumansEmotion" height="16" />Potent Liquid Melancholy</a></li>
+<li><a class="item_currency StackableCurrency" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FDistilledEmotion9" href="Concentrated_Liquid_Suffering"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/DistilledEmotions/ConcentratedDistilledSuffering.webp" alt="ConcentratedDistilledSuffering" height="16" />Concentrated Liquid Suffering</a></li>
+<li><a class="item_currency StackableCurrency" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FDistilledEmotion10" href="Concentrated_Liquid_Isolation"><img loading="lazy" src="https://cdn.poe2db.tw/image/Art/2DItems/Currency/DistilledEmotions/ConcentratedDistilledIsolation.webp" alt="ConcentratedDistilledIsolation" height="16" />Concentrated Liquid Isolation</a></li>
+<li><a class="whiteitem Amulet" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FAmulets%2FFourAmuletDelirium1" href="Twisted_Amulet">Twisted Amulet</a></li>
+</ul>
+<p>New Liquid Recipes</p>
+<ul>
+<li>Storm&#39;s Rebuke: Fully Broken Armour you inflict also increases Cold and Lightning Damage Taken from Hits</li>
+<li>Kaom&#39;s Blessing: The next Fire Spell you cast yourself using a Warcry is Ancestrally Boosted</li>
+<li>Augmented Flesh: Grants 2 additional Skill Slots</li>
+</ul>
+<h5 id="face-the-madness">Face the Madness</h5>
+<p>After conquering the Simulacrum, you earn the right to stand before Tangmazu. Once the questline is complete, Grand Mirrors will begin to surface across the Atlas. Through them, Tangmazu may be challenged anew, yielding ever more coveted relics to those who tread the path again.</p>
+<ul>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FThe+Raven%27s+Flock" href="The_Ravens_Flock">The Raven&#39;s Flock</a></li>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FHorror%27s+Flight" href="Horrors_Flight">Horror&#39;s Flight</a></li>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FVoices" href="Voices">Voices</a></li>
+</ul>
+<h2 id="breach---waking-the-dreamer">Breach - Waking the Dreamer</h2>
+<p>The Hiveborn are grotesque creatures from a strange realm, seeking to break free and overrun another. Ailith and the Keepers of the Flame have held them at bay, but their strength wanes as the Hiveborn multiply, forcing Ailith to call upon Exiles to take up the fight.</p>
+<h5 id="annihilate-breaches">Annihilate Breaches</h5>
+<p>Encountering a Breach will now display an indicator, extending the encounter time as enemies within it are slain. Resist the invasion long enough to stabilise the Breach and face the toughest miscreations the Hiveborn have to offer.</p>
+<h5 id="genesis-tree-crafting">Genesis Tree Crafting</h5>
+<p>Behold the Genesis Tree, a vital asset in the war effort, stolen from the enemy and gifted to the Keepers by the Dreamer himself.</p>
+<p>Fertilise the tree with Hiveblood harvested from slain Hiveborn abominations to unlock its vast crafting potential. Control what grows upon its branches to access new jewelry base types with powerful modifiers unavailable anywhere else.</p>
+<ul>
+<li><a class="whiteitem BrequelFruit" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FBrequel%2FFruitCurrency" href="Lavish_Wombgift">Lavish Wombgift</a></li>
+<li><a class="whiteitem BrequelFruit" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FBrequel%2FFruitAmulet" href="Ornate_Wombgift">Ornate Wombgift</a></li>
+<li><a class="whiteitem BrequelFruit" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FBrequel%2FFruitBreachstone" href="Revelatory_Wombgift">Revelatory Wombgift</a></li>
+<li><a class="whiteitem BrequelFruit" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FBrequel%2FFruitBelt" href="Banded_Wombgift">Banded Wombgift</a></li>
+<li><a class="whiteitem BrequelFruit" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FBrequel%2FFruitRing" href="Signet_Wombgift">Signet Wombgift</a></li>
+<li><a class="whiteitem Breachstone" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FMapFragments%2FCurrencyBreachFragment" href="Breachstone">Breachstone</a></li>
+<li>Ruby Catalyst</li>
+<li>Quartz Catalyst</li>
+<li>Tourmaline Catalyst</li>
+<li>Nephrite Catalyst</li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRingB1" href="Biostatic_Ring">Biostatic Ring</a></li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRingB4" href="Kinetic_Ring">Kinetic Ring</a></li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRingB2" href="Vitalic_Ring">Vitalic Ring</a></li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRingB5" href="Oneiric_Ring">Oneiric Ring</a></li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRingB3" href="Mnemonic_Ring">Mnemonic Ring</a></li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRingB6" href="Grasping_Ring">Grasping Ring</a></li>
+<li><a class="whiteitem Ring" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FRings%2FFourRing9" href="Prismatic_Ring">Prismatic Ring</a></li>
+<li><a class="whiteitem Amulet" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FAmulets%2FFourAmuletB2" href="Corona_Amulet">Corona Amulet</a></li>
+<li><a class="whiteitem Amulet" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FAmulets%2FFourAmuletB1c" href="Absent_Amulet">Absent Amulet</a></li>
+</ul>
+<p>Ring Minion Modifiers:</p>
+<ul>
+<li>Offering Skills have 23% increased Buff Effect</li>
+<li>Minions have +94% Suprassing chance to fire an additional Projectile</li>
+</ul>
+<p>Flesh Flower: <code>Killing Vruun will allow you to return his Head to the Genesis Tree to unlock the Grasping Orchid</code> hinted <a class="whiteitem BodyArmour" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FArmours%2FBodyArmours%2FFourBodyStrDexInt3" href="Grasping_Mail">Grasping Mail</a> </p>
+<h5 id="ignite-the-hiveborn">Ignite the Hiveborn</h5>
+<p>Fighting the Hiveborn will eventually unveil a path into their domain. Beyond the veil, the true scale of the incursion is revealed: sprawling, living hives and vast Skyhives.</p>
+<p>Purge these twisted structures and defeat the Breachlords to collapse their foothold once and for all.</p>
+<p>Bosses</p>
+<ul>
+<li><a  data-hover="?s=Data%5CMonsterVarieties%2F65247" href="/us/Vruun%2C_Marshal_of_Xesht">Vruun, Marshal of Xesht</a> with Atlas Passive <code>Vruun, Marshal of Xesht has a 25% chance to drop a Lineage Support</code> drops <a class="gemitem" data-hover="?s=Data%5CGemEffects%2FVruunsAftermathSupport" href="/us/Vruuns_Aftermath">Vruun&#39;s Aftermath</a></li>
+</ul>
+<h2 id="ritual---the-rite-of-the-nameless">Ritual - The Rite of the Nameless</h2>
+<p>Aoife lingers as a restless spirit, bound to the Wildwood and searching for one who might answer her call. The King in the Mists has claimed her flesh, leaving her soul adrift, untethered and unable to pass beyond. She believes that only by reclaiming what was taken can she be made whole once more.</p>
+<p>Foretold Proliferation:</p>
+<ul>
+<li>Monsters Sacrificed at Ritual Altars grants 25% increased Tribute</li>
+<li>All Unique Favours at Ritual Altars will instead be Currency</li>
+<li>Rerolling Favours at Ritual Altars has no Cost the first time</li>
+</ul>
+<p>Foretold Bounty:</p>
+<ul>
+<li>5 Chaos Orbs</li>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FMageblood" href="Mageblood">Mageblood</a></li>
+<li><a class="whiteitem Omen" data-hover="?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FOmenOnAnnulRemoveTwoMods" href="Omen_of_Greater_Annulment">Omen of Greater Annulment</a></li>
+</ul>
+<h5 id="meet-the-king">Meet the King</h5>
+<p>Head into the Wildwood to complete Rituals that resurrect bound monsters, earning Tribute that can now be spent on Uniques or Omens, making these encounters more rewarding than before.</p>
+<p>Use any remaining Tribute to fill the meter and gain an audience with the King in the Mists.</p>
+<h5 id="become-the-champion">Become the Champion</h5>
+<p>The Rite of the Nameless begins as a ritual encounter, swelling in power until the Map Boss is defeated, leaving behind a fragment of an effigy.</p>
+<p>It then bleeds into other maps, with each choice you make compounding the difficulty and rewards. Fight your way through and complete it to face a devastating final trial.</p>
+<h5 id="challenge-the-darkness">Challenge the Darkness</h5>
+<p>With the Rite of the Nameless brought to its end, etch your name into the effigy and step into the prison, where the darkness itself awaits.</p>
+<ul>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FSylvan%27s+Effigy" href="Sylvans_Effigy">Sylvan&#39;s Effigy</a></li>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FLiminal+Coil" href="Liminal_Coil">Liminal Coil</a></li>
+<li><a class="UniqueItems UniqueItem" data-hover="?s=Data%5CUniqueItems%2FPeriphery" href="Periphery">Periphery</a></li>
+</ul>
+<h2 id="abyss">Abyss</h2>
+<p>When you first encounter one in the endgame, you&#39;ll get a quest that leads you to the east, where you will find these mega abyss cracks on the earth, leading away from the Well of Souls. All the maps along the cracks will contain abysses with special properties, and mapping along these cracks will close the Atlas scale abysses, giving you points for the Abyss Atlas Tree. </p>
+<p>At the end of each Atlas Abyss, you&#39;ll find an abyssal depths with the boss fight for one of the Abyssal factions. After completing all three, you&#39;ll get a key for the Well of Souls, allowing you fight the <a  data-hover="?s=Data%5CMonsterVarieties%2F13845" href="/us/Vessel_of_Kulemak">Vessel of Kulemak</a>.</p>
+<h2 id="and-much-more">and Much More!</h2>
+<h5 id="over-30-new-maps">Over 30 New Maps</h5>
+<p>As part of the endgame overhaul, there are over thirty new areas to explore on the Atlas. From the deserts of Maraketh and snowbound towns to lush gardens and lava-filled dungeons, each map features a distinct environment and a boss to defeat.</p>
+<h5 id="40-new-unique-items">40+ New Unique Items</h5>
+<p>Return of the Ancients introduces over 30 new Unique Items, featuring powerful skills and distinctive mechanics. We have also revised more than a dozen existing Unique Items.</p>
+<h5 id="introducing-challenges">Introducing Challenges</h5>
+<p>In the Runes of Aldur league, we&#39;re introducing the very first set of eight <a href="Runes_of_Aldur_challenges">league challenges</a> to Path of Exile 2. Completing them will grant you pieces of the exclusive Knight of Aldur Armour Set.</p>
+<h5 id="streamlining-the-campaign">Streamlining the Campaign</h5>
+<p>The campaign has been updated to make navigating areas easier. Look out for cues that will guide you forward!</p>
+<h5 id="build-planner">Build Planner</h5>
+<p>As many players choose to follow build guides from content creators, we’re introducing a Build Guide system to make this process easier. Simply download the build file you’d like to use, and it will appear in the game client, showing everything needed to create that build, including Passive Tree nodes, Ascendancy points, Skill Gems, and more.</p>
+<p>Reference: <a href="Build_Planner">Build Planner</a></p>
+<h5 id="quality-of-life-features">Quality of Life Features</h5>
+<p>Additional quality-of-life improvements includes the Atlas search, market price checker, and the Fragment Stash Tab.</p>
+<h2 id=""></h2>
+<h5 id="destin-interviews">Destin interviews</h5>
+<p><a href='#' class="js-modal-btn" data-video-id="2EHDmylDt94"></a></p>
+<h5 id="chris-wilson-interviews">Chris Wilson interviews</h5>
+<p><a href='#' class="js-modal-btn" data-video-id="M0PhEFcIkg4"></a></p>
+<h5 id="path-of-exile-2-return-of-the-ancients-qa---a-monumental-new-endgame--too-much-more">PATH of EXILE 2: RETURN of the ANCIENTS Q&amp;A - A Monumental New Endgame &amp; Too Much More...</h5>
+<p><a href='#' class="js-modal-btn" data-video-id="P2-BLJQCeWo"></a></p>
+<h5 id="content-reveal">Content Reveal</h5>
+<p><a href='#' class="js-modal-btn" data-video-id="vkCu3V81N74"></a></p>
+<ul>
+<li>Play on PC and Consoles - 1PM May 29 PDT</li>
+</ul>
+</div>
+        <div><hr style='border-top: 1px solid white'>Wikis Content is available under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" target="_blank">CC BY-NC-SA 3.0</a> unless otherwise noted.</div>
+    </div>
+</div>
+<script>
+$(function() {
+    lightbox_panel();
+});
+</script>
+
+
+<footer class="ccontainer text-center text-lg-left">
+  <div class="card p-4">
+    <div class="row">
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Sites</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a target="_blank" href="https://poedb.tw/">poedb.tw</a> </li>
+          <li> <a target="_blank" href="https://tlidb.com/">tlidb.com</a> </li>
+          <!--<li> <a target="_blank" href="https://diablo4.cc/">diablo4.cc</a> </li>-->
+          <li> <a target="_blank" href="https://poe2db.tw/">poe2db.tw</a> </li>
+              <li> <a target="_blank" href="https://paldb.cc/">paldb.cc</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">News</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="news">GGG Tracker</a> </li>
+          <li> <a href="League#ConcurrentPlayers">Concurrent Players</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">About Site</h5>
+        <ul class="list-unstyled mb-0">
+          <li> <a href="privacy">Privacy</a> </li>
+          <li> <a href="General_disclaimer">Disclaimers</a> </li>
+          <li> <a href="patreon">Patreon</a> </li>
+        </ul>
+      </div>
+
+      <div class="col-lg-3 col-6 mb-4 mb-md-0">
+        <h5 class="text-uppercase">Community</h5>
+        <ul class="list-unstyled mb-0">
+
+
+
+          <li><a target="_blank" href="https://www.reddit.com/user/chuanhsing">/u/chuanhsing</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    Copyright &copy; 2014-2026 PoE2DB.
+  </div>
+</footer>
+
+<div style=""></div>
+<div class="clearfix"></div><div id="bottom_banner"></div><script>topbanner970("bottom_banner");</script>
+    </div>
+    </div>
+
+    <a href="#top" id="toTop"><span class="fas fa-arrow-circle-up fa-3x"></span></a>
+<script>
+ $(document).ready(function()
+ {
+    if (window.location.hostname != "poedb.tw" && window.location.hostname != "poe2db.tw") {
+        window.location.href="https://poedb.tw/";
+    }
+ });
+</script>
+    <script src="https://cdn.poe2db.tw/js/poedb_footer.43e536bf51dca9e4.js"></script>
+
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"369404df4026486bb42f428b903a2162","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>
