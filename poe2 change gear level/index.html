@@ -123,6 +123,24 @@
   footer{text-align:center;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line);padding-top:22px;margin-top:10px}
   .note{font-size:.82rem;color:var(--muted);margin-top:12px;font-style:italic}
 
+  /* tabs สำหรับตาราง Base */
+  .tabbar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+  .tabbtn{font-family:'Cinzel',serif;font-size:.8rem;color:var(--muted);background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:7px 12px;cursor:pointer;transition:.15s}
+  .tabbtn:hover{color:var(--gold-soft);border-color:var(--gold)}
+  .tabbtn.active{color:var(--bg);background:var(--gold);border-color:var(--gold);font-weight:700}
+  .tabpanel{display:none}
+  .tabpanel.active{display:block}
+  .basegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .baseslot{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:12px 14px}
+  .baseslot h4{font-family:'Cinzel',serif;color:var(--gold-soft);font-size:.92rem;font-weight:500;margin-bottom:9px;border-bottom:1px solid var(--line);padding-bottom:6px}
+  .baseslot ul{list-style:none;font-size:.82rem}
+  .baseslot li{padding:3px 0;color:var(--muted);display:flex;gap:8px;align-items:baseline}
+  .baseslot li b{color:var(--txt);font-weight:400}
+  .baseslot li .lv{color:var(--gold);font-family:'JetBrains Mono',monospace;font-size:.72rem;flex:none;min-width:34px;text-align:right}
+  .baseslot li.kp b{color:var(--eva)}
+  .baseslot li.kp .lv{color:var(--gold-soft)}
+  @media(max-width:560px){.basegrid{grid-template-columns:1fr 1fr}}
+
   @media(max-width:560px){
     .uniq{grid-template-columns:1fr}
     .sets{grid-template-columns:1fr}
@@ -183,8 +201,17 @@
 
   <!-- 3. ตาราง base เต็ม -->
   <section>
-    <h2><span class="num">3</span>ตาราง Base เต็ม (ค่า Evasion ต่อชิ้น)</h2>
+    <h2><span class="num">3</span>ตาราง Base เต็ม (เลือก tab ตามชนิดเกราะ)</h2>
     <div class="panel">
+      <div class="tabbar">
+        <button class="tabbtn active" onclick="showBaseTab(event,'b-eva')">Evasion (Dex)</button>
+        <button class="tabbtn" onclick="showBaseTab(event,'b-arm')">Armour (Str)</button>
+        <button class="tabbtn" onclick="showBaseTab(event,'b-es')">Energy Shield (Int)</button>
+        <button class="tabbtn" onclick="showBaseTab(event,'b-arev')">Armour/Evasion</button>
+        <button class="tabbtn" onclick="showBaseTab(event,'b-ares')">Armour/ES</button>
+        <button class="tabbtn" onclick="showBaseTab(event,'b-evaes')">Evasion/ES</button>
+      </div>
+      <div class="tabpanel active" id="b-eva">
       <table>
         <thead>
           <tr><th>Lv.</th><th>Body Armour</th><th>Boots</th><th>Gloves</th><th>Helmet</th></tr>
@@ -206,6 +233,261 @@
         </tbody>
       </table>
       <p class="note">ตัวเลขสีเขียว = ค่า Evasion ของ base · แถวที่ขีดทองคือ breakpoint สำคัญ</p>
+      </div><!-- /b-eva -->
+
+      <div class="tabpanel" id="b-arm">
+        <div class="basegrid">
+          <div class="baseslot"><h4>Body Armour</h4><ul>
+            <li><span class="lv">1</span><b>Rusted Cuirass</b></li>
+            <li><span class="lv">4</span><b>Fur Plate</b></li>
+            <li><span class="lv">11</span><b>Iron Cuirass</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Raider Plate</b></li>
+            <li><span class="lv">20</span><b>Maraketh Cuirass</b></li>
+            <li><span class="lv">27</span><b>Steel Plate</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Full Plate</b></li>
+            <li><span class="lv">37</span><b>Vaal Cuirass</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Juggernaut Plate</b></li>
+            <li><span class="lv">50</span><b>Chieftain Cuirass</b></li>
+            <li><span class="lv">52</span><b>Colosseum Plate</b></li>
+            <li><span class="lv">58</span><b>Champion Cuirass</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Glorious Plate</b></li>
+            <li><span class="lv">68</span><b>Conqueror Plate</b></li>
+            <li><span class="lv">73</span><b>Abyssal Cuirass</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Boots</h4><ul>
+            <li><span class="lv">1</span><b>Rough Greaves</b></li>
+            <li><span class="lv">11</span><b>Iron Greaves</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Bronze Greaves</b></li>
+            <li><span class="lv">27</span><b>Trimmed Greaves</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Stone Greaves</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Reefsteel Greaves</b></li>
+            <li><span class="lv">52</span><b>Monument Greaves</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Totemic Greaves</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Gloves</h4><ul>
+            <li><span class="lv">1</span><b>Stocky Mitts</b></li>
+            <li><span class="lv">11</span><b>Riveted Mitts</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Tempered Mitts</b></li>
+            <li><span class="lv">27</span><b>Bolstered Mitts</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Moulded Mitts</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Detailed Mitts</b></li>
+            <li><span class="lv">52</span><b>Titan Mitts</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Grand Mitts</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Helmet</h4><ul>
+            <li><span class="lv">1</span><b>Rusted Greathelm</b></li>
+            <li><span class="lv">12</span><b>Soldier Greathelm</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Wrapped Greathelm</b></li>
+            <li><span class="lv">27</span><b>Spired Greathelm</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Elite Greathelm</b></li>
+            <li><span class="lv">36</span><b>Warrior Greathelm</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Commander Greathelm</b></li>
+            <li><span class="lv">51</span><b>Fierce Greathelm</b></li>
+            <li><span class="lv">52</span><b>Sentinel Greathelm</b></li>
+            <li><span class="lv">57</span><b>Goliath Greathelm</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Guardian Greathelm</b></li>
+          </ul></div>
+        </div>
+      </div><!-- /b-arm -->
+
+      <div class="tabpanel" id="b-es">
+        <div class="basegrid">
+          <div class="baseslot"><h4>Body Armour</h4><ul>
+            <li><span class="lv">1</span><b>Tattered Robe</b></li>
+            <li><span class="lv">5</span><b>Feathered Robe</b></li>
+            <li><span class="lv">11</span><b>Hexer's Robe</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Bone Raiment</b></li>
+            <li><span class="lv">22</span><b>Silk Robe</b></li>
+            <li><span class="lv">28</span><b>Keth Raiment</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Votive Raiment</b></li>
+            <li><span class="lv">40</span><b>Altar Robe</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Elementalist Robe</b></li>
+            <li><span class="lv">49</span><b>Mystic Raiment</b></li>
+            <li><span class="lv">52</span><b>Imperial Robe</b></li>
+            <li><span class="lv">58</span><b>Plated Raiment</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Havoc Raiment</b></li>
+            <li><span class="lv">68</span><b>Enlightened Robe</b></li>
+            <li><span class="lv">73</span><b>Arcane Raiment</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Boots</h4><ul>
+            <li><span class="lv">1</span><b>Straw Sandals</b></li>
+            <li><span class="lv">11</span><b>Wrapped Sandals</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Lattice Sandals</b></li>
+            <li><span class="lv">27</span><b>Silk Slippers</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Feathered Sandals</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Flax Sandals</b></li>
+            <li><span class="lv">52</span><b>Studded Sandals</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Elaborate Sandals</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Gloves</h4><ul>
+            <li><span class="lv">1</span><b>Torn Gloves</b></li>
+            <li><span class="lv">12</span><b>Sombre Gloves</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Stitched Gloves</b></li>
+            <li><span class="lv">26</span><b>Jewelled Gloves</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Intricate Gloves</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Pauascale Gloves</b></li>
+            <li><span class="lv">52</span><b>Embroidered Gloves</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Adorned Gloves</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Helmet</h4><ul>
+            <li><span class="lv">1</span><b>Twig Circlet</b></li>
+            <li><span class="lv">10</span><b>Wicker Tiara</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Beaded Circlet</b></li>
+            <li><span class="lv">26</span><b>Chain Tiara</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Feathered Tiara</b></li>
+            <li><span class="lv">40</span><b>Gold Circlet</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Vermeil Circlet</b></li>
+            <li><span class="lv">50</span><b>Jade Tiara</b></li>
+            <li><span class="lv">52</span><b>Noble Circlet</b></li>
+            <li><span class="lv">58</span><b>Twilight Tiara</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Magus Tiara</b></li>
+          </ul></div>
+        </div>
+      </div><!-- /b-es -->
+
+      <div class="tabpanel" id="b-arev">
+        <div class="basegrid">
+          <div class="baseslot"><h4>Body Armour</h4><ul>
+            <li><span class="lv">1</span><b>Chain Mail</b></li>
+            <li><span class="lv">11</span><b>Rogue Armour</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Vagabond Armour</b></li>
+            <li><span class="lv">26</span><b>Cloaked Mail</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Explorer Armour</b></li>
+            <li><span class="lv">37</span><b>Scale Mail</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Knight Armour</b></li>
+            <li><span class="lv">50</span><b>Ancestral Mail</b></li>
+            <li><span class="lv">52</span><b>Lamellar Mail</b></li>
+            <li><span class="lv">58</span><b>Gladiator Armour</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Heroic Armour</b></li>
+            <li><span class="lv">68</span><b>Tournament Mail</b></li>
+            <li><span class="lv">73</span><b>Slayer Armour</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Boots</h4><ul>
+            <li><span class="lv">6</span><b>Mail Sabatons</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Braced Sabatons</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Stacked Sabatons</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Covered Sabatons</b></li>
+            <li><span class="lv">52</span><b>Flexile Sabatons</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Bold Sabatons</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Gloves</h4><ul>
+            <li><span class="lv">6</span><b>Ringmail Gauntlets</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Layered Gauntlets</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Doubled Gauntlets</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Plate Gauntlets</b></li>
+            <li><span class="lv">52</span><b>Burnished Gauntlets</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Ornate Gauntlets</b></li>
+            <li class="kp"><span class="lv">70★</span><b>Ancient Gauntlets</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Helmet</h4><ul>
+            <li><span class="lv">5</span><b>Brimmed Helm</b></li>
+            <li><span class="lv">11</span><b>Guarded Helm</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Visored Helm</b></li>
+            <li><span class="lv">26</span><b>Cowled Helm</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Shielded Helm</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Closed Helm</b></li>
+            <li><span class="lv">52</span><b>Decorated Helm</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Gallant Helm</b></li>
+            <li><span class="lv">65</span><b>Ancient Visor</b></li>
+          </ul></div>
+        </div>
+      </div><!-- /b-arev -->
+
+      <div class="tabpanel" id="b-ares">
+        <div class="basegrid">
+          <div class="baseslot"><h4>Body Armour</h4><ul>
+            <li><span class="lv">1</span><b>Pilgrim Vestments</b></li>
+            <li><span class="lv">10</span><b>Pelt Mantle</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Mail Vestments</b></li>
+            <li><span class="lv">28</span><b>Shaman Mantle</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Ironclad Vestments</b></li>
+            <li><span class="lv">36</span><b>Sacrificial Mantle</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Cleric Vestments</b></li>
+            <li><span class="lv">51</span><b>Tideseer Mantle</b></li>
+            <li><span class="lv">52</span><b>Gilded Vestments</b></li>
+            <li><span class="lv">54</span><b>Venerated Mantle</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Revered Vestments</b></li>
+            <li><span class="lv">68</span><b>Corvus Mantle</b></li>
+            <li><span class="lv">73</span><b>Zenith Vestments</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Boots</h4><ul>
+            <li><span class="lv">5</span><b>Padded Leggings</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Secured Leggings</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Pelt Leggings</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Weaver Leggings</b></li>
+            <li><span class="lv">52</span><b>Gilt Leggings</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Pious Leggings</b></li>
+            <li><span class="lv">65</span><b>Ancient Leggings</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Gloves</h4><ul>
+            <li><span class="lv">5</span><b>Rope Cuffs</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Aged Cuffs</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Goldcast Cuffs</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Kalguuran Cuffs</b></li>
+            <li><span class="lv">52</span><b>Righteous Cuffs</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Signet Cuffs</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Helmet</h4><ul>
+            <li><span class="lv">5</span><b>Iron Crown</b></li>
+            <li><span class="lv">10</span><b>Horned Crown</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Cultist Crown</b></li>
+            <li><span class="lv">28</span><b>Martyr Crown</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Heavy Crown</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Spiritbone Crown</b></li>
+            <li><span class="lv">52</span><b>Lavish Crown</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Archon Crown</b></li>
+            <li><span class="lv">65</span><b>Tenebrous Crown</b></li>
+          </ul></div>
+        </div>
+      </div><!-- /b-ares -->
+
+      <div class="tabpanel" id="b-evaes">
+        <div class="basegrid">
+          <div class="baseslot"><h4>Body Armour</h4><ul>
+            <li><span class="lv">1</span><b>Hermit Garb</b></li>
+            <li><span class="lv">11</span><b>Waxed Jacket</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Marabout Garb</b></li>
+            <li><span class="lv">28</span><b>Wayfarer Jacket</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Anchorite Garb</b></li>
+            <li><span class="lv">39</span><b>Scalper's Jacket</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Scoundrel Jacket</b></li>
+            <li><span class="lv">51</span><b>Ascetic Garb</b></li>
+            <li><span class="lv">52</span><b>Clandestine Jacket</b></li>
+            <li><span class="lv">56</span><b>Monastic Garb</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Torment Jacket</b></li>
+            <li><span class="lv">68</span><b>Devout Garb</b></li>
+            <li><span class="lv">73</span><b>Assassin Garb</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Boots</h4><ul>
+            <li><span class="lv">5</span><b>Frayed Shoes</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Threaded Shoes</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Hunting Shoes</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Steelpoint Shoes</b></li>
+            <li><span class="lv">52</span><b>Velour Shoes</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Bladed Shoes</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Gloves</h4><ul>
+            <li><span class="lv">4</span><b>Gauze Wraps</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Linen Wraps</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Spiral Wraps</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Buckled Wraps</b></li>
+            <li><span class="lv">52</span><b>Furtive Wraps</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Utility Wraps</b></li>
+          </ul></div>
+          <div class="baseslot"><h4>Helmet</h4><ul>
+            <li><span class="lv">5</span><b>Hewn Mask</b></li>
+            <li><span class="lv">10</span><b>Face Mask</b></li>
+            <li class="kp"><span class="lv">16★</span><b>Hooded Mask</b></li>
+            <li><span class="lv">28</span><b>Veiled Mask</b></li>
+            <li class="kp"><span class="lv">33★</span><b>Tribal Mask</b></li>
+            <li class="kp"><span class="lv">45★</span><b>Solid Mask</b></li>
+            <li><span class="lv">52</span><b>Shaded Mask</b></li>
+            <li class="kp"><span class="lv">65★</span><b>Death Mask</b></li>
+          </ul></div>
+        </div>
+      </div><!-- /b-evaes -->
+
+      <p class="note">ชื่อ base จาก poe2db (Patch 0.5) · <span class="eva">★</span> = breakpoint สำคัญ (16/33/45/65) · tab <b>Evasion</b> มีค่า Evasion กำกับ · tab อื่นแสดงชื่อ + เลเวลที่ใช้ได้</p>
     </div>
   </section>
 
@@ -380,5 +662,14 @@
   </footer>
 
 </div>
+<script>
+function showBaseTab(e, id){
+  var wrap = e.currentTarget.closest('.panel');
+  wrap.querySelectorAll('.tabpanel').forEach(function(p){ p.classList.remove('active'); });
+  wrap.querySelectorAll('.tabbtn').forEach(function(b){ b.classList.remove('active'); });
+  document.getElementById(id).classList.add('active');
+  e.currentTarget.classList.add('active');
+}
+</script>
 </body>
 </html>
