@@ -6,6 +6,8 @@
 
 👉 **https://krirk0137.github.io/poe2_krirk_gear_change**
 
+https://maxroll.gg/poe2/build-guides/spirit-walker-twisters#story-rewards-header
+
 ## 📋 ในชีต (`index.html`) มีอะไรบ้าง
 
 - **Breakpoint เปลี่ยนของตามเลเวล** (★ = จุดสำคัญ: Lv.16 / 33 / 45 / 70)
