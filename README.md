@@ -8,6 +8,10 @@
 
 https://maxroll.gg/poe2/build-guides/spirit-walker-twisters#story-rewards-header
 
+https://www.pathofexile.com/trade2/search/poe2/HC%20Runes%20of%20Aldur/OgodBJX0cE
+
+https://docs.google.com/spreadsheets/d/1NObuWi8DTFZbjhWlWeADUEkOZ8-CsxVopnEbTNN5yjE/edit?gid=506508026#gid=506508026
+
 ## 📋 ในชีต (`index.html`) มีอะไรบ้าง
 
 - **Breakpoint เปลี่ยนของตามเลเวล** (★ = จุดสำคัญ: Lv.16 / 33 / 45 / 70)
